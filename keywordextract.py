@@ -129,8 +129,8 @@ class KeywordExtract():
         #-index of end of keywords (when there is no more end chars
         keywords = text.lower()[startindex:].split("\n")[0]
 
-        #--if the last char is one of the end chars continue building keywords
-        if len(keywords) is not 0 and keywords[len(keywords)-1:] in endchars:
+        #--if the last char is one of the end chars continue building keywords, and doesnt contain a dot
+        if len(keywords) is not 0 and keywords[len(keywords)-1:] in endchars and keywords[len(keywords)-3:].count('.') is not 0:
             keywords = keywords[:len(keywords)] + self.findkeywords(text[startindex + len(keywords) + 2:])
         return keywords
 
@@ -144,10 +144,10 @@ class KeywordExtract():
 
         end = []
         #special cases
-        cases = [' 22nd international congress', " 1. Introduction"]
+        cases = [' 22nd international congress', "1. Introduction", "1.0 introduction"]
         for case in cases:
             if case.lower() in text.lower():
-                end.append(text.tolower().find(case.tolower()))
+                end.append(text.lower().find(case.lower()))
 
         if len(end) is not 0:
             text = text[0:min(end)]
@@ -166,7 +166,7 @@ def errordetect(keywords):
     # Output:
     # - [result : boolean] if it is an error or not
     #-size errors
-    if len(keywords) < 4 or len(keywords) > 200:
+    if len(keywords) < 4 or len(keywords) > 250:
         return True
 
     #-basic counting of words
@@ -197,7 +197,7 @@ def extractpdfs(listofpdfs, extractor, errorfiles, folder):
         if errordetect(keywords):
             print("potential error in ", pdf)
             print(pdf, keywords)
-            errorfiles.put(pdf)
+            errorfiles.put(pdf + "\t" + keywords)
 
         #prints progress
         print("[",os.getpid(), "]:",'\t',totalcount, "/", sizeoflist)
@@ -211,6 +211,7 @@ if __name__ == '__main__':
 
     #-testing vars
     #listofpdfs2 = ['-MODSIM03-Volume_03-B02-04_Cao.pdf']
+    #folder = "testpdf/"
 
     #-grabs files in folder
     completelistofpdfs = os.listdir(folder)
@@ -262,5 +263,9 @@ if __name__ == '__main__':
     #gets the file names with errors from the process queue
     results = [errorfiles.get() for p in processes]
     # prints total count of keywords under 3 letters and not over 150 letters
-    print("Keywords < 3: ", errorcount,"/",totalcount)
-    print(results)
+    print("Errors: ", len(results),"/",totalcount)
+
+    #record error file
+    thefile = open("error.txt",'w')
+    for result in results:
+        thefile.write("%s\n" % result)
