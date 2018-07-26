@@ -7,7 +7,6 @@ import urllib.error
 import wget
 import json
 import shutil
-
 from urllib.parse import urlparse
 
 
@@ -213,8 +212,8 @@ def downloadAllFilesRequestGet(list):
 #url = input("Enter url to start search")
 
 #Settings
-domain = "https://www.mssanz.org.au/modsim2017"
-url = "https://www.mssanz.org.au/modsim2017"
+domain = "https://www.mssanz.org.au/"
+url = "https://www.mssanz.org.au/"
 filetype = ".pdf"
 browsertype = "edge"
 
