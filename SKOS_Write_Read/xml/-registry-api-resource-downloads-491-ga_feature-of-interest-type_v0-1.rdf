@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Car.Nicholas</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Sedgmen.Lara_Admin</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Geoscience-Australia">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoscience Australia</foaf:name>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-28T09:44:39Z</dcterms:modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Nicholas-Car">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas-Car</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/Nicholas-Car"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-02-28T09:44:39Z</dcterms:modified>
+	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoscience Australia</dc:creator>
+	<dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-26T12:00:00.000</dc:date>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/Geoscience-Australia"/>
+	<dcterms:description xml:lang="en">GA's Features of Interest. FOIs are features (so a representation of a real-world object) that carry properties which are observed. FOIs can be either domain features (aka sampled features), e.g. 'Murray River', or a sampling feature, e.g. 'water gauge X' at the Murray River. GA's list of FOIs are derived from GA's internal databases that contain many thousands of features of interest to GA. Samples within GA's main systems are alsways associated with FOIs.</dcterms:description>
+	<dcterms:publisher rdf:resource="http://editor.vocabs.ands.org.au/user/Geoscience-Australia"/>
+	<dcterms:title xml:lang="en">Feature of Interest Type</dcterms:title>
+	<skos:changeNote xml:lang="en">This vocabulary was created directly from the GA ORAPROD A schema database</skos:changeNote>
+	<skos:editorialNote xml:lang="en">This vocabulary was formulated directly into RDF the loaded into the ANDS vocab system</skos:editorialNote>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/aceragerelease"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/borehole"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/country"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/drillhole"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/emitter"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/essci"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/estuary"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/explorationpermit"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/facies"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/fieldsite"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mapsheet"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/marsegment"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mineraldeposit"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mineralisedzone"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mineralproject"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/observatory"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/pipeline"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/placename"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/politicalregion"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/port"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/powerstation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/productionlicense"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/project"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/province"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/resourceprocessingplant"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/resourceproject"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/retentionlease"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/section"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/seismicline"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/state"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/survey"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/well"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/wildcatlocation"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/transect"/>
+	<skos:prefLabel xml:lang="en">Features of Interest Types</skos:prefLabel>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-11-08</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v0.1</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#changeNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#changeNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/aceragerelease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Acerage release</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ACREAGE RELEASE</skos:altLabel>
+	<skos:definition xml:lang="en">Offshore acreage released by the various Australian Government-State/NT Joint Authorities.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/borehole">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Borehole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">BOREHOLE</skos:altLabel>
+	<skos:definition xml:lang="en">A generic term for any hole or shaft drilled into the Earth. A borehole may have many purposes (eg, petroleum, mineral, or groundwater exploration or production; stratigraphic or engineering investigation).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:exactMatch rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/borehole"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/country">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Country</skos:prefLabel>
+	<skos:altLabel xml:lang="en">COUNTRY</skos:altLabel>
+	<skos:definition xml:lang="en">Country (ISO 3166-1998 Codes or Geonames URIs should be used for instances of countries).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/drillhole">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Drillhole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">DRILLHOLE</skos:altLabel>
+	<skos:definition xml:lang="en">Any hole drilled into the earth for the purpose of examining the earth material into which it is drilled, excluding holes drilled for petroleum purposes.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/emitter">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Emitter</skos:prefLabel>
+	<skos:altLabel xml:lang="en">EMITTER</skos:altLabel>
+	<skos:definition xml:lang="en">A CO2 Emission source - including power stations, petroleum fields, gas processing plants, oil refineries, coke production plants.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/essci">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">ESSCI</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ESSCI</skos:altLabel>
+	<skos:definition xml:lang="en">Environmentally sustainable sites for CO2 injection.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/estuary">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Estuary</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ESTUARY</skos:altLabel>
+	<skos:definition xml:lang="en">The tidal mouth of a large river, where the tide meets the stream.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/explorationpermit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Exploration permit</skos:prefLabel>
+	<skos:altLabel xml:lang="en">EXPLORATION PERMIT</skos:altLabel>
+	<skos:definition xml:lang="en">Permit to provide exclusive rights to undertake seismic surveys and drilling in a defined area.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/facies">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Facies</skos:prefLabel>
+	<skos:altLabel xml:lang="en">FACIES</skos:altLabel>
+	<skos:definition xml:lang="en">A mass of rock that can be recognized by its composition, structures or fossil content and mapped on the basis of those characteristics.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/fieldsite">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Field site</skos:prefLabel>
+	<skos:altLabel xml:lang="en">FIELD SITE</skos:altLabel>
+	<skos:definition xml:lang="en">Place (site) where an observation and/or measurement was made and/or sampling took place. For example observations/measurements/samples of rocks, soil, stream sediments, water, regolith, landform, vegetation, or rock properties.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:exactMatch rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/site"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mapsheet">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Mapsheet</skos:prefLabel>
+	<skos:altLabel xml:lang="en">MAPSHEET</skos:altLabel>
+	<skos:definition xml:lang="en">The bounding polygon of a map as in, for example, the National Mapping 1:250 000 map sheet index. Mapsheets can be any scale, and include standard mapsheet boundaries and non-standard mapsheet boundaries.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/marsegment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Marsegment</skos:prefLabel>
+	<skos:altLabel xml:lang="en">MARSEGMENT</skos:altLabel>
+	<skos:definition xml:lang="en">Subsets of a survey, referred to as segments. Operations segments are defined by a substantial change in the recording parameters of a survey, loop segments are defined where the survey loops on itself, and sampling segments identify where the ship may have stopped or slowed for sampling.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mineraldeposit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Mineral deposit</skos:prefLabel>
+	<skos:altLabel xml:lang="en">MINERAL DEPOSIT</skos:altLabel>
+	<skos:definition xml:lang="en">An aggregation of mineralisation that may or may not have resources defined.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mineralisedzone">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Mineralised zone</skos:prefLabel>
+	<skos:altLabel xml:lang="en">MINERALISED ZONE</skos:altLabel>
+	<skos:definition xml:lang="en">A mineralised zone may describe a zone of uneconomic mineralisation or an economic orebody. There may be one or more mineralised zone within a specific Mineral Deposit entity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mineralproject">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Mineral project</skos:prefLabel>
+	<skos:altLabel xml:lang="en">MINERAL PROJECT</skos:altLabel>
+	<skos:definition xml:lang="en">A mining operation or mineral exploration project that includes multiple mineral deposits.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/observatory">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Observatory</skos:prefLabel>
+	<skos:altLabel xml:lang="en">OBSERVATORY</skos:altLabel>
+	<skos:definition xml:lang="en">This entity contains data about observatories - buildings or places set apart for, and furnished with instruments for making, observations of natural phenomena; esp., for magnetic observations, ,astronomical, meteorological.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/pipeline">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Pipeline</skos:prefLabel>
+	<skos:altLabel xml:lang="en">PIPELINE</skos:altLabel>
+	<skos:definition xml:lang="en">Containers joining two connection points for the transportation of oil, gas, water or other materials.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/placename">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Place name</skos:prefLabel>
+	<skos:altLabel xml:lang="en">PLACE NAME</skos:altLabel>
+	<skos:definition xml:lang="en">Gazetteer (geographical index or dictionary) place names, e.g. 'Wagga Wagga  region' or 'Captains Flats'</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/politicalregion">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Political region</skos:prefLabel>
+	<skos:altLabel xml:lang="en">POLITICAL REGION</skos:altLabel>
+	<skos:definition xml:lang="en">This entity contains data about political regions and boundaries.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/port">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Port</skos:prefLabel>
+	<skos:altLabel xml:lang="en">PORT</skos:altLabel>
+	<skos:definition xml:lang="en">Harbour - a place by the sea, or by a river or other waterway, where ships and boats can dock, load, and unload.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/powerstation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Power station</skos:prefLabel>
+	<skos:altLabel xml:lang="en">POWER STATION</skos:altLabel>
+	<skos:definition xml:lang="en">Site where fossil fuel, nuclear, hydro, solar, wind, biological or other resources are converted into electrical power.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/productionlicense">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Production license</skos:prefLabel>
+	<skos:altLabel xml:lang="en">PRODUCTION LICENCE</skos:altLabel>
+	<skos:definition xml:lang="en">Licence granted to holder of exploration permit or retention lease, for the recovery of petroleum following a commercial discovery.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/project">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Project</skos:prefLabel>
+	<skos:altLabel xml:lang="en">PROJECT</skos:altLabel>
+	<skos:definition xml:lang="en">A GA-defined project.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/province">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Province</skos:prefLabel>
+	<skos:altLabel xml:lang="en">PROVINCE</skos:altLabel>
+	<skos:definition xml:lang="en">The administratoriv unit 'province'.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/resourceprocessingplant">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Resource processing plant</skos:prefLabel>
+	<skos:altLabel xml:lang="en">RESOURCE PROCESSING PLANT</skos:altLabel>
+	<skos:definition xml:lang="en">Locality for adding value to raw materials, particularly minerals.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/resourceproject">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Resource project</skos:prefLabel>
+	<skos:altLabel xml:lang="en">RESOURCE PROJECT</skos:altLabel>
+	<skos:definition xml:lang="en">Proposed, planned or developing scheme, including infrastructure, for extracting resources that requires a large amount of time, effort, capital, or planning. Once developed, the type of entity could change to MINE, WELL, RESOURCE PROCESSING PLANT, or something similar.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/retentionlease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Retention lease</skos:prefLabel>
+	<skos:altLabel xml:lang="en">RETENTION LEASE</skos:altLabel>
+	<skos:definition xml:lang="en">Lease granted to holder of exploration permit, where a discovery is not currently commercial but is expected to become so.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/section">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Section</skos:prefLabel>
+	<skos:altLabel xml:lang="en">SECTION</skos:altLabel>
+	<skos:definition xml:lang="en">A set of observations and/or measurements and/or samples taken at points or intervals along a line, section or traverse, in any direction at or beneath the earth's surface (measured section). For example, observations of a group of stratigraphic units or regolith zones.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/seismicline">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Seismic line</skos:prefLabel>
+	<skos:altLabel xml:lang="en">SEISMICLINE</skos:altLabel>
+	<skos:definition xml:lang="en">Information about seismic lines for a given survey.  Each seismic line has a different name, but the parameters of seismic lines in any given segment should be similar.  A segment may consist of many lines, and a line may fall within more than 1 segment if the operating parameters change.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/state">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">State</skos:prefLabel>
+	<skos:altLabel xml:lang="en">STATE</skos:altLabel>
+	<skos:definition xml:lang="en">States and Territories of Australia</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/survey">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Survey</skos:prefLabel>
+	<skos:altLabel xml:lang="en">SURVEY</skos:altLabel>
+	<skos:definition xml:lang="en">An airborn survey, usually conducted for the collection of marine, gravity or seismic data.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:exactMatch rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/flightline"/>
+	<skos:broader rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/transect"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/well">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Well</skos:prefLabel>
+	<skos:altLabel xml:lang="en">WELL</skos:altLabel>
+	<skos:definition xml:lang="en">An actual or proposed hole in the ground, designed to exchange fluids between a subsurface reservoir and the surface (or another reservoir) or to retrieve rock core or samples or to enable the detection and measurement of rock properties.  A well (e.g. sidetrack or horizontal well) may originate from another well defined by PARENT.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:exactMatch rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/observationWell"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/wildcatlocation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:44:47Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Wildcat location</skos:prefLabel>
+	<skos:altLabel xml:lang="en">WILDCAT LOCATION</skos:altLabel>
+	<skos:definition xml:lang="en">Permit to conduct further exploration and/or appraisal activities within the location blocks to determine more accurately the nature of the discovery.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/transect">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/survey"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/all-concepts">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">all concepts</rdfs:label>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Car.Nicholas"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-17T11:49:38Z</dcterms:modified>
+	<dcterms:description xml:lang="en">All the Concepts in this vocabulary</dcterms:description>
+	<dcterms:title xml:lang="en">All Concepts</dcterms:title>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/aceragerelease"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/borehole"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/country"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/drillhole"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/emitter"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/essci"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/estuary"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/explorationpermit"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/facies"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/fieldsite"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mapsheet"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/marsegment"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mineraldeposit"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mineralisedzone"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/mineralproject"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/observatory"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/pipeline"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/placename"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/politicalregion"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/port"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/powerstation"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/productionlicense"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/project"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/province"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/resourceprocessingplant"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/resourceproject"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/retentionlease"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/section"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/seismicline"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/state"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/survey"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/well"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/featureofinteresttype/wildcatlocation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/borehole">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/site">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/flightline">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/observationWell">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

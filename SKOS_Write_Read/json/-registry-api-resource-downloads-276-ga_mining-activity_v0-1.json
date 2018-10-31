@@ -1,0 +1,2368 @@
+{
+  "http://editor.vocabs.ands.org.au/user/CGI-Geoscience-Terminology-Working-Group" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "CGI-Geoscience-Terminology-Working-Group",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://editor.vocabs.ands.org.au/user/GA_Raymond.Oliver" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "GA_Raymond.Oliver",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "GA_Sedgmen.Lara_Admin",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://editor.vocabs.ands.org.au/user/Oliver-Raymond" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "Oliver-Raymond",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/Agent" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/contributor" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/contributor",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/creator" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/creator",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/date" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/date",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/description" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/description",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/issued" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/issued",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/modified" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/modified",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/source" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/source",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/title" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/title",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity" : {
+    "http://purl.org/dc/terms/title" : [
+      {
+        "value" : "Mining Activity - All Concepts",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Collection",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#member" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/dredge-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/hydraulic-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/in-situ-recovery",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/open-pit-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/placer-dredging",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/quarrying",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-remote-operated-vehicle",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-vacuum-pumping",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/surface-placer-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/underground-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Extraction of a mineral product in the liquid or gaseous state from the Earth's crust by means of boreholes. Boreholes are used for mining petroleum, and for the extraction of liquid solutions of salt, sulfur, etc.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/in-situ-recovery",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.02.",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "borehole mining",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/dredge-mining" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "http://www.britannica.com/EBchecked/topic/171297/dredgin; adapted to include all types of mineral resources, not just placer deposits (e.g. could include sulfide deposits, manganese nodules on sea floor)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Excavation of underwater mineral resources by floating equipment. Dredging systems are classified as mechanical or hydraulic, depending on the method of material transport.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/placer-dredging",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "03.03..",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "dredge mining",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/hydraulic-mining" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Glossary of Geology. 5th Edition, AGI - online",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The recovery of desired material, generally in open pits, by means of strong jets of water",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.20.",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "hydraulic mining",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/in-situ-recovery" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Glossary of Geology. 5th Edition, AGI - online, adapted from chemical mining and enhanced oil recovery",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "chemical mining",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "solution mining",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "underground gasification",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The extraction of valuable constituents of an orebody in place from boreholes using thermal, miscible, and chemical methods e.g. by dissolution, leaching, underground gasification",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.02.01.",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "in-situ recovery",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/open-pit-mining" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "CGI/ERML 2.0",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "open cut mining",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "open sky mining",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "open-cast mining",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "strip mining",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "An open-sky excavation for the extraction of mineral resources (eg, open cut, open cast, strip mining)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/quarrying",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.03.",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "open-pit mining",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/placer-dredging" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "this vocabulary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/dredge-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/surface-placer-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The extraction of minerals from an underwater placer deposit by the use of floating equipment for scooping or suction",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.01.01.",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "placer dredging",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/quarrying" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Glossary of Geology. 5th Edition, AGI - online",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/open-pit-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The extraction of building stone or other valuable nonmetallic constituent from an open or surface mineral working. It is distinguished from a mine because a quarry usually is open at the top and front, and, in ordinary use of the term, by the character of the material extracted.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.03.01.",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "quarrying",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-remote-operated-vehicle" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "this vocabulary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "03.02..",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "subaqueous remote operated vehicle",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-vacuum-pumping" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Raymond.Oliver",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/modified" : [
+      {
+        "value" : "2016-12-15T02:05:34Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "this vocabulary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "03.01..",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "subaqueous vacuum pumping",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Mining beneath the surface of the earth.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/underground-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02..",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "subsurface mining",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Mining via surface excavations.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/hydraulic-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/open-pit-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/surface-placer-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01..",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "surface mining",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/surface-placer-mining" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "alluvial mining",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The extraction of heavy mineral from beach or sand-bank deposits by concentration in running water. It includes ground sluicing, panning, shoveling gravel into a sluice, scraping by power scraper and excavation by dragline, dredge or other mechanized equipment.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/placer-dredging",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.01.",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "surface placer mining",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/underground-mining" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Dictionary of Mining, Mineral and Related Terms, 1st edition",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A mineral extraction activity in which ore is extracted from the subsurface via underground mine workings (adits, shafts, drifts, stopes, etc.).",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.01.",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "underground mining",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Mining of underwater mineral deposits at or close to the sea, lake or river bed. May be from floating or land-based platforms involving dredging or vaccuum pumping or may use remote operated vehicle (submersible).",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/dredge-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-remote-operated-vehicle",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-vacuum-pumping",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "03..",
+        "type" : "literal",
+        "datatype" : "http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "underwater mining",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity" : {
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/CGI-Geoscience-Terminology-Working-Group",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/date" : [
+      {
+        "value" : "2016-11-29",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      {
+        "value" : "This file contains the CGI Mining Activity vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts to categorize the type of mining activity (eg Open Cut, Underground Mine, multiple, unspecified) or processing activity (eg Ore Processing) or production. Using activity to distinguish between the extraction, processing and production activities allows distinguishing between ore mined/grade/recovery, ore treated/grade/recovery and produced payable/plant recovery. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://purl.org/dc/terms/issued" : [
+      {
+        "value" : "2017-09-06",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      {
+        "value" : "Mining Activity",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo" : [
+      {
+        "value" : "v0.1",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#changeNote" : [
+      {
+        "value" : "2014-02-23 SMR Original conversion to SKOS.",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name.",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#editorialNote" : [
+      {
+        "value" : "This file contains the 2016 SKOS-RDF version of the CGI Mining Activity vocabulary. Vocabulary Shepherd: Rachel Heaven/Tim McCormick. Compilation and review in Google doc spreadsheet; adopted 9/01/2014; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#List" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#object" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#value" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Class" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Container" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Datatype" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Literal" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Resource" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#comment" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#comment",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#domain" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#domain",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#label" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#label",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#member" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#member",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#range" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#range",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2002/07/owl#versionInfo" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#Collection" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Collection",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#Concept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#ConceptScheme" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#altLabel" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#altLabel",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#broader" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#broader",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#changeNote" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#changeNote",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#definition" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#definition",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#editorialNote",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#inScheme" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#inScheme",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#member" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#member",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#narrower" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#narrower",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#notation" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#notation",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://xmlns.com/foaf/0.1/name" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://xmlns.com/foaf/0.1/name",
+        "type" : "uri"
+      }
+    ]
+  }
+}

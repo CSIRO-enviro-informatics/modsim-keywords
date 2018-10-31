@@ -1,0 +1,4011 @@
+{
+  "http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "Groundwater Unit, Bureau of Meteorology",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://editor.vocabs.ands.org.au/user/NEII_Programme" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "NEII_Programme",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/Agent" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/contributor" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/contributor",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/created" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/created",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/creator" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/creator",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/description" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/description",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/issued" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/issued",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/publisher" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/publisher",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/source" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/source",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/subject" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/subject",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/title" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/title",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/GDE-potential" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Describes ecosystems in terms of their 'potential to be interacting with groundwater'. The classes mapped in the GDE Atlas are:\n• High potential for groundwater interaction\n• Moderate potential for groundwater interaction\n• Low potential for groundwater interaction\nThe term 'potential' is used to reflect the uncertainty inherent in identifying ecosystems as groundwater-dependant using desktop methods. Finer scale studies or fieldwork are needed to confirm this analysis.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "GDE potential",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:39Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      {
+        "value" : "The Groundwater Dependent Ecosystems Atlas (GDE Atlas) was developed as a national dataset of Australian GDEs to inform groundwater planning and management. It is the first and only national inventory of GDEs in Australia.  The GDE Atlas web-based mapping application allows you to visualise, analyse and download GDE information for an area of interest without needing specialised software.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://purl.org/dc/terms/issued" : [
+      {
+        "value" : "2017-07",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://purl.org/dc/terms/publisher" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/subject" : [
+      {
+        "value" : "Groundwater",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      {
+        "value" : "Groundwater Dependent Ecosystems Atlas",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [
+      {
+        "value" : "Groundwater Dependent Ecosystems Atlas",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo" : [
+      {
+        "value" : "Version 2",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/GDE-potential",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/LandsatTM5",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/MODIS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/aquifer",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/baseflow",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/capillary-zone",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/conceptual-model",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/confined-aquifer",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/eco-hydrogeological-zone",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/ecological-water-requirement",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/ecosystem",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/electrical-conductivity",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/evapotranspiration",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/gaining-stream",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-dependent-ecosystem",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-flow-system",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/hydraulic-conductivity",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependence-likelihood",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependent-ecosystem",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/karst",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/lines-of-evidence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/losing-stream",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/mean-seasonal-storage-range",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/pH",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/perched-aquifer",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/potentiometric-surface",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/remote-sensing",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/riparian",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/salinity",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/saturated-zone",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/stratification",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/streamflow",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/stygofauna",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/total-dissolved-solids",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/transmissivity",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/transpiration",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/troglofauna",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/turbidity",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/unconfined-aquifer",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/unsaturated-zone",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/vadose-zone",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/watertable",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/LandsatTM5" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Engel, J., and Weinstein, O., (1983). The Thematic Mapper – an overview, IEEE Transactions On Geoscience and Remote Sensing, GE-21:258-265",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Landsat Thematic Mapper 5 – a medium resolution satellite image sensor obtained twice monthly over Australia. Data can be obtained from United States Geological Survey.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "LandsatTM5",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/MODIS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Paget, M.J. and King, E.A., (2008). MODIS Land data sets for the Australian region. CSIRO Marine and Atmospheric Research internal report 004, CSIRO Canberra, Australia, ISBN 978192142432(pdf).",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "MODerate resolution Imaging Spectrometer – a sensor mounted on NASA’s TERRA and AQUA satellites that orbits the Earth collecting data in visible and infrared wavelengths. The data used in this project was the MOD43B4 Nadir BRDF (NBAR) product disseminated by NASA and post-processed by CSIRO.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "MODIS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/aquatic-GDE" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Eamus, D., Froend, R., Loomes, R., Hose, G., Murray, B., (2006). A functional methodology for determining the groundwater regime needed to maintain the health of groundwater-dependent vegetation, Australian Journal of Botany, 2006, 54, 97–114, 2006.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-dependent-ecosystem",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A GDE which uses groundwater after it has been discharged to the surface. This includes all groundwater-fed surface water bodies, such as rivers, wetlands, lakes and springs.\nThis definition refers only to the aquatic (inundated) component of a system, and therefore excludes any vegetation which may fringe a surface water body.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "aquatic GDE",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/aquifer" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Modified from Australian and New Zealand Guidelines for Fresh and Marine Water Quality (2000)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "An underground layer of saturated rock, sand or gravel that absorbs water and allows it to pass freely through pore spaces.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "aquifer",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/baseflow" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The component of streamflow supplied by groundwater discharge.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "baseflow",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/capillary-zone" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The zone of soil moisture above the watertable where water is drawn upwards by capillary tension in which the water is at less than atmospheric pressure.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "capillary zone",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/conceptual-model" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Documentation of a conceptual understanding of the location of GDEs and interaction between ecosystems and groundwater.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "conceptual model",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/confined-aquifer" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "An aquifer overlain by a confining bed. The confining bed has a significantly lower hydraulic conductivity than the aquifer. Typically, groundwater in a confined aquifer is under pressure significantly greater than atmospheric pressure.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "confined aquifer",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/eco-hydrogeological-zone" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "EHZ",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A region where similar processes determine the interaction between groundwater and ecosystems, due to similar ecology, geology, climate, and groundwater/surface water connections.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "EHZ",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "eco-hydrogeological zone",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/ecological-water-requirement" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "adapted from definition for Environmental Water Requirements in ARMCANZ & ANZECC 1996, National principles for the provision of water for ecosystems, Sustainable Land and Water Resources Management Committee Subcommittee on Water Resources Occasional Paper SWR No 3.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "EWR",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Description of the water regimes needed to sustain the ecological values of water-dependent ecosystems at a low level of risk.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "EWR",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ecological water requirement",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/ecosystem" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Commonwealth Environmental Protection and Biodiversity Conservation Act 1999",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A dynamic complex of plant, animal and micro-organism communities and their non-living environment interacting as a functional unit.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ecosystem",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/electrical-conductivity" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "EC",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Electrical conductivity (EC) measures dissolved salt in water. The standard EC unit is microSiemens per centimetre (µS/cm) at 25 °C.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "EC",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "electrical conductivity",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/evapotranspiration" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Australian and New Zealand Guidelines for Fresh and Marine Water Quality (2000)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The combined loss of water from a given area during a specified period of time by evaporation from the soil or water surface and by transpiration from plants.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "evapotranspiration",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/gaining-stream" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "discharge from groundwater to surface water",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A stream where groundwater discharge contributes to streamflow.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "gaining stream",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Water Act 2007  Part 1 Section 4",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "(a) water occurring naturally below ground level (whether in an aquifer or otherwise) or (b) water occurring at a place below ground that has been pumped, diverted or released to that place for the purpose of being stored there. It does not include water held in underground tanks, pipes or other works. \nIn GDE Atlas, this definition includes the capillary fringe, which is an important source of water for many GDEs.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "groundwater",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-dependent-ecosystem" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "GDE",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Natural ecosystems that require access to groundwater to meet all or some of their water requirements on a permanent or intermittent basis, so as to maintain their communities of plants and animals, ecosystem processes and ecosystem services.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/aquatic-GDE",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/subterranean-GDE",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/terrestrial-GDE",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "GDE",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "groundwater dependent ecosystem",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-flow-system" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "GFS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The system which represents the movement of subsurface water from the point where it enters the ground to where it leaves.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "GFS",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "groundwater flow system",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/hydraulic-conductivity" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A property of soil or rock, which describes the ease with which water can move through pore spaces or fractures. It depends on the intrinsic permeability of the material and on the degree of saturation. Saturated hydraulic conductivity describes water movement through saturated media.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "hydraulic conductivity",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependence" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "ID",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Describes a landscape within the GDE Atlas that is wetter than surrounding areas either seasonally or permanently, because it receives water from inflows in addition to rainfall. IDs include groundwater dependent ecosystems as well as ecosystems which use sources of water other than rainfall (e.g. surface water, soil water, irrigation). \nThe layer that shows IDs is derived from the remote sensing layer, in which only pixels that have inflow dependence likelihoods of between 6 and 10 are included. The pixels are a combination of MODIS and Landsat data and are at a resolution of 25m2.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "ID",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "inflow dependence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependence-likelihood" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Describes the likelihood that a landscape is accessing a source of water in addition to rainfall (that it is inflow dependent). It is expressed in the ID layer as a value between 6 (low) and 10 (high), where 10 indicates a landscape that is most likely to be accessing additional water sources. A likelihood value of 6 indicates a landscape that is marginally more likely to be accessing an additional source of water than relying solely on rainfall. A value of less than 6 represents a landscape that is more likely to rely solely on rainfall and is therefore not considered inflow dependent.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "inflow dependence likelihood",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependent-ecosystem" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "IDE",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Describes ecosystems that are likely to be using another source of water in addition to rainfall. IDEs include groundwater dependent ecosystems as well as ecosystems which use sources of water other than rainfall (e.g. surface water, soil water, irrigation).\nIDEs are effectively the ID pixels assigned onto a previously mapped ecosystem polygon. The pixel ID likelihood value was assigned to each ecosystem polygon using a majority rules approach. This means that the ID likelihood value which occurred most often within the ecosystem polygon, was the likelihood value assigned to the polygon overall.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "IDE",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "inflow dependent ecosystem",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/karst" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Jennings 1985; Culver et al. 1995; Fetter 2001 as referenced in M Tomlinson and A Boulton 2008, Subsurface groundwater dependent ecosystems: a review of biodiversity, ecological processes and ecosystem services, National Water Commission Waterlines Occasional Paper No. 8, October 2008",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Terrain characterised by sinkholes, caves and springs, developed most commonly in carbonate rocks, where significant dissolution of the rock has occurred due to flowing water.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "karst",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/lines-of-evidence" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "GDE Atlas terminology identifying the number of rules that could be applied to a polygon given the GIS data available for the analysis. The ‘Lines of Evidence’ result shows how much data the GDE potential result was based on, and therefore is a pragmatic indicator of the reliability of the GDE potential result. This is an attribute for each derived GDE polygon.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "lines of evidence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/losing-stream" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A stream from which water is lost to the surrounding and underlying substrate via infiltration through the streambed and banks.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "losing stream",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/mean-seasonal-storage-range" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Van Dijk, A., Warren, G., Van Niel, T., Byrne, G., Pollock. D., Doody, T., (2011). Derivation of data layers from medium resolution remote sensing to support mapping of groundwater dependent ecosystems. CSIRO Land and Water, Internal Document for National Water Commission GDE Atlas.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "MSSR",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Expresses the estimated mean seasonal range in the amount of water stored in all water stores (surface, soil and groundwater). A large range is likely to indicate a large use of water from storage during periods with low rainfall, for example through root water uptake from deeper soil or groundwater stores.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "MSSR",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mean seasonal storage range",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/pH" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Australian and New Zealand Guidelines for Fresh and Marine Water Quality (2000)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Value that represents the acidity or alkalinity of an aqueous solution. It is defined as the negative logarithm of the hydrogen ion concentration of the solution.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "pH",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/perched-aquifer" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A region in the unsaturated zone where the soil or rock may be locally saturated because it overlies a low-permeability unit.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "perched aquifer",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/potentiometric-surface" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "USGS Definition of Terms",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A surface representing the hydraulic head of groundwater; represented by the watertable altitude in an unconfined aquifer or by the altitude to which water will rise in a properly constructed well in a confined aquifer.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "potentiometric surface",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/remote-sensing" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Any kind of data recording by a sensor which measures energy emitted or reflected by objects located at some distance from the sensor (i.e. no direct ground contact). Can include aerial photographs, airborne digital sensors and satellite imagery.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "remote sensing",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/riparian" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "An area or zone within or along the banks of a stream or adjacent to a watercourse or wetland; relating to a riverbank and its environment, particularly to the vegetation.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "riparian",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/salinity" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "eWater Toolkit Glossary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The concentration of soluble salts in a solution, soil or other medium.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "salinity",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/saturated-zone" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Poehls DJ and Smith GJ 2009, Encyclopedic dictionary of hydrogeology, Elsevier Inc., 517 pp.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The part of the lithosphere where each void space in subsurface material is filled with water, or is saturated, under greater pressure than that of the atmosphere.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "saturated zone",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/stratification" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "eWater Toolkit Glossary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The formation of layers in a water body that show differences in temperature, turbidity, pH, nutrients, salinity, dissolved oxygen or light penetration at various depths.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "stratification",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/streamflow" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "flow",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The flow of water in streams, rivers and other channels.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "streamflow",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/stygofauna" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Tomlinson M and Boulton A 2008, Subsurface groundwater dependent ecosystems: a review of biodiversity, ecological processes and ecosystem services, National Water Commission Waterlines Occasional Paper No. 8, October 2008",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Aquatic animals found in groundwater; sometimes used as a synonym of stygobite.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "stygofauna",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/subterranean-GDE" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Australian National Aquatic Ecosystem Classification, Subterranean Class – Background briefing note. Aquatic Ecosystems Task Group.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-dependent-ecosystem",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A water-dependent ecosystem occurring below the surface of the ground within fractured, porous or unconsolidated aquifers, and in caves in both the saturated and vadose zones.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "subterranean GDE",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/terrestrial-GDE" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Eamus, D., Froend, R., Loomes, R., Hose, G., Murray, B., (2006). A functional methodology for determining the groundwater regime needed to maintain the health of groundwater-dependent vegetation, Australian Journal of Botany, 2006, 54, 97–114, 2006.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-dependent-ecosystem",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A GDE that accesses subsurface groundwater to meet all or some of its water requirements. This includes terrestrial vegetation, subsurface fauna communities (e.g. burrowing crayfish), and some vegetation which is associated with a surface water body.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "terrestrial GDE",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/total-dissolved-solids" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "TDS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The sum of all particulate material dissolved in water. Usually expressed in terms of milligrams per litre (mg/L). It can be measured by evaporating the solvent and measuring the mass of residues left or may be estimated from the electrical conductivity of the water.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "TDS",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "total dissolved solids",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/transmissivity" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The rate at which water moves through a unit width of aquifer or aquitard under a unit hydraulic gradient. It is the product of aquifer thickness and hydraulic conductivity.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "transmissivity",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/transpiration" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "eWater Toolkit Glossary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Evaporation loss of water from the leaves of plants through the stomata; the flow of water through plants from soil to atmosphere.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "transpiration",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/troglofauna" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Tomlinson M and Boulton A 2008, Subsurface groundwater dependent ecosystems: a review of biodiversity, ecological processes and ecosystem services, National Water Commission Waterlines Occasional Paper No. 8, October 2008",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Terrestrial animals living in caves and other air-filled subterranean spaces.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "troglofauna",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/turbidity" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Water Regulations 2008  Schedule 3 Part 1",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Means the measure of the light scattering properties of water, and is an indicator of the presence of suspended solids.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "turbidity",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/unconfined-aquifer" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "An aquifer in which there are no confining beds between the saturated zone and the surface. There will be a watertable in an unconfined aquifer.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "unconfined aquifer",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/unsaturated-zone" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Poehls DJ and Smith GJ 2009, Encyclopedic dictionary of hydrogeology, Elsevier Inc., 517 pp.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "vadose zone",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The areas below the ground where void spaces are filled with a mixture of water under pressure less than atmospheric which includes water held by capillarity and air (gases) under atmospheric pressure.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "unsaturated zone",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/vadose-zone" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Poehls DJ and Smith GJ 2009, Encyclopedic dictionary of hydrogeology, Elsevier Inc., 517 pp.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "unsaturated zone",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The areas below the ground where void spaces are filled with a mixture of water under pressure less than atmospheric which includes water held by capillarity and air (gases) under atmospheric pressure.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "vadose zone",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/watertable" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-13T04:01:55Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/NEII_Programme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "The groundwater surface in an unconfined aquifer or confining bed at which the pore pressure is atmospheric. It can be measured by installing shallow wells extending a few metres into the saturated zone and then determining the water level in those wells.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "watertable",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#List" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#object" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#value" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Class" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Container" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Datatype" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Literal" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Resource" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#comment" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#comment",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#domain" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#domain",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#label" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#label",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#member" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#member",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#range" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#range",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2002/07/owl#versionInfo" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#Concept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#ConceptScheme" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#altLabel" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#altLabel",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#broader" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#broader",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#definition" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#definition",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#narrower" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#narrower",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#notation" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#notation",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://xmlns.com/foaf/0.1/name" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://xmlns.com/foaf/0.1/name",
+        "type" : "uri"
+      }
+    ]
+  }
+}

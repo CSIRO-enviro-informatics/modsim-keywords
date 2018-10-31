@@ -1,0 +1,5998 @@
+{
+  "http://editor.vocabs.ands.org.au/user/Aust/NZ-Government-Geoscience-Information-Committee-GGIC" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "Aust/NZ-Government-Geoscience-Information-Committee-GGIC",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "GA_Sedgmen.Lara_Admin",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://editor.vocabs.ands.org.au/user/GGIC" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "GGIC",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://editor.vocabs.ands.org.au/user/Oliver-Raymond" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "Oliver-Raymond",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/Agent" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/creator" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/creator",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/date" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/date",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/description" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/description",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/issued" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/issued",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/source" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/source",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/title" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/title",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype" : {
+    "http://purl.org/dc/terms/title" : [
+      {
+        "value" : "Tenement Type - All Concepts",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Collection",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#member" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/Christmas-Island-mining-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/ancillary-mining-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease-private-mineral",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/christmas-island-exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/coal-mining-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/commonwealth-exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/consolidated-mining-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/continental-shelf-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/dredging-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-application",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-in-retention",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-offshore",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-private-mineral",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-substitution",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-coal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-minerals",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-special",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-prospecting-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-release-area",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-permit",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/fossicking-area",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease-sa",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-fossicking-area",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence-to-treat-tailings",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-converted-to-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-exploration",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-production",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-development-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease-sa",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-claim",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease-SA",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-mineral-owner-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-permit",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-purposes-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence-sa",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-purposes-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mineral-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mining-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-retention-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-special-purpose-consents",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-mining-purposes-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mine",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mining-operation",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-permit",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-crown-private-lands-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-mining-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-purpose-mining-permit",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/temporary-reserve",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/tourist-mining-authority",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/work-authority",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/Christmas-Island-mining-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.02",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Christmas Island mining lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/ancillary-mining-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NZ",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NZ -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.01",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ancillary mining licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "AL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.01",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "assessment lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease-private-mineral" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "A(MO)L",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.02",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "assessment lease (private mineral)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/christmas-island-exploration-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.03",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Christmas Island exploration licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/coal-mining-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA - Mining lease specifically for coal under repealed 1904 Act.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.03",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "coal mining lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/commonwealth-exploration-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.04",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Commonwealth exploration licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/consolidated-mining-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "CML",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.04",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "consolidated mining lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/continental-shelf-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NZ",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NZ -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.05",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "continental shelf licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/dredging-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "DL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.05",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "dredging lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "This vocabulary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A tenement, permit, or licence related to mineral exploration activities.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease-private-mineral",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/christmas-island-exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/commonwealth-exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/continental-shelf-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-application",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-in-retention",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-offshore",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-private-mineral",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-substitution",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-coal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-minerals",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-special",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-prospecting-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-release-area",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/fossicking-area",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-fossicking-area",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-exploration",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-development-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mineral-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-retention-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-special-purpose-consents",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-permit",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-exploration-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/temporary-reserve",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/tourist-mining-authority",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW, TAS, VIC, WA, SA, NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "TAS - Standard exploration tenement type for all commodities (Categories 1 to 6). VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s13.html. WA - Block based system; max 70 blocks; term 5 years plus 2 extensions; surrender 50%; 100 tonnes of material.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "EL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.06",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-application" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "SA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "SA - Application for an Exploration Licence.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "ELA",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.07",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration licence application",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-in-retention" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "retention licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NT - Licence to carry out feasibility study or retain ore body not economically viable. See also 'retention licence' used by other jurisdictions.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "ELR",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.11",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration licence in retention",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-offshore" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.08",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration licence offshore",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-private-mineral" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "E(MO)L",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.09",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration licence (private mineral)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-substitution" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NT - Replacement exploration licence when amalgamating two or more ELs after expiry of original grant/allowed renewal periods. No longer active title type under the MTA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "SEL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.10",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration licence - substitution",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NZ",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NZ -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.12",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration permit",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-coal" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "QLD",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "QLD - Standard exploration permit for coal which allows for overlap with EPM or EPS.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "EPC",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.13",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration permit for coal",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-minerals" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "QLD",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "QLD - Standard exploration permit for minerals which allows for overlap with EPC and EPS.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "EPM",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.14",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration permit for minerals",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-special" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "QLD",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "QLD - Special exploration permit for minerals which allows for overlap with EPM by mutual agreement with EPM holder where minerals sought are mutually exclusive.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "EPS",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.15",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration permit special",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-prospecting-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "EPL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.16",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration prospecting lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-release-area" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "SA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "ERA",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.17",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "exploration release area",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-exploration-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NT - To explore for extractive minerals",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "EMEL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.18",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "extractive mineral exploration licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "SA, NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "SA - An EML entitles the lessee to carry out mining operations specified in the lease for the recovery of extractive minerals. NT - To mine for extractive minerals and/or erect infrastructure",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "EML",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.06",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "extractive mineral lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-permit" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NT - A permit to extract, remove, store or process extractive minerals",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "EMP",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.07",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "extractive mineral permit",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/fossicking-area" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NT - Declared areas for fossicking",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "FA",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.19",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "fossicking area (s.131)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA - Lease not specifically for mineral extraction. Linked to mining opreations for purposes of operating machinery and depositing tailings.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.08",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "general purpose lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease-sa" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA - Lease not specifically for mineral extraction. Linked to mining opreations for purposes of operating machinery and depositing tailings, in State Agreement area.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.09",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "general purpose lease S.A.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-fossicking-area" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NZ",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NZ -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.20",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "gold fossicking area",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "GL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.10",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "gold lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "TAS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "TAS -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.11",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "TAS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "TAS -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.21",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence-to-treat-tailings" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA - Mining tenement under the repealed 1904 Act.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.12",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "licence to treat tailings",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-converted-to-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "M(C)L",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.13",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mineral claim converted to lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-exploration" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.22",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mineral claim (exploration)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-production" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "SA, NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "SA - An MC provides an exclusive right for 12 months to prospect for minerals within the claim area (conditions apply). NT - Small scale mining or exploration up to 40 Ha under the Mining Act. Not an active title type under the MTA and are in process of being converted to appropriate title type.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "MC",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.16",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mineral claim (production)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-development-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "QLD",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "QLD - A holding permit for coal or minerals which allows further exploration and testing within limits.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "MDL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.23",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mineral development licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "SA, WA, NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "SA - An ML entitles the lessee to carry out mining operations specified in the lease for the recovery of minerals other than extractive minerals. WA - Mining tenement under the repealed 1904 Act. NT - To mine for minerals, and/or erect infrastructures.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "ML",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.14",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mineral lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease-sa" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA - Special Agreement Act mineral lease.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.15",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mineral lease S.A.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-claim" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "QLD",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "QLD - Small scale mining activity commonly used for gemstones, opals and sometimes gold; Limited area and conditions on production methods",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "MC",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.17",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mining claim",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW, TAS, WA, QLD",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "TAS - Standard mineral extraction lease (for mineral categories 1,2,3 and 5). WA - Tenement on which there is an identified mineral resource for mining. Term 21 years + renewal.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "ML",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.18",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mining lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease-SA" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA - Max area 200 ha,term 4 years can extract 500 tonnes of material",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.19",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mining lease S.A.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "VIC, NZ",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s14.html",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.20",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mining licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-mineral-owner-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "M(MO)L",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.21",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mining (mineral owner) lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-permit" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NZ",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NZ -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.22",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mining permit",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-purposes-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "MPL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.23",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "mining purposes lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA - Lease not specifically for mineral extraction. An ancilliary tenement to a mining lease for the purposes of infrastructure such as roads, pipelines etc.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.24",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "miscellaneous licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence-sa" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA - Lease not specifically for mineral extraction. An ancilliary tenement to a mining lease for the purposes of infrastructure such as roads, pipelines etc, under a Special Agreement Act.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.25",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "miscellaneous licence S.A.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-purposes-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "SA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "SA - An MPL may be granted for any purpose ancillary to the conduct of mining operations, for example an operating plant, drainage or an access road.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "MPL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.26",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "miscellaneous purposes licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-exploration-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NT - Offshore Waters [Applications of Territory Laws] Act 1994. To explore for minerals outside of the 3 nautical mile",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "OEL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.24",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "offshore exploration licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mineral-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "TAS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "TAS -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.25",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "offshore mineral licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mining-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NT - Off-shore Waters [Application of Territory Laws] Act 1994 To mine for minerals outside the 3 nautical mile",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "OML",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.27",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "offshore mining licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-retention-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NT - Off-shore Waters [Application of Territory Laws] Act 1994",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "ORL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.26",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "offshore retention licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-special-purpose-consents" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NT",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NT - A special purpose consent authorises the holder to carry out either scientific investigations, a reconnaissance survey or collect a small amount of minerals. Actually a title under the Commonwealth Offshore Minerals Act, but each state were to use as model for within 3 mile limit.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "OSPC",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "01.27",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "offshore special purpose consents",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "PLL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.28",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "private lands lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-mining-purposes-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "PL(MP)L",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.29",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "private lands (mining purposes) lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mine" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "SA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "SA - tenements declared prior to the Mining Act, 1971 and are subject to specific conditions.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.30",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "private mine",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mining-operation" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NZ",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NZ -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.31",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "private mining operation",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "This vocabulary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A tenement, permit, or licence related to mining activities or related production of mineral products.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/Christmas-Island-mining-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/ancillary-mining-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/coal-mining-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/consolidated-mining-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/dredging-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-permit",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease-sa",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence-to-treat-tailings",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-converted-to-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-production",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease-sa",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-claim",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease-SA",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-mineral-owner-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-permit",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-purposes-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence-sa",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-purposes-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mining-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-mining-purposes-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mine",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mining-operation",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production-licence",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-crown-private-lands-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-mining-lease",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-purpose-mining-permit",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/work-authority",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "production",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "TAS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "TAS - for extraction of Geothermal (category 6) or onshore oil and gas (category 4)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.32",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "production licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "VIC, WA, NZ",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA - licence for prospecting, up to 200 hectares, 4 year term + 4year extension. Removal of up to 500 t of material allowed. VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s14b.html",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.28",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "prospecting licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-permit" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NZ, WA, QLD",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "QLD - Allows small scale exploration with area limits and pegging for mining applications",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.29",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "prospecting permit",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "SA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "SA - An RL entitles the lessee to retain the lease area for future mining operations where, for economic or other reasons, the lessee is justified in not proceeding immediately.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.33",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "retention lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "TAS, VIC, WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "exploration licence in retention",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "TAS - Exploration tenement where a resource has been defined but is currently sub-economic, and requires further exploratoin before a Mining lease can be granted VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s14c.html. WA - Holding title for an identified mineral resource for later mining, but is not able to be further explored or mined.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.30",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "retention licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-crown-private-lands-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "S(C&PL)L",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.34",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "special (crown & private lands) lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-exploration-licence" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "TAS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "TAS - Exploration tenement - larger than normal tenement to explore for new commodity types or utilise new exploration techniques. May be extended to a maximum of 10 years.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.31",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "special exploration licence",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NSW -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "SL",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel"
+      },
+      {
+        "value" : "02.35",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "special lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-mining-lease" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "SA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "SA - The tenement type SML (Special Mining Lease) relates to the Olympic Dam mine, which is administered under the Roxby Downs (Indenture Ratification) Act, 1982. There is also an historic disused tenement type SML.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.36",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "special mining lease",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-purpose-mining-permit" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "NZ",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "NZ -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.37",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "special purpose mining permit",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/temporary-reserve" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "WA",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WA - Mining tenement under the repealed 1904 Act.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.32",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "temporary reserve",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/tourist-mining-authority" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "VIC",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s59.html",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "01.33",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "tourist mining authority",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/work-authority" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "VIC",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "VIC -",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#notation" : [
+      {
+        "value" : "02.38",
+        "type" : "literal",
+        "datatype" : "http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "work authority",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype" : {
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/Aust/NZ-Government-Geoscience-Information-Committee-GGIC",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/date" : [
+      {
+        "value" : "2015-11-26",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      {
+        "value" : "This concept scheme defines terms used to describe the type of mineral tenements granted in Australian and New Zealand jurisdictions (eg, exploration licence, mining lease).",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://purl.org/dc/terms/issued" : [
+      {
+        "value" : "2017-09-06",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      {
+        "value" : "Tenement Type",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo" : [
+      {
+        "value" : "v0.1",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#changeNote" : [
+      {
+        "value" : "2016-07-22 OLR - Reformat SKOS-RDF for migration to new repository",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "Original SKOS implementation, 26 Nov 2015.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#editorialNote" : [
+      {
+        "value" : "This file contains the 2015 version of the GGIC mineral temement type vocabulary. Compilation and review in MS-Excel spreadsheet, converted to SKOS using GSML_SKOS_fromXLS_2015.02.xslt.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#List" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#object" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#value" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Class" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Container" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Datatype" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Literal" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Resource" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#comment" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#comment",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#domain" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#domain",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#label" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#label",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#member" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#member",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#range" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#range",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2002/07/owl#versionInfo" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#Collection" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Collection",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#Concept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#ConceptScheme" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#altLabel" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#altLabel",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#broader" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#broader",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#changeNote" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#changeNote",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#definition" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#definition",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#editorialNote",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#inScheme" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#inScheme",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#member" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#member",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#narrower" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#narrower",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#notation" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#notation",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://xmlns.com/foaf/0.1/name" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://xmlns.com/foaf/0.1/name",
+        "type" : "uri"
+      }
+    ]
+  }
+}

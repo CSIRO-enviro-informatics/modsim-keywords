@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/CGI-Geoscience-Terminology-Working-Group">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGI-Geoscience-Terminology-Working-Group</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Sedgmen.Lara_Admin</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Oliver-Raymond">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oliver-Raymond</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<dcterms:title xml:lang="en">Observation Method (Mapped Feature) - All Concepts</dcterms:title>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/compilation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/direct_observation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inertial_survey"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_aeromagnetic_survey"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_borehole_geophysical_log"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_drill_cuttings"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_gravity_data"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_ground_magnetic_survey"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_covering_mapped_unit"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_unmapped_surficial_material"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_vegetation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_radiometric_survey"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_remote_sensing_imagery"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_aerial_imagery"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_core"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_cuttings"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_material"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_distant_outcrop"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_elevation_data"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop__topographic_map_location"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop_gps_location"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/published_map"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dcterms:title xml:lang="en">Observation Method (Mapped Feature)</dcterms:title>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/compilation"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/direct_observation"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_elevation_data"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/published_map"/>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/CGI-Geoscience-Terminology-Working-Group"/>
+	<dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-22</dcterms:date>
+	<dcterms:description xml:lang="en">This file contains the CGI Observation Method (Mapped Feature) vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. These are terms that specify how a MappedFeature instance was mapped. MappedFeature ObservationMethod is essentially a metadata snippet indicating how the spatial extent of the mapped feature was determined, and the basis for association of the geometry with some GeologicFeature specification to define a MappedFeature. Observation method is a convenience property that provides a quick and dirty approach to shortcut use of more comprehensive observation and measurement construct when data are reported using a feature view (as opposed to observation view). By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+	<skos:changeNote xml:lang="en">2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</skos:changeNote>
+	<skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2016-11-21 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. Minor corrections to hierarchy from the previous 2012 version.</skos:changeNote>
+	<skos:changeNote xml:lang="en">Start file produced from excel spreadsheet version of momclassifier01001. Revisions based on recommendations from OneGeology Europe project.</skos:changeNote>
+	<skos:changeNote xml:lang="en">Vocabulary maintenence changed to SKOS with Protege v4 as tool of choice, Sept 2009</skos:changeNote>
+	<skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Observation Method (Mapped Feature) vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-09-06</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v0.1</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">mapped feature is located by survey methods</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">surveyed</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inertial_survey"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/compilation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Mapped feature geometry derived from one or more published or unpublished data sources, involving some interpretation or generalization by the compiler, not an exact digital reproduction of the sources.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">compilation</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/direct_observation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Federal Geographic Data Committee, 2006</dcterms:source>
+	<skos:definition xml:lang="en">Indicates that mapped feature was delineated and a specifier assigned by direct visual observation.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">direct observation</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_aerial_imagery"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_material"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inertial_survey">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">mapped feature is located by inertial survey methods</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inertial survey</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Federal Geographic Data Committee, 2006</dcterms:source>
+	<skos:definition xml:lang="en">Indicates that mapped feature is not directly observable, location and specification based on inference from available evidence.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_drill_cuttings"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_aeromagnetic_survey">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Matti et al 1997, definition this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Location and specification inferred based on magnetic field data acquired by airborne sensor.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred aeromagnetic survey</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_borehole_geophysical_log">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Location and specification inferred based on measurements made by electronic bore hole logging device(s) that measure geophysical properties.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred borehole geophysical log</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_drill_cuttings">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Geologic feature in bore hole inferred based on interpretation of drill cuttings.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred drill cuttings</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_gravity_data">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Matti et al 1997, definition this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Location and specification inferred based on measured variations in the acceleration of gravity related to mass of underlying Earth material.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred gravity data</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_ground_magnetic_survey">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Matti et al 1997, definition this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Location and specification inferred based on magnetic field data acquired by sensor on the earth surface, either at manually occupied stations, or by a vehicle-based continuously collected sensor data.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred ground magnetic survey</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Matti et al 1997, definition this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Location and specification inferred based on properties related to lithology, e.g. geophysical or geochemical signature, vegetation, surface texture, reflectance.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred using indirect method</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_aeromagnetic_survey"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_borehole_geophysical_log"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_gravity_data"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_ground_magnetic_survey"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_radiometric_survey"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_remote_sensing_imagery"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred projection between observed locations</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_covering_mapped_unit"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_unmapped_surficial_material"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_vegetation"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_covering_mapped_unit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Federal Geographic Data Committee, 2006</dcterms:source>
+	<skos:definition xml:lang="en">Phenomenon inferred to exist based on continuity with observed locations, and assumption of continuity of the feature. Mappable feature is covered by mapped younger geologic unit. Concealed feature.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred projection beneath covering mapped unit</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_unmapped_surficial_material">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of covering mantle of soil, talus or colluvium, not mapped as separate geologic units.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred projection beneath unmapped surficial material</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_vegetation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of obscuring vegetation, but inferred to crop out at surface.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred projection obscured by vegetation</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_radiometric_survey">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Matti et al 1997, definition this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Location and specification inferred based on flux or intensity of radiation related to the decay of radioactive elements in observed Earth material. Use for both airborne and ground-surface based sensor.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred radiometric survey</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_remote_sensing_imagery">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Matti et al 1997, definition this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Location and specification inferred based on spectral characteristics of light measured by airborne or satellite based sensor. Phenomenon visible on standard (visible light) air photographs are considered 'observable'.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">inferred remote sensing imagery</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_aerial_imagery">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Phenomenon observed and located using aerial imagery (standard visible light)</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">observed in aerial imagery</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/direct_observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_core">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Geologic feature observed in core obtained from a borehole.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">observed in borehole core</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_cuttings">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Geologic feature observed in cuttings obtained from a borehole.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">observed in borehole cuttings</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_material">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Geologic feature observed in material obtained from a borehole.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">observed in borehole material</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_core"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_cuttings"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/direct_observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_distant_outcrop">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Matti et al 1997, definition this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Phenomenon observed and located from a distance.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">observed distant outcrop</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_elevation_data">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Geomorphic features located and specified based on surface morphology determined by elevation (or bathemetry) data, e.g. DEM, LIDAR</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">observed based on elevation data</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Matti et al 1997, definition this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Phenomenon observed and located directly in outcrop, geologist occupied location of phenomenon, and traced it explicitly over mapped extent.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">observed in outcrop</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_distant_outcrop"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop__topographic_map_location"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop_gps_location"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/direct_observation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop__topographic_map_location">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Phenomenon observed directly in outcrop, and located by positioning on a topographic base map relative to physiographic or cultural features</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">observed outcrop topographic map location</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop_gps_location">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Phenomenon observed directly in outcrop, and located using GPS</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">observed outcrop gps location</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/published_map">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Mapped feature geometry was digitized from a published map, specification of feature based on map unit explanation</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+	<skos:prefLabel xml:lang="en">published map</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/date">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#changeNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#changeNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,1873 @@
+{
+  "http://editor.vocabs.ands.org.au/user/CGI-Geoscience-Terminology-Working-Group" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "CGI-Geoscience-Terminology-Working-Group",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "GA_Sedgmen.Lara_Admin",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://editor.vocabs.ands.org.au/user/Oliver-Raymond" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "Oliver-Raymond",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/Agent" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/creator" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/creator",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/date" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/date",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/description" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/description",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/issued" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/issued",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/source" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/source",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/title" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/title",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/metamorphicgrade" : {
+    "http://purl.org/dc/terms/title" : [
+      {
+        "value" : "Metamorphic Grade - All Concepts",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Collection",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#member" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/high_metamorphic_grade",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/low_metamorphic_grade",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/medium_metamorphic_grade",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_unknown",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/not_metamorphosed",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_high_metamorphic_grade",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_low_metamorphic_grade",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/high_metamorphic_grade" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Smulikowski et al, 2003; Fry, 1984",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Protolith structures almost always obliterated, evidence of partial melting common. Includes rocks metamorphosed in high-temperature amphibolite, pyroxene hornfels, and medium to high-temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-olivine, anthophyllite, cummingtonite, enstatite, mafic-hornblende, (diopside, garnet), calc-aluminous basic-plagioclase, pelite, semi-pelite -- K-feldspar, biotite, quartz, Al-minerals (garnet), migmatite.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "high metamorphic grade",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/low_metamorphic_grade" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Smulikowski et al, 2003; Fry, 1984",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Metamorphic effects clearly visible, protolith structures typically still observable, includes rocks metamorphosed in greenschisthigh-temperature blueschist, very low temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-serpentine (talc, magnesite), mafic-chlorite, actinolite (garnet), calc-aluminous basic-albite, epidote, pelite, semi-pelite -- white mica, chlorite, quartz, biotite (garnet, Al-minerals).",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "low metamorphic grade",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/medium_metamorphic_grade" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Smulikowski et al, 2003; Fry, 1984",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Protolith structure typically obliterated. Includes rocks metamorphosed in high-temperature epidote-amphibolite, low-temperature amphibolite, and low temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-olivine, talc (magnesite, anthophyllite), mafic-hornblende, (diopside, garnet), calc-aluminous basic-plagioclase, pelite, semi-pelite -- white mica, biotite, quartz (garnet, Al-minerals).",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "medium metamorphic grade",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "This vocabulary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "for use in normative descriptions to explicitly indicate that any metamorphic condition is allowed (including non-metamorphosed).",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/not_metamorphosed",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "metamorphic grade not specified",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_unknown" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "This vocabulary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "For use in instance descriptions to indicate that no information is available on metamorphic grade",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "metamorphic grade unknown",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "This vocabulary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Rock is metamorphosed, may have any value for metamorphic grade.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/high_metamorphic_grade",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/low_metamorphic_grade",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/medium_metamorphic_grade",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_high_metamorphic_grade",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_low_metamorphic_grade",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "metamorphosed grade not specified",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/not_metamorphosed" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "This vocabulary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Rock or sediment not metamorphosed.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "not metamorphosed",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_high_metamorphic_grade" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Smulikowski et al, 2003; Fry, 1984",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Protolith structures almost always obliterated. Includes rocks metamorphosed in granulite (or sanidinite), and high-temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-olivine, enstatite, mafic-hypersthene, diopside (hornblende), calc-aluminous basic-plagioclase, pelite, semi-pelite -- hypersthene + Al-minerals (K-feldspar, quartz), or sapphirine.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "very high metamorphic grade",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_low_metamorphic_grade" : {
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Smulikowski et al, 2003; Fry, 1984",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Rock very slightly metamorphosed, protolith structure ubiquitous, mineral assemblage of zeolite facies, subgreenschist facies, or low temperature part of blueschist facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-serpentine (quartz, magnesite), mafic-clay, chlorite, relict igneous minerals, calc-aluminous basic-zeolite, pumpellite, epidote, albite, pelite, semi-pelite -- clays, chlorite, sericite, quartz.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#inScheme" : [
+      {
+        "value" : "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "very low metamorphic grade",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade" : {
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/CGI-Geoscience-Terminology-Working-Group",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/date" : [
+      {
+        "value" : "2016-11-22",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://purl.org/dc/terms/description" : [
+      {
+        "value" : "This file contains the CGI Metamorphic Grade vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Vocabulary for populating Metamorphic Grade property in GeoSciML metamorphic description elements. Derived from Fettes and Desmons (eds.), 2007, METAMORPHIC ROCKS: A CLASSIFICATION AND GLOSSARY OF TERMS - Recommendations of the International Union of Geological Sciences Subcommission on the Systematics of Metamorphic Rocks. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://purl.org/dc/terms/issued" : [
+      {
+        "value" : "2017-09-06",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      {
+        "value" : "Metamorphic Grade",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo" : [
+      {
+        "value" : "v0.1",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#changeNote" : [
+      {
+        "value" : "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "2010-11-28 SMR replace URN identifiers with http URI identifiers according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "2012-02-27 SMR add skos:exactMatch triples relating URI in this vocabulary to URI with number tokens in 201012 vocabulary",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types.",
+        "type" : "literal",
+        "lang" : "en"
+      },
+      {
+        "value" : "2016-11-21 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes from the previous 2012 version.",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#editorialNote" : [
+      {
+        "value" : "This file contains the 2016 SKOS-RDF version of the CGI Metamorphic Grade vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_unknown",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#List" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#object" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#value" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Class" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Container" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Datatype" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Literal" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Resource" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#comment" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#comment",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#domain" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#domain",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#label" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#label",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#member" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#member",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#range" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#range",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2002/07/owl#versionInfo" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#Collection" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Collection",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#Concept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#ConceptScheme" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#broader" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#broader",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#changeNote" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#changeNote",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#definition" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#definition",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#editorialNote",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#inScheme" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#inScheme",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#member" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#member",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#narrower" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#narrower",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://xmlns.com/foaf/0.1/name" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://xmlns.com/foaf/0.1/name",
+        "type" : "uri"
+      }
+    ]
+  }
+}

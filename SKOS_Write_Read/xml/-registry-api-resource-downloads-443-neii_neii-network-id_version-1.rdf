@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/NEII_Programme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEII_Programme</foaf:name>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:17Z</dcterms:modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/National-Environmental-Information-Infrastructure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Environmental Information Infrastructure</foaf:name>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:02Z</dcterms:modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/National-Environmental-Information-Infrastructure-NEII">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Environmental Information Infrastructure (NEII)</foaf:name>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-09T02:41:11Z</dcterms:modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">1</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#deprecated">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#deprecated"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/10">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">10</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/11">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">11</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/12">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">12</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/13">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">13</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/14">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">14</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/15">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">15</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/16">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">16</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/2">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">2</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">3</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/4">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">4</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/5">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">5</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/6">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">6</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/7">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">7</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/8">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">8</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/9">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">9</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-network-id/Network-ID">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">NEII Network ID</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:label xml:lang="en">NEII Network ID</rdfs:label>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/1"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/10"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/11"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/12"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/13"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/14"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/15"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/16"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/2"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/3"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/4"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/5"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/6"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/7"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/8"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/9"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/17"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/18"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/19"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/20"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/21"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/22"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/23"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/24"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/25"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/National-Environmental-Information-Infrastructure"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:17Z</dcterms:modified>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T05:59:42Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/National-Environmental-Information-Infrastructure"/>
+	<dcterms:description xml:lang="en">Network ID is the unique identifier of the network within the National Environmental Monitoring Sites Register. A network is a collection of sites. The Network ID is allocated by the NEMSR system owner (Bureau of Meteorology) and the list will expand as networks are added.</dcterms:description>
+	<dcterms:publisher rdf:resource="http://editor.vocabs.ands.org.au/user/National-Environmental-Information-Infrastructure-NEII"/>
+	<dcterms:subject xml:lang="en">NEII</dcterms:subject>
+	<dcterms:title xml:lang="en">NEII Network ID</dcterms:title>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-09-01</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:37Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Geoscience Australia Seismic Network</skos:definition>
+	<skos:prefLabel xml:lang="en">1</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/10">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:37Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Integrated Marine Observing System Deep Water Moorings Collection</skos:definition>
+	<skos:prefLabel xml:lang="en">10</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/11">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:37Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Integrated Marine Observing System Shelf Moorings Collection</skos:definition>
+	<skos:prefLabel xml:lang="en">11</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/12">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:38Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Integrated Marine Observing System High Frequency Radar Sites Collection</skos:definition>
+	<skos:prefLabel xml:lang="en">12</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/13">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:38Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Integrated Marine Observing System Facility for the Automated Intelligent Monitoring of Marine Systems Collection</skos:definition>
+	<skos:prefLabel xml:lang="en">13</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/14">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:38Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Bureau of Meteorology rainfall radar network</skos:definition>
+	<skos:prefLabel xml:lang="en">14</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/15">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:38Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">To be confirmed</skos:definition>
+	<skos:prefLabel xml:lang="en">15</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/16">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:38Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Murray-Darling Basin Authority Phytoplankton Monitoring Network</skos:definition>
+	<skos:prefLabel xml:lang="en">16</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/2">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:37Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Geoscience Australia Accoustic Pressure Network</skos:definition>
+	<skos:prefLabel xml:lang="en">2</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:37Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Geoscience Australia Geomag Network</skos:definition>
+	<skos:prefLabel xml:lang="en">3</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/4">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:37Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Bureau of Meteorology ACORN-SAT Network</skos:definition>
+	<skos:prefLabel xml:lang="en">4</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/5">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:37Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Bureau of Meteorology Solar Radiation Network</skos:definition>
+	<skos:prefLabel xml:lang="en">5</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/6">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:37Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Bureau of Meteorology Water Data Online Network</skos:definition>
+	<skos:prefLabel xml:lang="en">6</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/7">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:37Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Department of Agriculture and Water Resources Groundcover Network</skos:definition>
+	<skos:prefLabel xml:lang="en">7</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/8">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:37Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Terrestrial Ecosystem Research Network OzFlux Network</skos:definition>
+	<skos:prefLabel xml:lang="en">8</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/9">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:00:37Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Terrestrial Ecosystem Research Network Supersites Network</skos:definition>
+	<skos:prefLabel xml:lang="en">9</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/NEII_Kaur.Hardeep_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-19T04:05:53Z</dcterms:modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/17">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:16:45Z</dcterms:modified>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:15:05Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">National Reference Stations (IMOS)</skos:definition>
+	<skos:prefLabel xml:lang="en">17</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/18">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:17:06Z</dcterms:modified>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:15:15Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Acidification Moorings (IMOS)</skos:definition>
+	<skos:prefLabel xml:lang="en">18</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/19">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:17:28Z</dcterms:modified>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:15:21Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Acoustic Observatories (IMOS)</skos:definition>
+	<skos:prefLabel xml:lang="en">19</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/20">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:17:48Z</dcterms:modified>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:15:28Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Fish Survey Network (MDBA)</skos:definition>
+	<skos:prefLabel xml:lang="en">20</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/21">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:18:12Z</dcterms:modified>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:15:45Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Ruppia tuberosa Monitoring Network - Southern Coorong (MDBA)</skos:definition>
+	<skos:prefLabel xml:lang="en">21</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/22">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:18:34Z</dcterms:modified>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:16:00Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Shorebird Monitoring Network - Coorong and the Lower Lakes (MDBA)</skos:definition>
+	<skos:prefLabel xml:lang="en">22</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/23">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:18:49Z</dcterms:modified>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:16:05Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Calibration/Validation Network (IMOS)</skos:definition>
+	<skos:prefLabel xml:lang="en">23</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/24">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:19:14Z</dcterms:modified>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:16:11Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">AusPollen Aerobiology Collaboration</skos:definition>
+	<skos:prefLabel xml:lang="en">24</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-network-id/25">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:19:29Z</dcterms:modified>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-12-12T00:16:17Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Upper Air Network (BOM)</skos:definition>
+	<skos:prefLabel xml:lang="en">25</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-network-id/NEII-Network-ID"/>
+</rdf:Description>
+
+</rdf:RDF>

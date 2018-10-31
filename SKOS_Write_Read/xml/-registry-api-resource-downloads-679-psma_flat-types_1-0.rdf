@@ -1,0 +1,1448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://gnafld.net/def/gnaf/code/FlatTypes#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This vocabulary contains types of flats as described by the Geocoded National Address File (GNAF). The vocabulary is derived from the GNAF's Flat Type code list which is presented within the relational database versions of the GNAF as an authority table (lookup table). The values here are documented in the GNAF product guide. This vocabulary was originally created from the December, 2017, version of that guide.</rdfs:comment>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flat Types</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<dct:publisher rdf:resource="http://psma.com.au"/>
+	<dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-10</dct:created>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-16</dct:issued>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-04-23</dct:modified>
+	<dct:subject xml:lang="en">GNAF Flats</dct:subject>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-12</owl:versionInfo>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Antenna"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Apartment"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#AutomatedTellerMachine"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Barbecue"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Block"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Boatshed"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Building"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Bungalow"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Cage"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Carpark"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Carspace"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Club"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Coolroom"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Cottage"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Duplex"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Flat"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Factory"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Garage"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Hall"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#House"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Kiosk"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Lobby"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Loft"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Lot"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Lease"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#MarineBerth"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Maisonette"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Office"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Penthouse"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Rear"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Room"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Reserve"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Suite"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Section"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Shed"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Shop"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Showroom"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Sign"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Site"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Stall"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Store"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Studio"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#StrataUnit"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Substation"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Tenancy"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Townhouse"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Tower"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Unit"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Villa"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Vault"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Ward"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Warehouse"/>
+	<skos:hasTopConcept rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Workshop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://orcid.org/0000-0002-8742-7730">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://psma.com.au">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Antenna">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Antenna</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANT</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Apartment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Apartment</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">APT</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#AutomatedTellerMachine">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Automated Teller Machine</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATM</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Barbecue">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Barbecue</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BBQ</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Block">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Block</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLCK</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Boatshed">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Boatshed</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTSD</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Building">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Building</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BLDG</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Bungalow">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Bungalow</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BNGW</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Cage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Cage</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAGE</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Carpark">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Carpark</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARP</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Carspace">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Carspace</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARS</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Club">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Club</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLUB</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Coolroom">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Coolroom</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COOL</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Cottage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Cottage</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTGE</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Duplex">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Duplex</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DUPL</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Flat">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Flat</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FLAT</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Factory">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Factory</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FCTY</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Garage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Garage</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GRGE</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Hall">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Hall</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HALL</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#House">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">House</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HSE</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Kiosk">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Kiosk</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KSK</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Lobby">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Lobby</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LBBY</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Loft">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Loft</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOFT</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Lot">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Lot</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LOT</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Lease</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LSE</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#MarineBerth">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Marine Berth</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MBTH</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Maisonette">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Maisonette</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSNT</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Office">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Office</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OFFC</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Penthouse">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Penthouse</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PTHS</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Rear">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Rear</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REAR</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Room">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Room</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ROOM</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Reserve">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Reserve</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESV</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Suite">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Suite</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SE</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Section">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Section</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SEC</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Shed">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Shed</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHED</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Shop">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Shop</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHOP</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Showroom">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Showroom</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SHRM</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Sign">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Sign</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SIGN</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Site">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Site</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SITE</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Stall">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Stall</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STLL</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Store">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Store</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STOR</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Studio">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Studio</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STU</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#StrataUnit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Strata Unit</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STR</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Substation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Substation</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUBS</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Tenancy">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Tenancy</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TNCY</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Townhouse">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Townhouse</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TNHS</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Tower">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Tower</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TWR</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Unit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Unit</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNIT</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Villa">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Villa</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VLLA</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Vault">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Vault</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VLT</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Ward">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Ward</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WARD</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Warehouse">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Warehouse</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WHSE</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#Workshop">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:seeAlso rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<rdfs:isDefinedBy rdf:resource="http://gnafld.net/def/gnaf/code/FlatType"/>
+	<skos:prefLabel xml:lang="en">Workshop</skos:prefLabel>
+	<dct:contributor rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WKSH</skos:altLabel>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G-NAF Data Product Description, November 2017</dct:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatTypes#allConcepts">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flat Subclass Collection</skos:prefLabel>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Antenna"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Apartment"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#AutomatedTellerMachine"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Barbecue"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Block"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Boatshed"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Building"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Bungalow"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Cage"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Carpark"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Carspace"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Club"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Coolroom"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Cottage"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Duplex"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Flat"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Factory"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Garage"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Hall"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#House"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Kiosk"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Lobby"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Loft"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Lot"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Lease"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#MarineBerth"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Maisonette"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Office"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Penthouse"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Rear"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Room"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Reserve"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Suite"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Section"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Shed"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Shop"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Showroom"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Sign"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Site"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Stall"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Store"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Studio"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#StrataUnit"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Substation"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Tenancy"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Townhouse"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Tower"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Unit"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Villa"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Vault"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Ward"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Warehouse"/>
+	<skos:member rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Workshop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+	<owl:members rdf:nodeID="node1cfbmuicgx2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#AllDisjointClasses">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx2">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Antenna"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx3">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Apartment"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx4">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#AutomatedTellerMachine"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx5"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx5">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Barbecue"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx6">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Block"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx7"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx7">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Boatshed"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx8"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx8">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Building"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx9"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx9">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Bungalow"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx10"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx10">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Cage"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx11"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx11">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Carpark"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx12"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx12">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Carspace"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx13"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx13">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Club"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx14"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx14">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Coolroom"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx15"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx15">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Cottage"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx16"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx16">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Duplex"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx17"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx17">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Flat"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx18"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx18">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Factory"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx19"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx19">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Garage"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx20"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx20">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Hall"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx21"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx21">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#House"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx22"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx22">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Kiosk"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx23"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx23">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Lobby"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx24"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx24">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Loft"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx25"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx25">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Lot"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx26"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx26">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Lease"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx27"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx27">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#MarineBerth"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx28"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx28">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Maisonette"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx29"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx29">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Office"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx30"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx30">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Penthouse"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx31"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx31">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Rear"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx32"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx32">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Room"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx33"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx33">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Reserve"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx34"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx34">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Suite"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx35"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx35">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Section"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx36"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx36">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Shed"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx37"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx37">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Shop"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx38"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx38">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Showroom"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx39"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx39">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Sign"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx40"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx40">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Site"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx41"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx41">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Stall"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx42"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx42">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Store"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx43"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx43">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Studio"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx44"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx44">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#StrataUnit"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx45"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx45">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Substation"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx46"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx46">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Tenancy"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx47"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx47">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Townhouse"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx48"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx48">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Tower"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx49"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx49">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Unit"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx50"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx50">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Villa"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx51"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx51">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Vault"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx52"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx52">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Ward"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx53"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx53">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Warehouse"/>
+	<rdf:rest rdf:nodeID="node1cfbmuicgx54"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node1cfbmuicgx54">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:first rdf:resource="http://gnafld.net/def/gnaf/code/FlatTypes#Workshop"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#members">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#members"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://gnafld.net/def/gnaf/code/FlatType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+</rdf:RDF>

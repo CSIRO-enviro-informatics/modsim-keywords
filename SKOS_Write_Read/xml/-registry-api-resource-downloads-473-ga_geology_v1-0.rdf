@@ -1,0 +1,1871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Sedgmen.Lara_Admin</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Geoscience-Australia">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoscience Australia</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:label xml:lang="en">geology</rdfs:label>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:title xml:lang="en">geology</dcterms:title>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/AWAGS"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_electromagnetics_(AEM)"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_geohysical_data"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_gravity"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_gravity_gradiometry"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_magnetics"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/alteraion"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/artificial_ground"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/bedrock"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/borehole"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/deposition"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/economic_geology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/engineering_geology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/environmental_geology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/erosion"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/gas_production"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geochemistry"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geochronology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geoheritage"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geomorphology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geophysical_survey"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geophysics"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/hydrogeology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/lithology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/marine_geology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/marine_submersion"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/marine_survey"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/mathematical_geology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/mineral_deposit"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/mineral_occurrence"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/mineralogy"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/mudflow"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/oil_production"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/petrology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/sedimentology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/stratigraphy"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/structural_geology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/surface_geology"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/tectonics"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/total_magnetic_intensity_(TMI)"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/uranium"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-09-18</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v1.0</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/AWAGS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">AWAGS</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_electromagnetics_(AEM)">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">airborne electromagnetics (AEM)</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_geohysical_data">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">airborne geohysical data</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_gravity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">airborne gravity</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_gravity_gradiometry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">airborne gravity gradiometry</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_magnetics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">airborne magnetics</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/alteraion">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">alteration</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/artificial_ground">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">artificial ground</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Man-made deposits, mine workings, re-modelled or altered ground</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/bedrock">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">bedrock</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Consolidated rock</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/borehole">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">borehole</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Boreholes or data surveyed in boreholes</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/deposition">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">deposition</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/economic_geology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">economic geology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Geologic bodies and materials that can be utilized profitably by man</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/energy_resources"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/exploration"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/mineral_resources"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/mining"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/engineering_geology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">engineering geology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Geologic factors affecting the location, design, construction, operation, and maintenance of engineering works</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geotechnics"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/land_heave"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/land_subsidence"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/rock_mechanics"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/soil_mechanics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/environmental_geology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">environmental geology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Human interactions with the geological environment</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/pollution"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/medical_geology"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/carbon_capture_and_storage"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/climate_change"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/conservation"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/reclamation"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/sea_level_rise"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/waste"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/erosion">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">erosion</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/gas_production">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">gas production</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geochemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geochemistry</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Distribution and amounts of the chemical elements in minerals, ores, rocks, soils, and water</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/hydrogeochemistry"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/lithogeochemistry"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/organic_geochemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geochronology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geochronology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Absolute ages of rocks, fossils, and sediments, within a certain degree of uncertainty inherent to the method used</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/absolute_age"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geoheritage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geoheritage</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Geological sites of scientific, cultural or aesthetic value, including geotourism</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_education"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_trail"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geopark"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geosite"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geotourism"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/preservation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geomorphology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geomorphology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Landforms on the Earth’s surface and the processes that shape them</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geophysical_survey">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">geophysical survey</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geophysics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geophysics</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Measurements and interpolations of geophysical parameters</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geoelectricity"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geomagnetism"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geothermics"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/gravimetry"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/paleomagnetism"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/radioactivity"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/seismology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/hydrogeology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">hydrogeology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Distribution and movement of groundwater in the soil and rocks of the Earth’s crust</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/aquifer"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/infiltration"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/spring"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/water_quality"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/water_well"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/lithology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">lithology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/igneous_rock"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/metamorphic_rock"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/sedimentary_rock"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/marine_geology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">marine geology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Investigations of the ocean floor and coastal margins</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/seafloor_type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/marine_submersion">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">marine submersion</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/marine_survey">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">marine survey</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/mathematical_geology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">mathematical geology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/mineral_deposit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">mineral deposit</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/mineral_occurrence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">mineral occurrence</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/mineralogy">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">mineralogy</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/mudflow">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">mudflow</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/oil_production">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">oil production</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/petrology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">petrology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Origin, occurrence, structure, and history of rocks</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/sedimentology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">sedimentology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Description, classification, origin, and interpretation of sediments and sedimentary rocks</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/stratigraphy">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">stratigraphy</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Rock and sediment layers and layering (stratification)</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/biostratigraphy"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/chronostratigraphy"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/lithostratigraphy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/structural_geology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">structural geology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Three-dimensional distribution of rock units with respect to their deformational histories</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/fault"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/fold"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/surface_geology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">surface geology</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:definition xml:lang="en">Superficial deposits and bedrock which occurs at the Earth’s surface</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/superficial_deposits__(or_regolith?)"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/tectonics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">tectonics</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/neotectonics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/total_magnetic_intensity_(TMI)">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">total magnetic intensity (TMI)</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/uranium">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:prefLabel xml:lang="en">uranium</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/absolute_age">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">absolute age</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geochronology"/>
+	<skos:definition xml:lang="en">The geologic age of a fossil, or a geologic event or structure expressed in units of time, usually years.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/acid_drainage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">acid drainage</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/pollution"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/pollution">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">pollution</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/environmental_geology"/>
+	<skos:definition xml:lang="en">Human pollution (contamination) of the geological environment</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/acid_drainage"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/diffuse_pollution"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater_pollution"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/point-source_pollution"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/soil_pollution"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_dust_exposure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">airborne dust exposure</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/medical_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/medical_geology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">medical geology</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/environmental_geology"/>
+	<skos:definition xml:lang="en">Geological conditions as they effect human, animal, and plant health</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/airborne_dust_exposure"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/arsenic_exposure"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/asbestos_exposure"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/heavy_metal_exposure"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/radon_exposure"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/aquifer">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">aquifer</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/hydrogeology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/arsenic_exposure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">arsenic exposure</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/medical_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/asbestos_exposure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">asbestos exposure</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/medical_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/avalanche">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">avalanche</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geological hazards</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/environmental_geology"/>
+	<skos:definition xml:lang="en">Geological conditions capable of causing damage or loss of property and life</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/avalanche"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/cavity_caving"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/collapse_of_metastable_sediments"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/earthquake"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/flood"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/landslide"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/mud_and_debris_flow"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/off-shore_landslides_and_collapses"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/quick_clay"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/rockfall"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/tsunami"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/volcanism"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/biostratigraphy">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">biostratigraphy</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/stratigraphy"/>
+	<skos:definition xml:lang="en">The branch of stratigraphy which focuses on correlating and assigning relative ages of rock strata by using the fossil assemblages contained within them</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/carbon_capture_and_storage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">carbon capture and storage</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/environmental_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/cavity_caving">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">cavity caving</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/chronostratigraphy">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">chronostratigraphy</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/stratigraphy"/>
+	<skos:definition xml:lang="en">The branch of stratigraphy that studies the age of rock strata in relation to time</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/climate_change">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">climate change</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/environmental_geology"/>
+	<skos:definition xml:lang="en">Geological conditions as they effect climate change</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/emission_of_climate_gas"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/global_warming"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/methane_exhalation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/emission_of_climate_gas">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">emission of climate gas</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/climate_change"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/global_warming">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">global warming</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/climate_change"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/methane_exhalation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">methane exhalation</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/climate_change"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/coal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">coal</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/energy_resources"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/energy_resources">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">energy resources</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/economic_geology"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/coal"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/gas"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/oil"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/oil_shale"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/peat"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/collapse_of_metastable_sediments">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">collapse of metastable sediments</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/conservation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">conservation</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/environmental_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/diffuse_pollution">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">diffuse pollution</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/pollution"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/earthquake">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">earthquake</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/exploration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">exploration</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/economic_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/mineral_resources">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">mineral resources</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/economic_geology"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/ore"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/metals"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/mining">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">mining</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/economic_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/gas">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">gas</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/energy_resources"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/oil">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">oil</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/energy_resources"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/oil_shale">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">oil shale</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/energy_resources"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/peat">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">peat</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/energy_resources"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geotechnics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geotechnics</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/engineering_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/land_heave">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">land heave</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/engineering_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/land_subsidence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">land subsidence</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/engineering_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/rock_mechanics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">rock mechanics</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/engineering_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/soil_mechanics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">soil mechanics</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/engineering_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/reclamation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">reclamation</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/environmental_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/sea_level_rise">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">sea level rise</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/environmental_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/waste">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">waste</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/environmental_geology"/>
+	<skos:definition xml:lang="en">Unwanted or unusable materials</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/fault">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">fault</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/structural_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/flood">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">flood</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/fold">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">fold</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/structural_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/hydrogeochemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">hydrogeochemistry</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geochemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/lithogeochemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">lithogeochemistry</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geochemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/organic_geochemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">organic geochemistry</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geochemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geoelectricity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geoelectricity</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geophysics"/>
+	<skos:definition xml:lang="en">measurements of the Earth’s natural electric fields and phenomena</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_education">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geological education</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geoheritage"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_trail">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geological trail</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geoheritage"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geopark">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geopark</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geoheritage"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geosite">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geosite</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geoheritage"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geotourism">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geotourism</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geoheritage"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/preservation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">preservation</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geoheritage"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/landslide">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">landslide</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/mud_and_debris_flow">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">mud and debris flow</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/off-shore_landslides_and_collapses">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">off-shore landslides and collapses</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/quick_clay">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">quick clay</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/rockfall">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">rockfall</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/tsunami">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">tsunami</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/volcanism">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">volcanism</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geological_hazards"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geomagnetism">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geomagnetism</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geophysics"/>
+	<skos:definition xml:lang="en">Measurements of the Earth’s magnetic field</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/geothermics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">geothermics</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geophysics"/>
+	<skos:definition xml:lang="en">Study of the thermal state of the interior of the solid Earth and of the thermal properties of Earth materials</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/gravimetry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">gravimetry</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geophysics"/>
+	<skos:definition xml:lang="en">Measurement of the strength of a gravitational field</skos:definition>
+	<skos:altLabel xml:lang="en">gravity</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/paleomagnetism">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">paleomagnetism</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geophysics"/>
+	<skos:definition xml:lang="en">The record of the Earth’s magnetic field preserved in various magnetic minerals through time</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/radioactivity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">radioactivity</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geophysics"/>
+	<skos:definition xml:lang="en">Measurements of the Earth’s radioactive elements</skos:definition>
+	<skos:altLabel xml:lang="en">radiometrics</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/seismology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">seismology</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/geophysics"/>
+	<skos:definition xml:lang="en">earthquakes and the propagation of elastic waves through the Earth</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">groundwater</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/hydrogeology"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater_abstraction"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater_body"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater_level"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater_abstraction">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">groundwater abstraction</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater_body">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">groundwater body</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater"/>
+	<skos:definition xml:lang="en">Principal reporting unit with hydraulically coherent entities</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater_level">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">groundwater level</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/groundwater_pollution">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">groundwater pollution</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/pollution"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/heavy_metal_exposure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">heavy metal exposure</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/medical_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/infiltration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">infiltration</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/hydrogeology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/spring">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">spring</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/hydrogeology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/water_quality">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">water quality</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/hydrogeology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/water_well">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">water well</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/hydrogeology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/igneous_rock">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">igneous rock</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/lithology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/metamorphic_rock">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">metamorphic rock</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/lithology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/sedimentary_rock">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">sedimentary rock</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/lithology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/lithostratigraphy">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">lithostratigraphy</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/stratigraphy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/seafloor_type">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">seafloor type</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/marine_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/radon_exposure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">radon exposure</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/medical_geology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/metallic_ore">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">metallic ore</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/ore"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/ore">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">ore</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/mineral_resources"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/metallic_ore"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/metals">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">metals</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/mineral_resources"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/neotectonics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">neotectonics</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/tectonics"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/pedology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">pedology</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/soil"/>
+	<skos:definition xml:lang="en">Soil morphology, genesis, and classification</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/soil">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">soil</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/superficial_deposits__(or_regolith?)"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/pedology"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/permafrost">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">permafrost</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/superficial_deposits__(or_regolith?)"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/superficial_deposits__(or_regolith?)">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">superficial deposits  (or regolith?)</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/surface_geology"/>
+	<skos:definition xml:lang="en">Unconsolidated/quaternary geological deposits</skos:definition>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/soil"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/permafrost"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/point-source_pollution">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">point-source pollution</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/pollution"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/geology/soil_pollution">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-09-18T08:20:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.onegeology.org/wmsCookbook/appendixI.html</dcterms:source>
+	<skos:prefLabel xml:lang="en">soil pollution</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/geology/pollution"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

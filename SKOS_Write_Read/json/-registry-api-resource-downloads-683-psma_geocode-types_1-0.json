@@ -1,0 +1,3864 @@
+{
+  "_:node1cfbn5sd7x1" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2002/07/owl#AllDisjointClasses",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#members" : [
+      {
+        "value" : "_:node1cfbn5sd7x2",
+        "type" : "bnode"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x10" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Letterbox",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x11",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x11" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyAccessPoint",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x12",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x12" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyAccessPointSetback",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x13",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x13" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyCentroid",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x14",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x14" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyCentroidManual",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x15",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x15" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#UnitCentroid",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x16",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x16" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#UnitCentroidManual",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x17",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x17" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Gap",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x18",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x18" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#WaterConnectionPoint",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x19",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x19" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#WaterMeter",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x20",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x2" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#BuildingCentroid",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x3",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x20" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#SewageConnectionPoint",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x21",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x21" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#GasConnectionPoint",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x22",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x22" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#GasMeterPoint",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x23",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x23" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#TelephoneConnectionPoint",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x24",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x24" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#ElectricityConnectionPoint",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x25",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x25" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#ElectricityMeterPoint",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x26",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x26" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#InternetConnectionPoint",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x27",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x27" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Unknown",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x28",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x28" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#StreetLocality",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x29",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x29" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Locality",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x3" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#CentreLineDroppedFrontage",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x4",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x4" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#DrivewayFrontage",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x5",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x5" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#EmergencyAccess",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x6",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x6" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#EmergencyAccessSecondary",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x7",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x7" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontDoorAccess",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x8",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x8" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontageCentre",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x9",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "_:node1cfbn5sd7x9" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontageCentreSetback",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : [
+      {
+        "value" : "_:node1cfbn5sd7x10",
+        "type" : "bnode"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeType" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2018-02-10",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://purl.org/dc/terms/issued" : [
+      {
+        "value" : "2018-04-16",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://purl.org/dc/terms/modified" : [
+      {
+        "value" : "2018-04-23",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#date"
+      }
+    ],
+    "http://purl.org/dc/terms/publisher" : [
+      {
+        "value" : "http://psma.com.au",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/subject" : [
+      {
+        "value" : "GNAF Geocodes",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [
+      {
+        "value" : "This vocabulary contains types of geocodes (geo located points) as described by the Geocoded National Address File (GNAF). The vocabulary is derived from the GNAF's Geocode Type code list which is presented within the relational database versions of the GNAF as an authority table (lookup table). The values here are documented in the GNAF product guide. This vocabulary was originally created from the December, 2017, version of that guide.",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo" : [
+      {
+        "value" : "2017-12",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#BuildingCentroid",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#CentreLineDroppedFrontage",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#DrivewayFrontage",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#ElectricityConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#ElectricityMeterPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#EmergencyAccess",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#EmergencyAccessSecondary",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontDoorAccess",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontageCentre",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontageCentreSetback",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Gap",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#GasConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#GasMeterPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#InternetConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Letterbox",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Locality",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyAccessPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyAccessPointSetback",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyCentroid",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyCentroidManual",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#SewageConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#StreetLocality",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#TelephoneConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#UnitCentroid",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#UnitCentroidManual",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Unknown",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#WaterConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#WaterMeter",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Geocode Types",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#BuildingAccessPoint" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "BAP",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "POINT OF ACCESS TO THE BUILDING",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Building Access Point",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#BuildingCentroid" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "BC",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "POINT AS CENTRE OF BUILDING AND LYING WITHIN ITS BOUNDS (E.G. FOR U-SHAPED BUILDING)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Building Centroid",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#CentreLineDroppedFrontage" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "CDF",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A POINT ON THE ROAD CENTRE-LINE OPPOSITE THE CENTRE OF THE ROAD FRONTAGE OF AN ADDRESS SITE",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Centre-Line Dropped Frontage",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#DrivewayFrontage" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "DF",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "CENTRE OF DRIVEWAY ON ADDRESS SITE FRONTAGE",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Driveway Frontage",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#ElectricityConnectionPoint" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "ECP",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "ELECTRICITY CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Electricity Connection Point",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#ElectricityMeterPoint" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "EM",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "ELECTRICITY METER POINT (E.G. BOX, OR UNDERGROUND CHAMBER)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Electricity Meter Point",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#EmergencyAccess" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "EA",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "SPECIFIC BUILDING OR PROPERTY ACCESS POINT FOR EMERGENCY SERVICES",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Emergency Access",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#EmergencyAccessSecondary" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "EAS",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "SPECIFIC BUILDING OR PROPERTY SECONDARY ACCESS POINT FOR EMERGENCY SERVICES",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Emergency Access Secondary",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontDoorAccess" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "FDA",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "FRONT DOOR OF BUILDING",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Front Door Access",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontageCentre" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "FC",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "POINT ON THE CENTRE OF THE ADDRESS SITE FRONTAGE",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Frontage Centre",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontageCentreSetback" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "FCS",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A POINT SET BACK FROM THE CENTRE OF THE ROAD FRONTAGE WITHIN AN ADDRESS SITE",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Frontage Centre Setback",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#Gap" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "GG",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "POINT PROGRAMMATICALLY ALLOCATED DURING THE G-NAF PRODUCTION PROCESS PROPORTIONALLY BETWEEN ADJACENT ADDRESS LOCATIONS (BASED ON NUMBER_FIRST)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Gap ",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#GasConnectionPoint" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "GCP",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "GAS CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Gas Connection Point",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#GasMeterPoint" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "GM",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "GAS METER POINT (E.G. BOX, OR UNDERGROUND CHAMBER)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Gas Meter Point",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#InternetConnectionPoint" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "ICP",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "INTERNET CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Internet Connection Point",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#Letterbox" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "LB",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "PLACE WHERE MAIL IS DEPOSITED",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Letterbox",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#Locality" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "LOC",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "POINT REPRESENTING A LOCALITY",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Locality",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyAccessPoint" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "PAP",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "ACCESS POINT (CENTRE OF) AT THE ROAD FRONTAGE OF THE PROPERTY",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Property Access Point",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyAccessPointSetback" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "PAPS",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "A POINT SET BACK FROM THE (CENTRE OF THE) ACCESS POINT AT THE ROAD FRONTAGE OF THE PROPERTY",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Property Access Point Setback",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyCentroid" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "PC",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "POINT OF CENTRE OF PARCELS MAKING UP A PROPERTY AND LYING WITHIN ITS BOUNDARIES (E.G. FOR L-SHAPED PROPERTY)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Property Centroid",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyCentroidManual" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "PCM",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "POINT MANUALLY PLACED APPROXIMATELY AT CENTRE OF PARCELS MAKING UP A PROPERTY AND LYING WITHIN ITS BOUNDARIES (E.G. FOR L-SHAPED PROPERTY)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Property Centroid Manual",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#SewageConnectionPoint" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "SCP",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "SEWERAGE CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Sewage Connection Point",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#StreetLocality" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "STL",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "POINT REPRESENTING THE EXTENT OF A STREET WITHIN A LOCALITY",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Street Locality",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#TelephoneConnectionPoint" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "TCP",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "TELEPHONE CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Telephone Connection Point",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#UnitCentroid" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "UC",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "POINT AT CENTRE OF UNIT AND LYING WITHIN ITS BOUNDS (E.G. FOR U-SHAPED UNIT)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Unit Centroid",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#UnitCentroidManual" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "UCM",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "POINT MANUALLY PLACED APPROXIMATELY AT CENTRE OF UNIT AND LYING WITHIN ITS BOUNDS (E.G. FOR U-SHAPED UNIT)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Unit Centroid Manual",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#Unknown" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "UNK",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "THE TYPE OF REAL WORLD FEATURE THE POINT REPRESENTS IS NOT KNOWN",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Unknown",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#WaterConnectionPoint" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "WCP",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WATER CONNECTION POINT (E.G. BOX, OR UNDERGROUND CHAMBER)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Water Connection Point",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#WaterMeter" : {
+    "http://purl.org/dc/terms/contributor" : [
+      {
+        "value" : "http://orcid.org/0000-0002-8742-7730",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "G-NAF Data Product Description, November 2017",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeType",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "WM",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "WATER METER POINT (E.G. BOX, OR UNDERGROUND CHAMBER)",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Water Meter",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://gnafld.net/def/gnaf/code/GeocodeTypes#allConcepts" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Collection",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#member" : [
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#BuildingCentroid",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#CentreLineDroppedFrontage",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#DrivewayFrontage",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#ElectricityConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#ElectricityMeterPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#EmergencyAccess",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#EmergencyAccessSecondary",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontDoorAccess",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontageCentre",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#FrontageCentreSetback",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Gap",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#GasConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#GasMeterPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#InternetConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Letterbox",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Locality",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyAccessPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyAccessPointSetback",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyCentroid",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#PropertyCentroidManual",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#SewageConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#StreetLocality",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#TelephoneConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#UnitCentroid",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#UnitCentroidManual",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#Unknown",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#WaterConnectionPoint",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://gnafld.net/def/gnaf/code/GeocodeTypes#WaterMeter",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "All Concepts Collection",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://orcid.org/0000-0002-8742-7730" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://psma.com.au" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/contributor" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/contributor",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/created" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/created",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/issued" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/issued",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/modified" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/modified",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/publisher" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/publisher",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/source" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/source",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/subject" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/subject",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#List" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#object" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#value" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Class" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Container" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Datatype" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Literal" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Resource" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#comment" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#comment",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#domain" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#domain",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#label" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#label",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#member" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#member",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#range" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#range",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2002/07/owl#AllDisjointClasses" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2002/07/owl#AllDisjointClasses",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2002/07/owl#members" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2002/07/owl#members",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2002/07/owl#versionInfo" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#Collection" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Collection",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#Concept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#ConceptScheme" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#altLabel" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#altLabel",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#definition" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#definition",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#member" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#member",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "type" : "uri"
+      }
+    ]
+  }
+}

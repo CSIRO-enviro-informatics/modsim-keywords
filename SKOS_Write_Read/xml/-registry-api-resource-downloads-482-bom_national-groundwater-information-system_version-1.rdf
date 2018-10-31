@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/NEII_Programme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEII_Programme</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Groundwater Unit, Bureau of Meteorology</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/national-groundwater-information-system">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NGIS</skos:notation>
+	<skos:prefLabel xml:lang="en">national groundwater information system</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A spatially-enabled database for storing and analysing Australian groundwater data.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#notation">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:label xml:lang="en">National Groundwater Information System</rdfs:label>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:46:22Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology"/>
+	<dcterms:description xml:lang="en">The National Groundwater Information System (NGIS) is a spatial database for GIS specialists that contains a range of groundwater information submitted by States and Territories. The NGIS contains information on more than 870 000 bores and their attributes—such as purpose and date they were drilled. The database also includes logs of their lithology, construction and hydrostratigraphy as well as groundwater management areas and aquifer boundaries. 2.5D and 3D aquifer geometries are also available for some areas. Hydrogeologic units within the NGIS have been standardised for national consistency using the National Aquifer Framework.  http://www.bom.gov.au/water/groundwater/ngis/ </dcterms:description>
+	<dcterms:publisher rdf:resource="http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology"/>
+	<dcterms:subject xml:lang="en">Groundwater</dcterms:subject>
+	<dcterms:title xml:lang="en">National Groundwater Information System</dcterms:title>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/national-groundwater-information-system"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/raster-dataset"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/Aquaveo"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/ArcGIS"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/ArcHydro-for-Groundwater"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/ESRI"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/ESRI-File-Geodatabase"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/australia-new-zealand-land-information-council"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore-feature"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore-line"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore-log"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore-pipe"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore-screen"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/casing"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/construction-line"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/construction-log"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/creative-commons"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/digital-elevation-model"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/feature-class"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/geographic-information-system"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/georaster"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/geovolume"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/hydrostratigraphy-log"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/lithology-log"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/multipatch-feature-class"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013-05</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/raster-dataset">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">raster dataset</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Represents geographic features by dividing the world into discrete square or rectangular cells laid out in a grid. Each cell has a value that is used to represent some characteristic of that location.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/Aquaveo">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Aquaveo</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:42Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A software development company based in the United States that builds ArcHydro for groundwater tools</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/ArcGIS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ArcGIS</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:42Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A range of software programs developed by ESRI for spatial data analysis, processing and storage.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/ArcHydro-for-Groundwater">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ArcHydro for Groundwater</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:42Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A data model published by ESRI and tools developed by Aquaveo for analysis of hydrogeological data.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/ESRI">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ESRI</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A software development company based in the United States that builds ArcGIS.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/ESRI-File-Geodatabase">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ESRI File Geodatabase</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A format for storing GIS data within the ArcGIS software</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/australia-new-zealand-land-information-council">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANZLIC</skos:notation>
+	<skos:prefLabel xml:lang="en">australia new zealand land information council</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:42Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">ANZLIC is the Spatial Information Council is the peak intergovernmental organisation providing leadership in the collection, management and use of spatial information in Australia and New Zealand. They have established a widely metadata profile for spatial data in Australia.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bore</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:42Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A hole drilled in the ground, a well or any other excavation used to access groundwater. May be used for observation of groundwater (including water level, pressure or quality).</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore-feature">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bore feature</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:42Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Point feature class that represents the location of a bore and associated attributes. Multiple independently screened bore pipes are regarded as separate bore features.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore-line">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bore line</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:42Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A three dimensional line feature class that represents the hydrogeologic units along a borehole.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore-log">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bore log</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:42Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A table with rock or sediment types classified into hydrogeologic units along a borehole.</skos:definition>
+	<skos:altLabel xml:lang="en">hydrostratigraphy log</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore-pipe">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bore pipe</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">An independently screened inlet to a bore that can be pumped or monitored separately. A bore can have multiple pipes, each having one or more screens.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/bore-screen">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bore screen</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">The construction component of a bore that allows groundwater to enter e.g. casing with slots or holes.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/casing">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">casing</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">The construction component that lines a bore and provides the conduit from the water-producing zone to the surface.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/construction-line">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">construction line</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A three dimensional line feature class that represents the construction information (e.g. casing and bore screen) along a borehole</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/construction-log">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">construction log</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A table with bore construction information along a borehole (e.g. casing and bore screen).</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/creative-commons">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CC</skos:notation>
+	<skos:prefLabel xml:lang="en">creative commons</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">An international non-profit organisation that provides free licences and tools that copyright owners can use to allow others to share, reuse and remix their material, legally.</skos:definition>
+	<dcterms:source xml:lang="en">Creative Commons Australia</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/digital-elevation-model">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DEM</skos:notation>
+	<skos:prefLabel xml:lang="en">digital elevation model</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A digital elevation model of the earth's surface.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/feature-class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">feature class</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">Homogeneous collections of common features, each having the same spatial representation, such as points, lines, or polygons, and a common set of attribute columns, for example, a line feature class for representing road centrelines. The four most commonly used feature classes in the geodatabase are points, lines, polygons, and annotation (the geodatabase name for map text).</skos:definition>
+	<dcterms:source xml:lang="en">ArcGIS 9.2 Desktop Help</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/geographic-information-system">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GIS</skos:notation>
+	<skos:prefLabel xml:lang="en">geographic information system</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A system used for the design, capture, storage, management and analysis of geographic data. Often referred to as GIS.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/georaster">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">georaster</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A catalog of raster datasets describing properties of hydrogeologic units (e.g. depth or elevation of hydrogeologic unit's top or base, salinity and groundwater level).</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/geovolume">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">geovolume</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A three dimensional multipatch feature class that represents hydrogeologic units as a volume.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/hydrostratigraphy-log">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">hydrostratigraphy log</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A table with rock or sediment types classified into hydrogeologic units along a borehole.</skos:definition>
+	<skos:altLabel xml:lang="en">bore log</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/lithology-log">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">lithology log</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A table with drillers' or geologists' description of rock or sediment types along a borehole.</skos:definition>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/multipatch-feature-class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">multipatch feature class</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/national-groundwater-information-system/National-Groundwater-Information-System"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-08T00:47:43Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:definition xml:lang="en">A GIS object that stores a collection of patches to represent the boundary of a three dimensional object as a single row in a database.</skos:definition>
+	<dcterms:source xml:lang="en">ArcGIS Help 10.1</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

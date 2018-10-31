@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/upper-soil-moisture">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:hasFormat xml:lang="en">Percent</dcterms:hasFormat>
+	<dcterms:hasPart xml:lang="en">water</dcterms:hasPart>
+	<dcterms:isPartOf xml:lang="en">pedosphere</dcterms:isPartOf>
+	<dcterms:source xml:lang="en">scaled quantity kind | mechanics quantity kind | quantity kind |Concept</dcterms:source>
+	<skos:broader rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/root-zone-soil-moisture"/>
+	<skos:definition xml:lang="en">Upper Soil Moisture estimate represents the percentage of available water content in the top 10 cm of the soil profile. The maximum storage within the soil layer is calculated from the depth of the soil and the relative soil water storage capacity. The soil properties that control the storage of water are derived from the continental scale mapping within Australian Soil Resources Information System (ASRIS) (Johnston et al., 2003). Pedotransfer functions are used to relate soil hydraulic properties to soil textural class. Soil drainage and moisture dynamics are then based on water balance considerations for each soil layer. This upper soil layer is the primary source of soil evaporation. The relative available water capacity of the upper soil layer is derived from ASRIS information as the available water capacity of a layer divided by its thickness. The Actual soil moisture grids estimate the percentage of available water content rather than total soil water volume. The Relative soil moisture grids, like the other grids, represent the long term deciles. The soil moisture is not well represented in major urban areas due to a current lack of impervious layers in the Hydrological Response Units (HRU). Similarly, the estimated soil moisture for irrigation areas and open water needs to be taken with caution due to the current lack of irrigated crops and water bodies in the HRU.</skos:definition>
+	<skos:prefLabel xml:lang="en">upper soil moisture</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:55:31Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:abstract xml:lang="en">dimensionless ratio | root zone soil moisture</dcterms:abstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/hasFormat">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasFormat"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/hasPart">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/isPartOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/root-zone-soil-moisture">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:hasFormat xml:lang="en">Percent</dcterms:hasFormat>
+	<dcterms:hasPart xml:lang="en">water</dcterms:hasPart>
+	<dcterms:isPartOf xml:lang="en">pedosphere</dcterms:isPartOf>
+	<dcterms:source xml:lang="en">quantity kind | Concept | mechanics quantity kind | scaled quantity kind</dcterms:source>
+	<skos:broader rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/soil-moisture"/>
+	<skos:definition xml:lang="en">Root Zone Soil Moisture is the sum of water in the AWRA-L Upper and Lower soil layers and represents the percentage of available water content in the top 1 m of the soil profile. The maximum storage within the soil layer is calculated from the depth of the soil and the relative soil water storage capacity. The soil properties that control the storage of water are derived from the continental scale mapping within Australian Soil Resources Information System (Johnston et al., 2003). The relative available water capacity of the soil layer is derived from information ASRIS as the available water capacity of a layer divided by its thickness. Pedotransfer functions are used to relate soil hydraulic properties to soil textural class. Soil drainage and moisture dynamics are then based on water balance considerations for each soil layer. The shallow and deep rooted vegetation can both draw on this combined layer. The Actual soil moisture grids estimate the percentage of available water content rather than total soil water volume. The Relative soil moisture grids, like the other grids, represent the long term deciles. The soil moisture is not well represented in major urban areas due to a current lack of impervious layers in the Hydrological Response Units (HRU). Similarly, the estimated soil moisture for irrigation areas and open water needs to be taken with caution due to the current lack of irrigated crops and waterbodies in the HRU.</skos:definition>
+	<skos:prefLabel xml:lang="en">root zone soil moisture</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:55:31Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:abstract xml:lang="en">soil moisture | dimensionless ratio</dcterms:abstract>
+	<skos:narrower rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/upper-soil-moisture"/>
+	<skos:narrower rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/lower-soil-moisture"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/Australian-Water-Assessment-Landscape-Model">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:label xml:lang="en">Australian Water Assessment Landscape Model</rdfs:label>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:54:10Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:description xml:lang="en">The water balance in the Australian landscape is the product of a number of variables including soil moisture, runoff, evapotranspiration, deep drainage and precipitation. Water professionals, farmers and decision-makers in industry, government and the community can access data about all these variables through an interactive website from the Bureau of Meteorology. Nationally consistent modelled data is available on soil moisture, runoff, evapotranspiration, deep drainage and precipitation, each at a spatial resolution of 25 square kilometres . The information is updated daily and is available at daily, monthly and annual timescales from 1911 onwards.</dcterms:description>
+	<dcterms:publisher rdf:resource="http://editor.vocabs.ands.org.au/user/Bureau-of-Meteorology"/>
+	<dcterms:subject xml:lang="en">Hydrology</dcterms:subject>
+	<dcterms:title xml:lang="en">Australian Water Assessment Landscape Model</dcterms:title>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/deep-drainage"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/evapotranspiration"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/precipitation"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/runoff"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/soil-moisture"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-05-29</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/NEII_Programme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEII_Programme</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Bureau-of-Meteorology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bureau of Meteorology</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/deep-drainage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:hasFormat xml:lang="en">Millimeter</dcterms:hasFormat>
+	<dcterms:hasPart xml:lang="en">water</dcterms:hasPart>
+	<dcterms:isPartOf xml:lang="en">pedosphere</dcterms:isPartOf>
+	<dcterms:source xml:lang="en">scaled quantity kind | Concept | quantity kind | mechanics quantity kind</dcterms:source>
+	<skos:definition xml:lang="en">Deep drainage is an estimate of the water that drains from the bottom of the deep soil layer (6 m) into the groundwater stores. Soil drainage and moisture dynamics are based on water balance considerations for each layer, and unsaturated downward movement of water under gravity only. There is assumed to be no lateral drainage from the deep soil layer. Drainage from each layer is subject to limits imposed by water availability and hydraulic conductivity. Deep Drainage generally describes diffuse groundwater recharge.</skos:definition>
+	<skos:prefLabel xml:lang="en">deep drainage</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:55:31Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/Australian-Water-Assessment-Landscape-Model"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/evapotranspiration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:hasFormat xml:lang="en">Millimeter</dcterms:hasFormat>
+	<dcterms:hasPart xml:lang="en">water</dcterms:hasPart>
+	<dcterms:isPartOf xml:lang="en">critical zone</dcterms:isPartOf>
+	<dcterms:source xml:lang="en">scaled quantity kind | Concept | quantity kind | mechanics quantity kind</dcterms:source>
+	<skos:definition xml:lang="en">Evapotranspiration is an estimate of the total evapotranspiration from vegetation, soil and groundwater. Water is evaporated directly from the canopy interception, the upper soil water store and the groundwater store. In addition water is withdrawn by transpiration from the lower soil water store, the deep soil water store and the groundwater store. Evaporation from groundwater occurs only in those saturated parts of the landscape where the water table intersects the surface. Soil evaporation depends on the moisture content of the upper layer for the unsaturated parts of the landscape.</skos:definition>
+	<skos:prefLabel xml:lang="en">evapotranspiration</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:55:31Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/Australian-Water-Assessment-Landscape-Model"/>
+	<skos:narrower rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/actual-evapotranspiration"/>
+	<skos:narrower rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/potential-evapotranspiration"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/precipitation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:hasFormat xml:lang="en">Millimeter</dcterms:hasFormat>
+	<dcterms:hasPart xml:lang="en">water</dcterms:hasPart>
+	<dcterms:source xml:lang="en">mechanics quantity kind | scaled quantity kind | quantity kind |Concept</dcterms:source>
+	<skos:definition xml:lang="en">Daily precipitation grids are produced by the Bureau from approximately 6,500 rain gauge stations and interpolated to a 0.05 degree (approximately 5 x 5 km) national grid (Jones et al. 2009). Precipitation is an input into the AWRA-L model. The estimates were subject to approximations associated with interpolating observation point data to a national grid detailed in Jones et al. (2009). The precipitation input to the AWRA-L model are the near real time daily grids available at www.bom.gov.au/climate/maps. The monthly and annual precipitation is simply an aggregation of the near real time daily grids input to the AWRA-L model. Monthly grids that include additional rain gauge stations and rainfall observations (that are not available in near real time) can be found at www.bom.gov.au/climate/maps</skos:definition>
+	<skos:prefLabel xml:lang="en">precipitation</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:55:31Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/Australian-Water-Assessment-Landscape-Model"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/runoff">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:hasFormat xml:lang="en">Millimeter</dcterms:hasFormat>
+	<dcterms:hasPart xml:lang="en">water</dcterms:hasPart>
+	<dcterms:source xml:lang="en">Concept | mechanics quantity kind | scaled quantity kind | quantity kind</dcterms:source>
+	<skos:definition xml:lang="en">Runoff represents a modelled estimate expected from a small unimpaired catchment. It is produced from surface runoff, baseflow and interflow for each grid cell. Surface runoff is a combination of infiltration excess runoff and saturation excess runoff. The baseflow depends on groundwater storage and deep drainage from the deep soil store. The interflow term represents the sum of the total discharge to the stream from the upper and lower soil stores in each grid cell. The Bureau’s operational AWRA-L model is currently calibrated on a continental scale against streamflow observations and satellite based actual evapotranspiration and soil moisture. Hillslope processes are not simulated; there is no lateral flow between grid cells. Similarly, there is no routing technique used in AWRA-L. The estimated runoff for major urban areas should not be used due to lack of impervious layers in the Hydrological Response Units (HRU) of AWRA-L. The estimated runoff numbers for irrigation areas and open water storages (lakes) also needs to be used with caution due to lack of irrigated crops and waterbodies in the HRU.</skos:definition>
+	<skos:prefLabel xml:lang="en">runoff</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:55:31Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/Australian-Water-Assessment-Landscape-Model"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/soil-moisture">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:hasFormat xml:lang="en">Percent</dcterms:hasFormat>
+	<dcterms:hasPart xml:lang="en">water</dcterms:hasPart>
+	<dcterms:isPartOf xml:lang="en">pedosphere</dcterms:isPartOf>
+	<dcterms:source xml:lang="en">quantity kind | Concept | mechanics quantity kind | scaled quantity kind</dcterms:source>
+	<skos:definition xml:lang="en">Soil Moisture estimate represents the percentage of available water content in the soil profile. The maximum storage within the soil layer is calculated from the depth of the soil and the relative soil water storage capacity. The soil properties that control the storage of water are derived from the continental scale mapping within Australian Soil Resources Information System (Johnston et al., 2003). The relative available water capacity of the soil layer is derived from ASRIS information as the available water capacity of a layer divided by its thickness. Pedotransfer functions are used to relate soil hydraulic properties to soil textural class. Soil drainage and moisture dynamics are then based on water balance considerations for each soil layer. The Actual soil moisture grids estimate the percentage of available water content rather than total soil water volume. The Relative soil moisture grids, like the other grids, represent the long term deciles. The soil moisture is not well represented in major urban areas due to a current lack of impervious layers in the Hydrological Response Units (HRU). Similarly, the estimated soil moisture for irrigation areas and open water needs to be taken with caution due to the current lack of irrigated crops and waterbodies in the HRU.</skos:definition>
+	<skos:prefLabel xml:lang="en">soil moisture</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:55:31Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:abstract xml:lang="en">dimensionless ratio</dcterms:abstract>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/Australian-Water-Assessment-Landscape-Model"/>
+	<skos:narrower rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/root-zone-soil-moisture"/>
+	<skos:narrower rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/deep-soil-moisture"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/actual-evapotranspiration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:hasFormat xml:lang="en">Millimeter</dcterms:hasFormat>
+	<dcterms:hasPart xml:lang="en">water</dcterms:hasPart>
+	<dcterms:isPartOf xml:lang="en">critical zone</dcterms:isPartOf>
+	<dcterms:source xml:lang="en">mechanics quantity kind | Concept | scaled quantity kind | quantity kind</dcterms:source>
+	<skos:broader rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/evapotranspiration"/>
+	<skos:definition xml:lang="en">Actual Evapotranspiration is an estimate of the total evapotranspiration from vegetation, soil and groundwater. Water is evaporated directly from the canopy interception, the upper soil water store and the groundwater store. In addition water is withdrawn by transpiration from the lower soil water store, the deep soil water store and the groundwater store. The evaporation from canopy uses the event-based approach of Gash (1979) and the Van Dijk and Bruijnzeel (2001) modification for sparse canopies. Evaporation from groundwater occurs only in those saturated parts of the landscape where the water table intersects the surface. Soil evaporation depends on the moisture content of the upper layer for the unsaturated parts of the landscape. The actual transpiration is limited by a potential transpiration rate and a maximum root water uptake. Actual evapotranspiration is not well represented in major urban areas due to a current lack of impervious layers in the Hydrological Response Units (HRU). Similarly, the estimated actual evapotranspiration for irrigation areas and open water needs to be taken with caution due to the current lack of irrigated crops and waterbodies in the HRU.</skos:definition>
+	<skos:prefLabel xml:lang="en">actual evapotranspiration</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:55:31Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:abstract xml:lang="en">evapotranspiration</dcterms:abstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/abstract">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/abstract"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/deep-soil-moisture">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:hasFormat xml:lang="en">Percent</dcterms:hasFormat>
+	<dcterms:hasPart xml:lang="en">water</dcterms:hasPart>
+	<dcterms:isPartOf xml:lang="en">pedosphere</dcterms:isPartOf>
+	<dcterms:source xml:lang="en">scaled quantity kind | mechanics quantity kind | quantity kind |Concept</dcterms:source>
+	<skos:broader rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/soil-moisture"/>
+	<skos:definition xml:lang="en">Deep Soil Moisture represents the percentage of available water content between 1 m and 6 m in the soil profile. The maximum storage within the soil layer is calculated from the depth of the soil and the relative soil water storage capacity. The soil properties of the deep soil layer are indirectly derived from ASRIS based on the lower soil layer properties. In this case it is assumed that the bulk density of the deep soil is higher than the lower soil and so the relative available water capacity is lower. The 6 m bottom boundary of the deep soil layer is based on the assumption that the deep rooted vegetation can access water down to 6 m. Only the deep rooted vegetation can access the deep soil moisture. The Actual soil moisture grids estimate the percentage of available water content rather than total soil water volume. The Relative soil moisture grids, like the other grids, represent the long term deciles. The soil moisture is not well represented in major urban areas due to a current lack of impervious layers in the Hydrological Response Units (HRU). Similarly, the estimated soil moisture for irrigation areas and open water needs to be taken with caution due to the current lack of irrigated crops and water bodies in the HRU.</skos:definition>
+	<skos:prefLabel xml:lang="en">deep soil moisture</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:55:31Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:abstract xml:lang="en">dimensionless ratio | soil moisture</dcterms:abstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/potential-evapotranspiration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:hasFormat xml:lang="en">Millimeter</dcterms:hasFormat>
+	<dcterms:hasPart xml:lang="en">water</dcterms:hasPart>
+	<dcterms:isPartOf xml:lang="en">critical zone</dcterms:isPartOf>
+	<dcterms:source xml:lang="en">scaled quantity kind | Concept | quantity kind | mechanics quantity kind</dcterms:source>
+	<skos:broader rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/evapotranspiration"/>
+	<skos:definition xml:lang="en">The potential evapotranspiration in AWRA-L is calculated on a 0.05 degree (approximately 5 x 5 km) national grid using the Penman (1948) equation. Potential evapotranspiration provides an upper limit on evaporation and transpiration processes from the soil and vegetation and depends solely on the available energy at the surface. The daily gridded climate datasets used to produce this estimate include downward solar irradiance, and maximum and minimum air temperature produced by the Bureau of Meteorology (Jones et al., 2009) and windspeed at 2 m which is input as a spatially-gridded long-term average (McVicar et al., 2008).</skos:definition>
+	<skos:prefLabel xml:lang="en">potential evapotranspiration</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:55:31Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:abstract xml:lang="en">evapotranspiration</dcterms:abstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/lower-soil-moisture">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:hasFormat xml:lang="en">Percent</dcterms:hasFormat>
+	<dcterms:hasPart xml:lang="en">water</dcterms:hasPart>
+	<dcterms:isPartOf xml:lang="en">pedosphere</dcterms:isPartOf>
+	<dcterms:source xml:lang="en">Concept | quantity kind | mechanics quantity kind | scaled quantity kind</dcterms:source>
+	<skos:broader rdf:resource="http://www.neii.gov.au/def/voc/AWRA/australian-water-assessment-landscape-model/root-zone-soil-moisture"/>
+	<skos:definition xml:lang="en">Lower Soil Moisture estimate represents the percentage of available water content between 10 cm and 100 cm in the soil profile. The maximum storage within the soil layer is calculated from the depth of the soil and the relative soil water storage capacity. The soil properties that control the storage of water are derived from the continental scale mapping within Australian Soil Resources Information System (Johnston et al., 2003). The relative available water capacity of the lower soil layer is derived from ASRIS information as the available water capacity of a layer divided by its thickness. Pedotransfer functions are used to relate soil hydraulic properties to soil textural class. Soil drainage and moisture dynamics are then based on water balance considerations for each soil layer. The shallow and deep rooted vegetation can draw on this Lower Soil Moisture layer. The Actual soil moisture grids estimate the percentage of available water content rather than total soil water volume. The Relative soil moisture grids, like the other grids, represent the long term deciles. The soil moisture is not well represented in major urban areas due to a current lack of impervious layers in the Hydrological Response Units (HRU). Similarly, the estimated soil moisture for irrigation areas and open water needs to be taken with caution due to the current lack of irrigated crops and waterbodies in the HRU.</skos:definition>
+	<skos:prefLabel xml:lang="en">lower soil moisture</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-29T04:55:31Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:abstract xml:lang="en">dimensionless ratio | root zone soil moisture</dcterms:abstract>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Andrew-Frost">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrew Frost</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,4433 @@
+{
+  "http://editor.vocabs.ands.org.au/user/Aaron-Sedgmen" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "Aaron Sedgmen",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "GA_Sedgmen.Lara_Admin",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://editor.vocabs.ands.org.au/user/Geoscience-Australia" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://xmlns.com/foaf/0.1/name" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/issued" : [
+      {
+        "value" : "2017-11-10",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://purl.org/dc/terms/title" : [
+      {
+        "value" : "Protocol Type",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [
+      {
+        "value" : "Protocol Type",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#versionInfo" : [
+      {
+        "value" : "v1.0",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/DataTurbine",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Database",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ESRI",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/File",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/GoogleEarth",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/JetStream",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/UKST",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/W3C",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/AIMS-HTTP-configuration" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "ESRI:AIMS-HTTP-configuration",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ESRI",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ArcIMS Map Service Configuration File AXL",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/AIMS-HTTP-get-feature" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "ESRI:AIMS-HTTP-get-feature",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ESRI",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ArcIMS Internet Feature Map Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/AIMS-HTTP-get-image" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "ESRI:AIMS-HTTP-get-image",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ESRI",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ArcIMS InternetImageMap Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ArcIMS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "AIMS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ESRI",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ArcIMS HTTP configuration",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/CSW" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:CSW",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Catalogue Service for the Web",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/DB-ORACLE" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "DB:ORACLE",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Database",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ORACLE database table",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/DB-POSTGIS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "DB:POSTGIS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Database",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "PostGIS database table",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/DataTurbine" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "RBNB:DATATURBINE",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "DataTurbine",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Database" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Un-typed database protocol",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/DB-ORACLE",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/DB-POSTGIS",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Database",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ESRI" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Un-typed ESRI protocol",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/AIMS-HTTP-configuration",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/AIMS-HTTP-get-feature",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/AIMS-HTTP-get-image",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ArcIMS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Geoprocessing-Service",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Image-Service",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Map-Service",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Services-Directory-Page",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ESRI",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/FILE-GEO" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "FILE:GEO",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/File",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "GIS file",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/FILE-RASTER" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "FILE:RASTER",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/File",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "GIS Raster file",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/File" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/FILE-GEO",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/FILE-RASTER",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "File",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/GML" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:GML",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Geography Markup Language",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Geoprocessing-Service" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "ESRI:Geoprocessing Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ESRI",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ArcGIS Geoprocessing Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/GoogleEarth" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "GLG:KML-2.0-HTTP-get-map",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Google Earth KML Service 2.0",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-RSS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "WWW:LINK-1.0-HTTP-rss",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/W3C",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "RSS News feed URL",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-ical" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "WWW:LINK-1.0-htt--ical",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/W3C",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "iCalendar URL",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-link" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "WWW:LINK-1.0-HTTP-link",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/W3C",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web address URL",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-opendap" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "WWW:LINK-1.0-HTTP-opendap",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/W3C",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "OPeNDAP URL",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-partners" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "WWW:LINK-1.0-HTTP-partners",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/W3C",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Partner web address URL",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-related" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "WWW:LINK-1.0-HTTP-related",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/W3C",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Related link URL",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-samples" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "WWW:LINK-1.0-HTTP-samples",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/W3C",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Showcase product URL",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Image-Service" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "ESRI:Image Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ESRI",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ArcGIS Image Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/JetStream" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "URN:JETSTREAM-PROXY",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "File for download through Jetstream Proxy",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/KML" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:KML",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "KML Keyhole Markup Language",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Map-Service" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "ESRI:Map Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ESRI",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ArcGIS Map Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ODS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:ODS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Open Layers Directory Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Un-typed Open Geospatial Consortium protocol",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/CSW",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/GML",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/KML",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ODS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OPS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ORS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OUS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/SAS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/SOS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/SOS-1.0.0-HTTP-get-observation",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/SOS-1.0.0-HTTP-post-observation",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/SPS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WCS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WCS-1.0.0-HTTP-get-capabilities",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WCS-1.1.0-HTTP-get-capabilities",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WCTS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WFS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WFS-1.0.0-HTTP-get-capabilities",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WFS-1.1.0-HTTP-get-capabilities",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WFS-G",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMC-1.1.0-HTTP-get-capabilities",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMS-1.1.1-HTTP-get-capabilities",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMS-1.1.1-HTTP-get-map",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMS-1.3.0-HTTP-get-capabilities",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMS-1.3.0-HTTP-get-map",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WNS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WPS",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Open Geospatial Consortium",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:OGS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Open Layers Gateway Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OPS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:OPS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Open Layers Presentation Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ORS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:ORS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Open Layers Route Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OUS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:OUS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Open Layers Utility Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/SAS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:SAS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Sensor Alert Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/SOS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:SOS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Sensor Observation Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/SOS-1.0.0-HTTP-get-observation" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:SOS-1.0.0-HTTP-get-observation",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Sensor Observation Service Get Observation 1.0.0",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/SOS-1.0.0-HTTP-post-observation" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:SOS-1.0.0-HTTP-post-observation",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Sensor Observation Service Get Observation POST 1.0.0",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/SPS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:SPS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Sensor Planning Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/Services-Directory-Page" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "ESRI:Services Directory Page",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/ESRI",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "ArcGIS Services Directory Page",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/UKST" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "UKST",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Unknown Service Type",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/W3C" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#definition" : [
+      {
+        "value" : "Un-typed World Wide Web Consortium protocol",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#narrower" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-RSS",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-ical",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-link",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-opendap",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-partners",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-related",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/HTTP-samples",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "W3C",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#topConceptOf" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WCS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WCS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Coverage Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WCS-1.0.0-HTTP-get-capabilities" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WCS-1.0.0-HTTP-get-capabilities",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Coverage Service 1.0.0",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WCS-1.1.0-HTTP-get-capabilities" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WCS-1.1.0-HTTP-get-capabilities",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Coverage Servicever 1.1.0",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WCTS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WCTS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Coordinate Transformation Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WFS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WFS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Feature Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WFS-1.0.0-HTTP-get-capabilities" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WFS-1.0.0-HTTP-get-capabilities",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Feature Service 1.0.0",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WFS-1.1.0-HTTP-get-capabilities" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "Geoscience Australia",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WFS-1.1.0-HTTP-get-capabilities",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Feature Service 1.1.0",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WFS-G" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WFS-G",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Gazzetteer Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMC-1.1.0-HTTP-get-capabilities" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WMC-1.1.0-HTTP-get-capabilities",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Map Context 1.1",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WMS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Map Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMS-1.1.1-HTTP-get-capabilities" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WMS-1.1.1-HTTP-get-capabilities",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Capabilities Service 1.1.1",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMS-1.1.1-HTTP-get-map" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WMS-1.1.1-HTTP-get-map",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Map Service 1.1.1",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMS-1.3.0-HTTP-get-capabilities" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WMS-1.3.0-HTTP-get-capabilities",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Capabilities Service 1.3.0",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WMS-1.3.0-HTTP-get-map" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WMS-1.3.0-HTTP-get-map",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Map Service 1.3.0",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WNS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WNS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Notification Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/WPS" : {
+    "http://purl.org/dc/terms/created" : [
+      {
+        "value" : "2017-10-05T03:23:56Z",
+        "type" : "literal",
+        "datatype" : "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ],
+    "http://purl.org/dc/terms/creator" : [
+      {
+        "value" : "http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin",
+        "type" : "uri"
+      }
+    ],
+    "http://purl.org/dc/terms/source" : [
+      {
+        "value" : "GeoNetwork",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#altLabel" : [
+      {
+        "value" : "OGC:WPS",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#broader" : [
+      {
+        "value" : "http://pid.geoscience.gov.au/def/voc/ga/protocoltype/OGC",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2004/02/skos/core#prefLabel" : [
+      {
+        "value" : "Web Processing Service",
+        "type" : "literal",
+        "lang" : "en"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/Agent" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/Agent",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/created" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/created",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/creator" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/creator",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/issued" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/issued",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/source" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/source",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://purl.org/dc/terms/title" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://purl.org/dc/terms/title",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#List" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#first" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#object" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#object",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#value" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#value",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Class" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Container" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Container",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Datatype" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Datatype",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Literal" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#Resource" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#comment" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#comment",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#domain" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#domain",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#label" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#label",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#member" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#member",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#range" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#range",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2002/07/owl#versionInfo" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2002/07/owl#versionInfo",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#Concept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#ConceptScheme" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Class",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#altLabel" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#altLabel",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#broader" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#broader",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#definition" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#definition",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#hasTopConcept" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#narrower" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#narrower",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://www.w3.org/2004/02/skos/core#topConceptOf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#topConceptOf",
+        "type" : "uri"
+      }
+    ]
+  },
+  "http://xmlns.com/foaf/0.1/name" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [
+      {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+      },
+      {
+        "value" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+        "type" : "uri"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [
+      {
+        "value" : "http://xmlns.com/foaf/0.1/name",
+        "type" : "uri"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Sedgmen.Lara_Admin</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Geoscience-Australia">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoscience Australia</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:label xml:lang="en">Sampling Method</rdfs:label>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:title xml:lang="en">Sampling Method</dcterms:title>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/airfall_dust_collector"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_logging_tool"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bottle_incubation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/camera"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/chamber_incubation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_incubation_dark"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_incubation_light"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/current_meter"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/field_mapping_observation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/filtered_dust_collector"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/filtration"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grainsize_separation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/marine_survey_observation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/marine_survey_sampling"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sediment_trap"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sonde"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/still_photography"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/surface_material_sampling"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/undergound_mine_sampling"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_camera"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/unknown"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/video_photography"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_sampling"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-01-30</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v1.0</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/airfall_dust_collector">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Sample of fine-grained solid material that is passively collected by airfall from the atmosphere.</skos:definition>
+	<skos:prefLabel xml:lang="en">airfall dust collector</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Sampling of fluids (oil, gas, or water) from a borehole by an unspecified method.</skos:definition>
+	<skos:prefLabel xml:lang="en">borehole fluid sampling</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/airlift"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/artesian_flow"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bailer"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/in_situ_grab_sampler"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_dst_test"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_prod_test"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_wft_test"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/electric_submersible_pump"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/helical_coil_pump"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/jet_pump"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/liquid-gas_separation"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/low_flow_pump"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/pump_jack"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_pump"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/windmill"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_logging_tool">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Observation of measurement of physical properties down a borehole by an instrument in a continuous linear format.  (e.g. a gamma log)</skos:definition>
+	<skos:prefLabel xml:lang="en">borehole logging tool</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bottle_incubation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A method to derive the oxygen consumption rate/respiration rates of organic matter conducted in a bottle or vial  under controlled light and temperature conditions.</skos:definition>
+	<skos:prefLabel xml:lang="en">bottle incubation</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bottle_incubation_dark"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bottle_incubation_light"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/camera">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">The process of capturing a still image or moving scene of a feature by a video or still photographic camera</skos:definition>
+	<skos:prefLabel xml:lang="en">camera</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/chamber_incubation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A method that isolates sediment and overlying water in a benthic chamber. Water samples are collected from the benthic chamber during the incubation.</skos:definition>
+	<skos:prefLabel xml:lang="en">chamber incubation</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/chamber_incubation_dark"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/chamber_incubation_light"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_incubation_dark">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A method whereby a sediment core is collected along with overlying water. The sediment and water are incubated under no light and controlled temperature conditions.</skos:definition>
+	<skos:prefLabel xml:lang="en">core incubation dark</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_incubation_light">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A method whereby a sediment core is collected along with overlying water. The sediment and water are incubated under controlled light and temperature conditions.</skos:definition>
+	<skos:prefLabel xml:lang="en">core incubation light</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_catcher"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_cutter"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/current_meter">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A mooring deployed on the seabed for a finite time during a marine survey to measure sea-levels and current velocities near to the seafloor. Moorings may contain a suite of instruments measuring other parameters.</skos:definition>
+	<skos:prefLabel xml:lang="en">current meter</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Sampling by a hole drilled into the Earth by any method</skos:definition>
+	<skos:prefLabel xml:lang="en">drilling</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/auger"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/percussion_drilling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_air"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_box"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_conventional"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_diamond"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_drilling_unspecified"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_geoprobe"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_gravity"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_kasten"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_mackereth"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_piston"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_push"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_rov"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_sonic"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_spike"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_vibro"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/reverse_circulation_drilling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/rotary_drilling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sidewall_core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/field_mapping_observation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A mapping survey undertaken in a land environment. May include observations and/or sampling.</skos:definition>
+	<skos:prefLabel xml:lang="en">field mapping survey</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/filtered_dust_collector">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Sample of fine-grained solid material that is actively collected from the atmosphere by pumping and filtration.</skos:definition>
+	<skos:prefLabel xml:lang="en">filtered dust collector</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/filtration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Separation of undissolved sediment and biological particles collected from a water column by filtration. For total dissolved solids measurements the sample is filtered through a glass fibre filter under controlled conditions.  The type of filter is dependent on the method used and the purpose of the determination.</skos:definition>
+	<skos:prefLabel xml:lang="en">filtration</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grainsize_separation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Separation of various size fractions of mineral or rock particles from the original specimen. For example, by using a seive.</skos:definition>
+	<skos:prefLabel xml:lang="en">grainsize separation</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:altLabel xml:lang="en">seive</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/marine_survey_observation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A mapping survey undertaken in a marine environment. May include observations and/or sampling.</skos:definition>
+	<skos:prefLabel xml:lang="en">marine survey</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/marine_survey_sampling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Collection of materials from a marine or coastal survey by any method.</skos:definition>
+	<skos:prefLabel xml:lang="en">marine survey sampling</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/dredge"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sediment_trap">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Sediment traps are containers placed in the water column to collect particles falling toward the sea floor. The traps collect tiny sediment or larger accumulations called marine snow - made up of organic matter, dead sea creatures, tiny shells, dust and minerals.</skos:definition>
+	<skos:prefLabel xml:lang="en">sediment trap</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sonde">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A sonde (French for probe) is a water quality monitoring instrument, that may be stationary or may move up and down a water column, measuring, but not limited to, the following water attributes; temperature, conductivity, salinity, dissolved oxygen, pH, turbidity, light, flourescence and depth. This includes CTDs, light meters or any other probes. They may be lowered through the water column by hand, or mechanically (e.g. by a winch), and measurements can be taken continuously or at discrete depth intervals. The probes may be attached to a frame (e.g. a CTD frame) with other instruments (e.g. niskin bottles, cameras), or they may be stand-alone probes attached to a meter by a cable.</skos:definition>
+	<skos:prefLabel xml:lang="en">sonde</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:altLabel xml:lang="en">probe</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/still_photography">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A still image captured by a camera.</skos:definition>
+	<skos:prefLabel xml:lang="en">still photography</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/surface_material_sampling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Collection of earth materials at the ground surface on land.</skos:definition>
+	<skos:prefLabel xml:lang="en">surface material sampling</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/outcrop_sampling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/pit_or_trench_sampling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/undergound_mine_sampling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Collection of material from a rock outcrop exposed beneath the ground surface (eg, a mine), typically using a hammer.</skos:definition>
+	<skos:prefLabel xml:lang="en">undergound mine sampling</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_camera">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">The process of capturing a still image or moving scene of an underwater feature by a video or still photographic camera.</skos:definition>
+	<skos:prefLabel xml:lang="en">underwater camera</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/unknown">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<skos:definition xml:lang="en">The sampling method is unknown.</skos:definition>
+	<skos:prefLabel xml:lang="en">unknown</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/video_photography">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Moving images captured by a video camera, either digital or film.</skos:definition>
+	<skos:prefLabel xml:lang="en">video photography</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_sampling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Any method used to sample water.</skos:definition>
+	<skos:prefLabel xml:lang="en">water sampling</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/airlift"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/artesian_flow"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bailer"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_pump"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_press"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/niskin_bottle"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/rain_gauge"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/airlift">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Compressed air is used to extract groundwater</skos:definition>
+	<skos:prefLabel xml:lang="en">airlift</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_sampling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/artesian_flow">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Groundwater sample obtained from flowing artesian bore</skos:definition>
+	<skos:prefLabel xml:lang="en">artesian flow</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_sampling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/auger">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Specimens collected by hand or mechanical auger which enable samples to be taken at intervals down profile. For example regolith, soil or sediment.</skos:definition>
+	<skos:prefLabel xml:lang="en">auger</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bailer">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Bailer is a hollow tube used to retrieve groundwater samples from monitoring wells. A bailer is tied to a piece of rope or wire and lowered into the water column to collect a sample.</skos:definition>
+	<skos:prefLabel xml:lang="en">bailer</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_sampling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/in_situ_grab_sampler"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/in_situ_grab_sampler">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A point souce bailer that has a check valve at each end of the bailer allowing sample collection from a discrete depth</skos:definition>
+	<skos:prefLabel xml:lang="en">in situ grab sampler</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bailer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/baited_remote_underwater_still_photograph">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A photograph taken using a baited remote underwater camera.</skos:definition>
+	<skos:prefLabel xml:lang="en">baited remote underwater still photograph</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A video/still camera used under water to take picture images /observations of the sea floor (incl. sediment, rocks and biota). Cameras can be vertically dropped from the ship, towed, hand-held by divers, or mounted on remotely operated vehicles (ROVs).</skos:definition>
+	<skos:prefLabel xml:lang="en">underwater still photograph</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/still_photography"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_camera"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/baited_remote_underwater_still_photograph"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/diver_operated_underwater_still_photograph"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/stereo_towed_underwater_still_photograph"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/towed_underwater_still_photograph"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph_auv"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph_rov"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/baited_remote_underwater_video">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A video taken using a baited remote underwater video camera.</skos:definition>
+	<skos:prefLabel xml:lang="en">baited remote underwater video</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video"/>
+	<skos:altLabel xml:lang="en">BRUV</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A video taken underwater.</skos:definition>
+	<skos:prefLabel xml:lang="en">underwater video</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_camera"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/video_photography"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/baited_remote_underwater_video"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/diver_operated_underwater_video"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/stereo_towed_underwater_video"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/towed_underwater_video"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video_auv"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video_rov"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/benthic_dredge">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Seabed sampling taken over a small area seaward of the continental shelf. Sample of the upper few cm of rocky sea floor particularly for biota.</skos:definition>
+	<skos:prefLabel xml:lang="en">dredge benthic</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/dredge"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/dredge">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Sampling of either benthic or pelagic material using a dredge method.</skos:definition>
+	<skos:prefLabel xml:lang="en">dredge</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/marine_survey_sampling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/benthic_dredge"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/chain_bag_dredge"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/diamantina_dredge"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/epibenthic_sled"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/pipe_dredge"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_dst_test">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A sample is collected during drilling by a test using a hydrostatic head to measure the formation pressures and to bring the formation fluids to the surface. The test can provide information for determination of potential petroleum producing formations and their exact depth.</skos:definition>
+	<skos:prefLabel xml:lang="en">borehole DST test</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:altLabel xml:lang="en">drill stem test</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_prod_test">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A borehole sampling test similar to DST test, but on a larger scale and under the production conditions after the well completion is conducted.</skos:definition>
+	<skos:prefLabel xml:lang="en">borehole PROD test</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:altLabel xml:lang="en">well production test</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_wft_test">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A sample is taken from a borehole with a wireline formation tester by inserting a probe into a well wall to withdraw a small amount of formation fluid and to measure the formation pore pressure. This measurement can provide formation pressures along the well hole, thereby giving a measure of pressure with depth or along a horizontal borehole.</skos:definition>
+	<skos:prefLabel xml:lang="en">borehole WFT test</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:altLabel xml:lang="en">wireline formation test</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/electric_submersible_pump">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Water is collected by pumping using an electric submersible pump</skos:definition>
+	<skos:prefLabel xml:lang="en">electric submersible pump</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_pump"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/helical_coil_pump">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Water is collected by pumping using a helical coil pump</skos:definition>
+	<skos:prefLabel xml:lang="en">helical coil pump</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_pump"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/jet_pump">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Water is collected by pumping using a jet pump</skos:definition>
+	<skos:prefLabel xml:lang="en">jet pump</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_pump"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/liquid-gas_separation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Separation of natural gas from a liquid phase at a surface separator.</skos:definition>
+	<skos:prefLabel xml:lang="en">liquid-gas separation</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/low_flow_pump">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Groundwater sample collected while flow is low</skos:definition>
+	<skos:prefLabel xml:lang="en">low flow pump</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_pump"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/pump_jack">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Water is collected by pumping using a pump jack</skos:definition>
+	<skos:prefLabel xml:lang="en">pump jack</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_pump"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_pump">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Water is collected by pumping</skos:definition>
+	<skos:prefLabel xml:lang="en">water pump</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_sampling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/electric_submersible_pump"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/helical_coil_pump"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/jet_pump"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/low_flow_pump"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/pump_jack"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/windmill"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/windmill">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Water is collected by pumping from a water bore using a windmill</skos:definition>
+	<skos:prefLabel xml:lang="en">windmill</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/borehole_fluid_sampling"/>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_pump"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bottle_incubation_dark">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A method to derive the oxygen consumption rate/respiration rates of organic matter conducted in a bottle or vial  under controlled light and temperature conditions.</skos:definition>
+	<skos:prefLabel xml:lang="en">bottle incubation dark</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bottle_incubation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bottle_incubation_light">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A method to derive the oxygen consumption rate/respiration rates of organic matter conducted in a bottle or vial  under controlled light and temperature conditions.</skos:definition>
+	<skos:prefLabel xml:lang="en">bottle incubation light</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/bottle_incubation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/cable_tool_drilling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">National Groundwater Information System (NGIS)</dcterms:source>
+	<skos:definition xml:lang="en">A percussion drilling method that uses a heavy drilling tool that is raised and lowered with enough force to pulverise the rock, with the debris removed by a bailer.</skos:definition>
+	<skos:prefLabel xml:lang="en">cable tool drilling</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/percussion_drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/percussion_drilling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Rock or sediment chips or fragments derived from a percussion (hammer) method.</skos:definition>
+	<skos:prefLabel xml:lang="en">percussion drilling</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/cable_tool_drilling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/rab_drilling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/rotary_hammer_drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/chain_bag_dredge">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Sampling of large rocks from the sea floor using a chain bag</skos:definition>
+	<skos:prefLabel xml:lang="en">dredge chain bag</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/dredge"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/chamber_incubation_dark">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A in situ method that isolates sediment and overlying water in a dark benthic chamber. Incubation water samples are collected from the benthic chamber during the incubation. The dark chamber restricts light penetration and therefore stops the process of photosynthesis. This enables benthic respiration to be measured.</skos:definition>
+	<skos:prefLabel xml:lang="en">chamber incubation dark</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/chamber_incubation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/chamber_incubation_light">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A in situ method that isolates sediment and overlying water in a light benthic chamber. Incubation water samples are collected from the benthic chamber during the incubation. The  transparent walls of the chamber allow light penetration and enables benthic respiration and photosynthesis to be measured.</skos:definition>
+	<skos:prefLabel xml:lang="en">chamber incubation light</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/chamber_incubation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_air">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Rock or sediment core derived from a dry, air-cooled diamond drilling method.</skos:definition>
+	<skos:prefLabel xml:lang="en">core air</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_box">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A method that obtains a large volume or large surface area core with shallow penetration and minimum disturbance. Commonly uses a double spade system.</skos:definition>
+	<skos:prefLabel xml:lang="en">core box</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_catcher">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A method by which a specimen of sediment is collected from the end of the core in the core catcher. The core catcher has curved finger-like projections that extend down to the lowest part of the core liner. The core catcher helps keep the sediment in the core liner when the core is being removed from the surface.</skos:definition>
+	<skos:prefLabel xml:lang="en">core catcher</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_incubation_light"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_conventional">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Core drilling using diamond or tungsten carbide bit using a core barrel with fibreglass inner sleeves. Used in the oil industry.</skos:definition>
+	<skos:prefLabel xml:lang="en">core conventional</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_cutter">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A method by which a specimen of sediment is collected from the lowest part of a coring assembly at the core cutter. The core cutter has sharp edges which cut and shape the sediment entering the core liner as the corer goes into the sediment.</skos:definition>
+	<skos:prefLabel xml:lang="en">core cutter</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_incubation_light"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_diamond">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Rock or sediment core drilling using a liquid-cooled, diamond or tungsten carbide bit.</skos:definition>
+	<skos:prefLabel xml:lang="en">core diamond</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_drilling_unspecified">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Sampling of a core of earth material by an unspecified drilling method</skos:definition>
+	<skos:prefLabel xml:lang="en">core drilling, unspecified</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_geoprobe">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">High quality core extracted by hydraulic power. Used in rough terrain, soft sand, mud, shallow water, or tight, congested areas. Long high quality cores.</skos:definition>
+	<skos:prefLabel xml:lang="en">core geoprobe</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_gravity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Used only where short cores are required. Core barrel is gravity forced. Near surface high quality core.</skos:definition>
+	<skos:prefLabel xml:lang="en">core gravity</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_kasten">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Large volume, reletatively undisturbed sediment core (~3m long) from a Kasten Corer. The corer is constructed of stainless steel and is square in cross-section. A weight of several hundred kilograms on top of the corer pushes it 2-3 metres into the seabed. It is designed for sedimentological and geochemical sampling of fine-grained sediments. This type of corer obtains relatively undisturbed cores and can preserve the sediment/water interface. This type of core is useful for determining sediment accumulation rates.</skos:definition>
+	<skos:prefLabel xml:lang="en">core Kasten</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_mackereth">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">The Mackereth is a complex coring system utilizing compressed gas to penetrate and recover single-drive moderate (up to 12 m) cores from lakes of diverse depths.  Mackereth cores can be deployed on virutally any small craft and and can be used in water depths up to 80 m.</skos:definition>
+	<skos:prefLabel xml:lang="en">core Mackereth</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_piston">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Uses a piston to drive the core barrel. High quality long cores.</skos:definition>
+	<skos:prefLabel xml:lang="en">core piston</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_press">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Pore water is extracted from core material under pressure.</skos:definition>
+	<skos:prefLabel xml:lang="en">core press</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_sampling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_push">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A pipe that is pushed into the sediment to gain a core that is no longer than 2m long. Can be used in up to 5m of water. Core pipe has a valve on top that is used to create a vacuum  at the top of the core when pulling the core out of the sediment.</skos:definition>
+	<skos:prefLabel xml:lang="en">core push</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_rov">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A core drilled from a remotely operated vehicle</skos:definition>
+	<skos:prefLabel xml:lang="en">core ROV</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_sonic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Similar to the vibro-core technique, the drill stem and barrel are vibrated vertically at frequencies between 50Hz and 180Hz such that the sampler barrel advances by slicing through the regolith.</skos:definition>
+	<skos:prefLabel xml:lang="en">core sonic</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_spike">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A core of surficial material taken by driving a spike into the ground.</skos:definition>
+	<skos:prefLabel xml:lang="en">core spike</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/core_vibro">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.pvltech.com</dcterms:source>
+	<skos:definition xml:lang="en">A core tube is attached to a source of mechanical vibration (the power head) and lowered into  sediment. The vibrations provide energy for rearranging the particles within the sediment in such a way that the coretube penetrates under the static weight of the vibracoring apparatus. Samples include stiff and stony clays, soft rock and sands, and saturated sediments which can not be sampled using gravity or piston corers. Also know as VIBRA.</skos:definition>
+	<skos:prefLabel xml:lang="en">core vibro</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+	<skos:altLabel xml:lang="en">vibracore</skos:altLabel>
+	<skos:altLabel xml:lang="en">vibrocore</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/diamantina_dredge">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Used as a spot dredge to quickly ascertain sea bed geology. Samples give the seabed character unless it is deep when any mud is washed out during retrieval. In shallow water this dredge will return rock, mud, benthic samples and any thing else that is on the bottom.</skos:definition>
+	<skos:prefLabel xml:lang="en">dredge diamantina</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/dredge"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/diver_operated_underwater_still_photograph">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A photograph taken by a diver using an underwater camera.</skos:definition>
+	<skos:prefLabel xml:lang="en">diver-operated underwater still photograph</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/diver_operated_underwater_video">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A video taken by a diver using an underwater camera.</skos:definition>
+	<skos:prefLabel xml:lang="en">diver-operated underwater video</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video"/>
+	<skos:altLabel xml:lang="en">DOV</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/epibenthic_sled">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A method designed to collect benthic and benthopelagic faunas from the deep sea. The sled is made from a steel frame consisting of two skids and stabilizing planes to keep it from sinking too deep into the mud.</skos:definition>
+	<skos:prefLabel xml:lang="en">epibenthic sled</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/dredge"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/plantobenthic_sampler"/>
+	<skos:altLabel xml:lang="en">sled benthic</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/pipe_dredge">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Sampling of small fragments and mud from the sea floor, using a metal pipe linked to the tow cable. Total weight of the dredge is around 25kg.</skos:definition>
+	<skos:prefLabel xml:lang="en">dredge pipe</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/dredge"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/reverse_circulation_drilling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">National Groundwater Information System (NGIS)</dcterms:source>
+	<skos:definition xml:lang="en">A drilling technique similar to rotary drilling except that drilling fluid flow down the annular space between the drilling stem and the wall of the hole forcing cuttings up through the inside of the drill stem .</skos:definition>
+	<skos:prefLabel xml:lang="en">reverse circulation drilling</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+	<skos:altLabel xml:lang="en">RC</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/rotary_drilling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">National Groundwater Information System (NGIS)</dcterms:source>
+	<skos:definition xml:lang="en">A drilling method using a drill stem equipped with a bit that is rotated to cut and grind the rock with a fluid pumped down the stem to force cuttings up through the annular space between the stem and the wall of the hole</skos:definition>
+	<skos:prefLabel xml:lang="en">rotary drilling</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sidewall_core">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A method to extract core or plug from the sidewall of a borehole.</skos:definition>
+	<skos:prefLabel xml:lang="en">sidewall core</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/drilling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sidewall_core_bullet"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sidewall_core_mechanical"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/plantobenthic_sampler">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Mounted Assembly for Planktobenthic Sampling (MAPS) - a trilayered net with a seafloor-triggered opening and closing mechanism attached to an epibenthic sled</skos:definition>
+	<skos:prefLabel xml:lang="en">plantobenthic sampler</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/epibenthic_sled"/>
+	<skos:altLabel xml:lang="en">Mounted Assembly for Planktobenthic Sampling (MAPS)</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Specimens gathered from the bed of a water body by a mechanical grab primarily for lithogical and petrographical analyses.</skos:definition>
+	<skos:prefLabel xml:lang="en">grab</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/marine_survey_sampling"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab_eckman"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab_rov"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab_shipek"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab_smith_mcintyre"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab_van_veen"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab_eckman">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">The Eckman Bottom Grab sampler is designed for sampling in soft bottomed lakes and rivers composed of muck, mud or fine peat</skos:definition>
+	<skos:prefLabel xml:lang="en">grab Eckman</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab_rov">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A grad sampling method mounted on a remotely operated vehicle.</skos:definition>
+	<skos:prefLabel xml:lang="en">grab ROV</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab_shipek">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Near surface unconsolidated marine sediment sample taken using the Shipek Method.</skos:definition>
+	<skos:prefLabel xml:lang="en">grab Shipek</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab_smith_mcintyre">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Near surface sediment grab sample. Sample has a surface area of 0.1m2. It is useful for quantitative macrobenthos sampling in either shallow or deep water.</skos:definition>
+	<skos:prefLabel xml:lang="en">grab Smith Mcintyre</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab_van_veen">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Quantitative sample of the sediment. Van Veen grab has long arms for levering the clam shell scoop.</skos:definition>
+	<skos:prefLabel xml:lang="en">grab Van Veen</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/grab"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/niskin_bottle">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Surface water/seawater collection. A device for collection of water samples from a specific depth in the water column.</skos:definition>
+	<skos:prefLabel xml:lang="en">Niskin Bottle</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_sampling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/outcrop_sampling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Collection of material from a rock outcrop or subcrop at the ground surface, typically using a hammer, or feathers and wedges.</skos:definition>
+	<skos:prefLabel xml:lang="en">outcrop sampling</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/surface_material_sampling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/rab_drilling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">http://www.foragefte.com; http://www.masterdrilling.com</dcterms:source>
+	<skos:definition xml:lang="en">RAB, rotary air blast, or Down-the-hole drilling. Rock or sediment chips or fragments are derived from a percussion drilling method where the cuttings are blown up the outside of the rods and collected at surface, using air or a combination of air and foam lift the cuttings.</skos:definition>
+	<skos:prefLabel xml:lang="en">RAB drilling</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/percussion_drilling"/>
+	<skos:altLabel xml:lang="en">rotary air blast drilling</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/rotary_hammer_drilling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">National Groundwater Information System (NGIS)</dcterms:source>
+	<skos:definition xml:lang="en">A percussion drilling method using a cutting tool powered by compressed air that creates a rapid percussion effect coupled with rotary action to drill hard rocks.</skos:definition>
+	<skos:prefLabel xml:lang="en">rotary hammer drilling</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/percussion_drilling"/>
+	<skos:altLabel xml:lang="en">hammer drilling</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/pit_or_trench_sampling">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Collection of materials, typically regolith, near the ground surface from a pit, trench, or costean dug by spade or other mechanical means (not drilling).</skos:definition>
+	<skos:prefLabel xml:lang="en">pit or trench sampling</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/surface_material_sampling"/>
+	<skos:altLabel xml:lang="en">costean</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/rain_gauge">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Rainwater is collected using an approved rain gauge/collector method.</skos:definition>
+	<skos:prefLabel xml:lang="en">rain gauge</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/water_sampling"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sidewall_core_bullet">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Percussion cores are taken by firing hollow bullets into the formation. The bullets are attached to the tool by fasteners, and are retrieved, along with the core inside, by pulling up the tool and the fasteners. Percussion coring tools typically hold 20 to 30 bullets, but two or three tools can be combined on one run in the hole.</skos:definition>
+	<skos:prefLabel xml:lang="en">sidewall core, bullet</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sidewall_core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sidewall_core_mechanical">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Mechanical tools use hollow rotary drills to cut and then pull out core plugs. Up to 75 plugs can be recovered on one run. With full recovery, cores from typical percussion tools are 1 in. [2.5 cm] in diameter by 1 3/4 in. [4.4 cm] long, while those from mechanical tools are 0.91 in. [2.3 cm] in diameter by 2 in. [5 cm] long. The latter are also known as rotary sidewall cores.</skos:definition>
+	<skos:prefLabel xml:lang="en">sidewall core, mechanical</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/sidewall_core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/stereo_towed_underwater_still_photograph">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A photograph taken using a towed underwater stereo camera.</skos:definition>
+	<skos:prefLabel xml:lang="en">stereo towed underwater still photograph</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/stereo_towed_underwater_video">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A video taken using a towed underwater stereo video camera.</skos:definition>
+	<skos:prefLabel xml:lang="en">stereo towed underwater video</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video"/>
+	<skos:altLabel xml:lang="en">STV</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/towed_underwater_still_photograph">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A photograph taken using a towed underwater camera.</skos:definition>
+	<skos:prefLabel xml:lang="en">towed underwater still photograph</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/towed_underwater_video">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A video taken using a towed underwater video camera.</skos:definition>
+	<skos:prefLabel xml:lang="en">towed underwater video</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph_auv">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A photograph taken using a camera on an autonomous underwater vehicle.</skos:definition>
+	<skos:prefLabel xml:lang="en">underwater still photograph AUV</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph_rov">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A photograph taken using an underwater camera on a remotely operated vehicle.</skos:definition>
+	<skos:prefLabel xml:lang="en">underwater still photograph ROV</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_still_photograph"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video_auv">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A video taken using a camera on an autonomous underwater vehicle.</skos:definition>
+	<skos:prefLabel xml:lang="en">underwater video AUV</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video_rov">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-30T23:26:29Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A video taken using an underwater camera on a remotely operated vehicle.</skos:definition>
+	<skos:prefLabel xml:lang="en">underwater video ROV</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/samplingmethod/underwater_video"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/CGI-Geoscience-Terminology-Working-Group">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGI-Geoscience-Terminology-Working-Group</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Oliver-Raymond">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oliver-Raymond</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<dcterms:title xml:lang="en">Genetic Category - All Concepts</dcterms:title>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/anthropogenic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/biological_sedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/cataclastic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/chemical_sedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/clastic_sedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/contact_metamorphic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/diagenetic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/dislocation_metamorphic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/ductile_deformation_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/hypabyssal_intrusive_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_sedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/impact_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/local_metamorphic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaigneous_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaplutonic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasomatic_or_hydrothermal_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metavolcanic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/plutonic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/regional_metamorphic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaerial_extrusive_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaqueous_extrusive_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/volcaniclastic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/weathering_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dcterms:title xml:lang="en">Genetic Category</dcterms:title>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/anthropogenic_genesis"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_sedimentary_genesis"/>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/CGI-Geoscience-Terminology-Working-Group"/>
+	<dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-21</dcterms:date>
+	<dcterms:description xml:lang="en">This scheme specifies categories that summarize the geologic history of an Earth material. (ie, a genetic process classifier term), as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Examples include igneous, sedimentary, metamorphic, shock metamorphic, volcanic, pyroclastic. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+	<skos:changeNote xml:lang="en">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2010-02-08 SMR add prefLabel strings; they were missing up to this time. Add and modify hierarchical relations to better represent concept hierachy. Add TopConcept assertions</skos:changeNote>
+	<skos:changeNote xml:lang="en">2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2010-11-28 SMR replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</skos:changeNote>
+	<skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2013-02-04 SMR Check update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types. Add missing for missing definitions.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2016-11-21 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes to terms from the previous 2012 version.</skos:changeNote>
+	<skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Genetic Category vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-09-06</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v0.1</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by processes of erosion, mass wasting, transportation, deposition, precipitation and biogenic production that take place in Earth’s hydrosphere and atmosphere.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">sedimentary genesis</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/biological_sedimentary_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/chemical_sedimentary_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/clastic_sedimentary_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/diagenetic_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/anthropogenic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by human activity.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">anthropogenic genesis</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/biological_sedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by deposition of material produced by living organisms either as part of their body (e.g., exoskeleton, bone, pollen, wood) or through their activities (e.g., faecal pellets).</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">biological sedimentary genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/cataclastic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Neuendorf et al 2005</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by brittle deformation, i.e. the formation and growth of fractures and frictional sliding along fracture surfaces.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">cataclastic genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/chemical_sedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by direct chemical precipitation (e.g., evaporites, exhalative deposits).</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">chemical sedimentary genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/clastic_sedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by accumulation of particles (clasts) derived by weathering, erosion, or fragmentation of pre-existing rock or produced by chemical or biologically-mediated precipitation.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">clastic sedimentary genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation in which more than one genetic process is dominant. This usually involves some combination of igneous, weathering, sedimentary, metamorphic, deformation or impact-related processes that better represents the origin of the material</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">composite process genesis</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/impact_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/weathering_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/contact_metamorphic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Smulikowski et al, 2003</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by metamorphism due to the effect of a magma body on the rocks it intrudes.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">contact metamorphic genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by strain-related processes resulting in changes of shape of a rock body, including folding, faulting, shearing, or fabric development, deformation may be either brittle or ductile. Local deformation metamorphic genesis related to a particular fault or shear zone is categorized as 'Dislocation metamorphic genesis'</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">deformation genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/cataclastic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/dislocation_metamorphic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/ductile_deformation_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/diagenetic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by chemical and physical changes subsequent to deposition of sediment, during and after lithification that occur under temperature and pressure conditions too low to be considered metamorphic.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">diagenetic genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/dislocation_metamorphic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Smulikowski et al, 2003</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by metamorphism of local extent associated with fault zones or shear zones. 'Dislocation metamorphic genesis' is 'Deformation genesis' of local extent, explicitly associated with a particular fault or shear zone.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">dislocation metamorphic genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/local_metamorphic_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/ductile_deformation_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by deformation without loss of material continuity at the scale of observation.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">ductile deformation genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/hypabyssal_intrusive_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formed by crystallisation close to the Earth's surface, characterized by more rapid cooling than plutonic setting to produce generally fine-grained intrusive igneous rock, commonly associated with co-magmatic volcanic rocks.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">hypabyssal intrusive genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by crystallisation of magma at or immediately adjacent to Earth's surface.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">igneous extrusive genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaerial_extrusive_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaqueous_extrusive_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by crystallisation from magma</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">igneous genesis</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by crystallisation of magma within the Earth.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">igneous intrusive genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/hypabyssal_intrusive_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/plutonic_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_sedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation by a combination of igneous and sedimentary processes</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">igneous sedimentary genesis</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/volcaniclastic_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/impact_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Smulikowski et al, 2003</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by metamorphism related to the passage of a shock wave through a body of material, typically the result of impact of a planetary body (impactor) on a planetary surface (target)</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">impact genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/local_metamorphic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Smulikowski et al, 2003</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by metamorphism that may be attributed to a localized cause, such as magmatic intrusion, faulting, metorite impact, combustion of naturally occuring substances (coal), or lightning.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">local metamorphic genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaigneous_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation by metamorphism of an igneous protolith</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">metaigneous genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaplutonic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metavolcanic_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Neuendorf et al. 2005</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by closed-system changes in mineralogy, texture, or fabric of a rock in response to chemical and physical conditions that have been imposed below the surface zones of weathering and cementation (diagenesis), and that differ from the conditions under which the rocks in question originated. As defined here the changes in rock volume may include removal of some chemical constituents from the system (especially water and other volatile constituents). Note narrower use that Neuendorf et al. 2005, this vocabulary distinguishes metasomatism from metamorphism.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">metamorphic genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/contact_metamorphic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/local_metamorphic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaigneous_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasedimentary_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/regional_metamorphic_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by changes in chemical, mineralogical, or structural properties of rocks in response to chemical and physical conditions that have been imposed below the surface zones of weathering and cementation (diagenesis), and that differ from the conditions under which the rocks in question originated.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">metamorphic metasomatic or hydrothermal genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasomatic_or_hydrothermal_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaplutonic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation by metamorphism of a plutonic igneous protolith.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">metaplutonic genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaigneous_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation by metamorphism of a sedimentary protolith.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">metasedimentary genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasomatic_or_hydrothermal_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">based on Neuendorf et al 2005</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by open-system changes in chemical composition by reaction with an external source, typically involving chemical transport by a fluid medium flowing through the rock. Metasomatism typically involves introduction of chemical constituents into a rock volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">metasomatic or hydrothermal genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metavolcanic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation by metamorphism of an extrusive igneous protolith.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">metavolcanic genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaigneous_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/plutonic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by crystallisation of magma far enough below Earth surface that complete crystallization of magma bodies forms holocrystalline medium to coarse grained igneous rock, wall rocks generally do not include volcanic products related to the magma, and some contact metamorphism is developed at intrusive contacts.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">plutonic genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/regional_metamorphic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Smulikowski et al, 2003</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by metamorphic processes affecting a large rock volume, associated with large-scale tectonic processes.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">regional metamorphic genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaerial_extrusive_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by crystallisation of magma either in the open air or immediately adjacent to the land surface.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">subaerial extrusive genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaqueous_extrusive_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by crystallisation of magma under water or ice.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">subaqueous extrusive genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/volcaniclastic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation by a combination of extrusive igneous activity and sedimentary transport and deposition.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">volcaniclastic genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_sedimentary_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/weathering_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Formation predominantly by the physical, chemical or biological alteration of rock or sediment at or near the Earth surface, connotes involvement of processes related to the atmosphere (weather...).</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">weathering genesis</skos:prefLabel>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/date">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#changeNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#changeNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

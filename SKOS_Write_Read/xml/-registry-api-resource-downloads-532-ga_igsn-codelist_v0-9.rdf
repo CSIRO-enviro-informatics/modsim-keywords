@@ -1,0 +1,2316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:igsncode="http://pid.geoscience.gov.au/def/voc/ga/igsncode/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/accessType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Access type</rdfs:label>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Private"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Public"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Private">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Private</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Not to be accessed outside the hosting institution</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Public">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Public</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Accessible to the general public</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/collectionType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection type</rdfs:label>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/contributorType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contributor type</rdfs:label>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ContactPerson"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Distributor"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Editor"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Funder"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/HostingInstitution"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Other"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ProjectLeader"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ProjectManager"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ProjectMember"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/RelatedPerson"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ResearchGroup"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Researcher"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/RightsHolder"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Sponsor"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Supervisor"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Unknown"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/WorkPackageLeader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ContactPerson">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contact person</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">the individual or organization who is responsible for the initial triage of and answering questions related to the resource</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO19115-1 Geographic metadata standard codelists</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Distributor">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Distributor</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">The person or organization that is responsible for providing required access to the data</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Editor">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Editor</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">An individual who has made a corrective or editorial change to the resource as part of a systematic revision process</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO19115-1 Geographic metadata standard codelists</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Funder">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Funder</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">The individual or organization which has provided all or part of the finances associated with the resource</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO19115-1 Geographic metadata standard codelists</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/HostingInstitution">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hosting institution</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">The institution that hosts the physical sample</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Other">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ProjectLeader">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Project leader</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A person who lead a project</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ProjectManager">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Project manager</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A person who managed a project</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ProjectMember">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Project member</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A member of a project team</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/RelatedPerson">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Related person</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A person related to an object of interest (a sample), possibly in an unknonwn way</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ResearchGroup">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research group</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A group conducting research</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Researcher">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Researcher</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A person undertaking research</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/RightsHolder">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rights holder</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A person or organisation holding rights to an object of interest (a sample)</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Sponsor">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sponsor</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">The individual or organization who is providing sponsorship for the resource</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO19115-1 Geographic metadata standard codelists</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Supervisor">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervisor</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Unknown">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/WorkPackageLeader">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Work package leader</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A leader of a package of work</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/featureType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature type</rdfs:label>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Unknown"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/CTD"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/borehole"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/crossSection"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/depthInterval"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/excavation"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/fieldArea"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/flightline"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/interval"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/observationWell"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/profile"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/quadrat"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/scene"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/shipsTrack"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/site"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/soilPitSection"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/specimen"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/streamGage"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/trajectory"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/transect"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/traverse"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/waterQualityStation"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/weatherStation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/CTD">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CTD</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A CTD (Conductivity, Temperature, and Depth) cast is a water column depth profile collected over a specific and relatively short date-time range, that can be considered as a parent specimen</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/CTD</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/borehole">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Borehole</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A narrow shaft bored into the ground, either vertically or horizontally. A borehole includes the hole cavity and walls surrounding that cavity</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/borehole</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/crossSection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross section</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">The intersection of a body in three-dimensional space with a plane. Represented as a polygon</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/crossSection</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/depthInterval">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Depth interval</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A discrete segment along a longer vertical path, such as a borehole, soil profile or other depth profile, in which an observation or specimen is collected over the distance between the upper and lower depth limits of the interval. A Depth Interval is a sub-type of Interval</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/depthInterval</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/excavation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Excavation</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">An artificially constructed cavity in the earth that is deeper than the soil, larger than a well bore, and substantially open to the atmosphere. The diameter of an excavation is typically similar or larger than the depth. Excavations include building-foundation diggings, roadway cuts, and surface mines</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/excavation</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/fieldArea">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Field area</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A location at which field experiments or observations of ambient conditions are conducted. A field area may contain many sites and has a geographical footprint that can be represented by a polygon</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/fieldArea</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/flightline">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flight line</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A path along which an aircraft travels while measuring a phenomena of study</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/flightline</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/interval">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interval</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A discrete segment along a longer path in which an observation or specimen is collected over the distance between the upper and lower bounds of the interval. A Depth Interval is a sub-type of Interval</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/interval</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/observationWell">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Observation well</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A hole or shaft constructed in the earth intended to be used to locate, sample, or develop groundwater, oil, gas, or some other subsurface material. The diameter of a well is typically much smaller than the depth. Wells are also used to artificially recharge groundwater or to pressurize oil and gas production zones. Specific kinds of wells should be specified in the SamplingFeature description. For example, underground waste-disposal wells should be classified as waste injection wells</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/observationWell</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/profile">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Profile</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A one-dimensional grid at fixed (x, y, t) coordinates within a four-dimensional (x, y, z, t) coordinate reference system. The grid axis is aligned with the coordinate reference system z-axis. Typically used to characterize or measure phenomena as a function of depth</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/profile</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/quadrat">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quadrat</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A small plot used to isolate a standard unit of area for study of the distribution of an item over a large area</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/quadrat</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/scene">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scene</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A two-dimensional visual extent within a physical environment</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/scene</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/shipsTrack">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ships track</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A path along which a ship or vessel travels while measuring a phenomena of study. Represented as a line connecting the ship's consecutive positions on the surface of the earth</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/shipsTrack</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/site">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Site</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A facility or location at which observations have been collected. A site may have instruments or equipment installed and may contain multiple other sampling features (e.g., a stream gage, weather station, observation well, etc.). Additionally, many specimen sampling features may be collected at a site. Sites are also often referred to as stations. A site is represented as a point, but it may have a geographical footprint that is not a point. The site coordinates serve as a reference for the site and offsets may be specified from this reference location</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/site</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/soilPitSection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soil pit section</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Two-dimensional vertical face of a soil pit that is described and sampled</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ttp://vocabulary.odm2.org/samplingfeaturetype/soilPitSection</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/specimen">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specimen</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A physical sample (object or entity) obtained for observations, typically performed ex situ, often in a laboratory</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/specimen</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/streamGage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stream gage</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A location used to monitor and test terrestrial bodies of water. Hydrometric measurements of water level, surface elevation ("stage") and/or volumetric discharge (flow) are generally taken, and observations of biota and water quality may also be made</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ttp://vocabulary.odm2.org/samplingfeaturetype/streamGage</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/trajectory">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trajectory</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">The path that a moving object follows through space as a function of time. A trajectory can be described by the geometry of the path or as the position of the object over time</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/trajectory</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/transect">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transect</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A path along which ocurrences of a phenomena of study are counted or measured</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/transect</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/traverse">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Traverse</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A field control network consisting of survey stations placed along a line or path of travel</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/traverse</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/waterQualityStation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Water quality station</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A location used to monitor and test the quality of terrestrial bodies of water. Water quality stations may be locations at which physical water samples are collected for ex situ analysis. Water qulaity stations may also have instruments and equipment for continuous, in situ measurement of water quality variables</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/waterQualityStation</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/samplingfeaturetype/weatherStation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weather station</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A facility, either on land or sea, with instruments and equipment for measuring atmospheric conditions to provide information for weather forecasts and to study weather and climate</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/samplingfeaturetype/weatherStation</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/geometryType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geometry type</rdfs:label>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Unknown"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/LineString"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MultiLineString"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MultiPoint"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MultiPolygon"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Point"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Polygon"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/LineString">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Line string</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A series of Point objects with assumed linear interpolation in between</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car / GML</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MultiLineString">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi line string</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Multiple LineStrings</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car / GML</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MultiPoint">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi point</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Multiple Points</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car / GML</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MultiPolygon">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi polygon</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Multiple Polygons</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car / GML</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Point">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Point</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A 0-dimensional geometric primitive, representing a position, as defined by the OGC's GML standard</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geographic Markup Language</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Polygon">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polygon</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A planar surface defined by 1 exterior boundary and 0 or more interior boundaries</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geographic Markup Language</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/identifierType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifier type</rdfs:label>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Unknown"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ARK"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/DOI"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Handle"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/IGSN"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ISBN"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ISNI"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ISSN"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/LSID"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ORCID"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/PURL"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/URI"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/URN"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/VIAF"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ARK">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archival Resource Key</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">An Archival Resource Key (ARK) is a Uniform Resource Locator (URL) that is a multi-purpose persistent identifier for information objects of any type.</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://confluence.ucop.edu/display/Curation/ARK</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/DOI">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital Object Identifier</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A persistent identifier or handle used to uniquely identify objects, standardized by the International Organization for Standardization (ISO)</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.doi.org/</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Handle">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Handle</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">the Handle System is a distributed computer system for assigning persistent identifiers, or handles, to information resources, and for resolving "those handles into the information necessary to locate, access, and otherwise make use of the resources"</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Handle_System</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/IGSN">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International GeoSample Number</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">The International Geo Sample Number or IGSN is a sample identification code of typically nine characters. As an active persistent identifier it can be resolved through the Handle System</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/International_Geo_Sample_Number</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ISBN">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International Standard Book Number</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">The International Standard Book Number is a unique numeric commercial book identifier</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/International_Standard_Book_Number</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ISNI">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International Standard Name Identifier</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">The International Standard Name Identifier is an identifier for uniquely identifying the public identities of contributors to media content such as books, television programmes, and newspaper articles. Such an identifier consists of 16 digits</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/International_Standard_Name_Identifier</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ISSN">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">International Standard Serial Number</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">An International Standard Serial Number is an eight-digit serial number used to uniquely identify a serial publication. The ISSN is especially helpful in distinguishing between serials with the same title. ISSN are used in ordering, cataloging, interlibrary loans, and other practices in connection with serial literature</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/International_Standard_Serial_Number</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/LSID">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Life Science Identifiers</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Life Science Identifiers are a way to name and locate pieces of information on the web. Essentially, an LSID is a unique identifier for some data, and the LSID protocol specifies a standard way to locate the data. They are a little like DOIs used by many publishers</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/LSID</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ORCID">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Open Researcher and Contributor ID</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">ORCID is a nonproprietary alphanumeric code to uniquely identify scientific and other academic authors and contributors</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/ORCID</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/PURL">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Persistent uniform resource locator</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A persistent uniform resource locator (PURL) is a uniform resource locator (URL) (i.e., location-based uniform resource identifier or URI) that is used to redirect to the location of the requested web resource</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Persistent_uniform_resource_locator</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/URI">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uniform Resource Identifier</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A compact sequence of characters that identifies an abstract or physical resource, formulated according to RFC 3986</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tools.ietf.org/rfc/rfc3986</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/URN">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uniform Resource Name</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Persistent, location-independent, resource identifiers, formulated according to RFC 2141</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ietf.org/rfc/rfc2141</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/VIAF">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Virtual International Authority File</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">The VIAF® (Virtual International Authority File) combines multiple name authority files into a single OCLC-hosted name authority service</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://viaf.org/</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/materialType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Material type</rdfs:label>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/air"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/gas"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/ice"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/liquidAqueous"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/liquidOrganic"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/mineral"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/organism"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/other"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/particulate"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/rock"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/sediment"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/snow"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/soil"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/tissue"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/medium/unknown"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/air">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Air</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Specimen collection of ambient air or sensor emplaced to measure properties of ambient air</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/air</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/gas">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gas</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Gas phase specimen or sensor emplaced to measure properties of a gas</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/gas</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/ice">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ice</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Sample collected as frozen water or sensor emplaced to measure properties of ice</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/ice</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/liquidAqueous">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid aqueous</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Specimen collected as liquid water or sensor emplaced to measure properties of water in sampled environment</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/liquidAqueous</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/liquidOrganic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liquid organic</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Specimen collected as an organic liquid</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/liquidOrganic</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/mineral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mineral</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Specimen collected as a mineral</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/mineral</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/organism">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organism</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Data collected about a species at organism level</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/organism</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/other">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Other</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/other</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/particulate">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particulate</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Specimen collected from particulates suspended in a paticulate-fluid mixture. Examples include particulates in water or air</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/particulate</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/rock">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rock</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Specimen collected from a naturally occuring solid aggregate of one or more minerals</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/rock</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/sediment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sediment</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Specimen collected from material broken down by processes of weathering and erosion and subsequently transported by the action of wind, water, or ice, and/or by the force of gravity acting on the particles. Sensors may also be emplaced to measure sediment properties</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/sediment</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/snow">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Snow</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Observation in, of or sample taken from snow</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/snow</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/soil">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soil</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Specimen collected from soil or sensor emplaced to measure properties of soil. Soil includes the mixture of minerals, organic matter, gasses, liquids, and organisms that make up the upper layer of earth in which plants grow</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/soil</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/tissue">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tissue</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Sample of a living organism's tissue or sensor emplaced to measure property of tissue</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/tissue</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/medium/unknown">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unknown</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">The sampled medium is unknown</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/medium/unknown</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/methodType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Method type</rdfs:label>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Other"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Unknown"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Auger"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Blast"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Box"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ChainBag"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Dredge"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Drill"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/FreeFall"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Grab"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Gravity"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/GravityGiant"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Hammer"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Hand"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Kastenlot"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Knife"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MOCNESS"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Multi"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Net"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Piston"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/PistonGiant"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Probe"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Rock"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Scallop"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Scoop"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/SideSaddle"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Trap"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Trawl"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/TriggerWeight"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Vibrating"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Auger">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auger</skos:prefLabel>
+	<skos:definition xml:lang="en">An auger is a drilling device, or drill bit, that usually includes a rotating helical screw blade called a "flighting" to act as a screw conveyor to remove the drilled out material.</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Auger_(drill)</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Hand"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Blast">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blast</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">An explosion is a rapid increase in volume and release of energy in an extreme manner, usually with the generation of high temperatures and the release of gases.</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Explosion</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Box">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Box</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ChainBag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chain bag</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Dredge"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corer</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Box"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Drill"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/FreeFall"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Gravity"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/GravityGiant"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Kastenlot"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Multi"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Piston"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/PistonGiant"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Rock"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/SideSaddle"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/TriggerWeight"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Vibrating"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Dredge">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dredge</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A boat or barge used in freshwater or ocean dredging</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ChainBag"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Scallop"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Drill">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Drill</skos:prefLabel>
+	<skos:definition xml:lang="en">A drill is a tool fitted with a cutting tool attachment or driving tool attachment, usually a drill bit or driver bit, used for boring holes in various materials</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Drill</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/FreeFall">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free fall</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Grab">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grap</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Gravity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gravity</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/GravityGiant">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gravity giant</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Hammer">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hammer</skos:prefLabel>
+	<skos:definition xml:lang="en">A hammer is a tool or device that delivers a blow to an object. Most hammers are hand tools used to drive nails, fit parts, forge metal, and break apart objects</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Hammer</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Hand"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Hand">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hand</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A human hand</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Auger"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Hammer"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Knife"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Kastenlot">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kastenlot</skos:prefLabel>
+	<skos:definition xml:lang="en">Also known as a Kiel box corer, a kastenlot is a square-cross sectioned core sampling device used to collect marine sediments.</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Knife">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knife</skos:prefLabel>
+	<skos:definition xml:lang="en">A knife is a tool with a cutting edge or blade, hand-held or otherwise, with most having a handle</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Knife</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Hand"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MOCNESS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multiple Opening/Closing Net and Environmental Sensing System</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Multiple Opening/Closing Net and Environmental Sensing System and is a net system for plankton in the ocean</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/MOCNESS</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Net"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Multi">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Multi</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Net">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Net</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Fibers woven in a grid-like structure. It blocks the passage of large items, while letting small items and fluids pass. It requires less material than something sheet-like, and provides a degree of transparency</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Net_(device)</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MOCNESS"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Piston">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piston</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/PistonGiant">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piston giant</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Probe">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Probe</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Rock">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rock</skos:prefLabel>
+	<skos:definition xml:lang="en">Rock or stone is a natural substance, a solid aggregate of one or more minerals or mineraloids. For example, granite, a common rock, is a combination of the minerals quartz, feldspar and biotite</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Rock_(geology)</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Scallop">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scallop</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Dredge"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Scoop">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scoop</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/SideSaddle">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Side saddle</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Trap">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trap</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Trawl">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trawl</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/TriggerWeight">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trigger weight</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Vibrating">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vibrating</skos:prefLabel>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/registrationType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Registration type</rdfs:label>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/PhysicalSample"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/SampleCollection"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/SamplingFeature"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/PhysicalSample">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical sample</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A physical sample of a feature of interest, as opposed to a digital one (such as a satellite image or other photo). Physical samples are sometimes known as 'specimens'.</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/SampleCollection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample collection</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A set of things</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/SamplingFeature">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sampleing feature</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/relationType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relation type</rdfs:label>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Collection"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Feature"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Sample"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Feature">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feature</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A geographical feature of the earth that is eitehr man-made or naturally-created. Natural geographical features consist of landforms and ecosystems. For example, terrain types, physical factors of the environment are natural geographical features. Conversely, human settlements or other engineered forms are considered types of artificial geographical features.</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Geographical_feature</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Sample">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Sample - Feature which is intended to be representative of a FeatureOfInterest on which Observations may be made</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/TR/vocab-ssn/#SOSASample</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/resourceType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High level categorization of the kind of resource, used as the type for an attribute of the resource root element. Note that the resource element also has a resourceTypes child element that is a sequence of resourceType elements defined as a union of the enumerations for featureType, sampleType and collectionType.</rdfs:comment>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resource type</rdfs:label>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/hasDocument"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/hasEvent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/hasDocument">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has document</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/hasEvent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has event</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en"></skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/sampleType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sample type</rdfs:label>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/automated"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/core"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/coreHalfRound"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/corePiece"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/coreQuarterRound"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/coreSection"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/coreSectionHalf"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/coreSub-Piece"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/coreWholeRound"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/cuttings"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/dredge"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/foliageDigestion"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/foliageLeaching"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/forestFloorDigestion"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/grab"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/individualSample"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/litterFallDigestion"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/orientedCore"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/other"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/petriDishDryDeposition"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/precipitationBulk"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/rockPowder"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/standardReferenceSpecimen"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/terrestrialSection"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/thinSection"/>
+	<skos:member rdf:resource="http://vocabulary.odm2.org/specimentype/unknown"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/automated">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Automated</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Sample collected using an automated sampler</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/automated</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/core">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Long cylindrical cores</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/core</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:narrower rdf:resource="http://vocabulary.odm2.org/specimentype/coreHalfRound"/>
+	<skos:narrower rdf:resource="http://vocabulary.odm2.org/specimentype/corePiece"/>
+	<skos:narrower rdf:resource="http://vocabulary.odm2.org/specimentype/coreQuarterRound"/>
+	<skos:narrower rdf:resource="http://vocabulary.odm2.org/specimentype/coreSection"/>
+	<skos:narrower rdf:resource="http://vocabulary.odm2.org/specimentype/coreSectionHalf"/>
+	<skos:narrower rdf:resource="http://vocabulary.odm2.org/specimentype/coreSub-Piece"/>
+	<skos:narrower rdf:resource="http://vocabulary.odm2.org/specimentype/coreWholeRound"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/coreHalfRound">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core half round</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Half-cylindrical products of along-axis split of a whole round</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/coreHalfRound</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://vocabulary.odm2.org/specimentype/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/corePiece">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core piece</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Material occurring between unambiguous [as curated] breaks in recovery</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/corePiece</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://vocabulary.odm2.org/specimentype/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/coreQuarterRound">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core quarter round</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Quarter-cylindrical products of along-axis split of a half round</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/coreQuarterRound</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://vocabulary.odm2.org/specimentype/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/coreSection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core section</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Arbitrarily cut segments of a "core"</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/coreSection</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://vocabulary.odm2.org/specimentype/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/coreSectionHalf">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core section half</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Half-cylindrical products of along-axis split of a section or its component fragments through a selected diameter</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/coreSectionHalf</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://vocabulary.odm2.org/specimentype/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/coreSub-Piece">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core sub-piece</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Unambiguously mated portion of a larger piece noted for curatorial management of the material</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/coreSub-Piece</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://vocabulary.odm2.org/specimentype/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/coreWholeRound">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Core whole round</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Cylindrical segments of core or core section material</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/coreWholeRound</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+	<skos:broader rdf:resource="http://vocabulary.odm2.org/specimentype/core"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/cuttings">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cuttings</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Loose, coarse, unconsolidated material suspended in drilling fluid</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/cuttings</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/dredge">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dredge</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A group of rocks collected by dragging a dredge along the seafloor</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ttp://vocabulary.odm2.org/specimentype/dredge</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/foliageDigestion">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foliage digestion</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Sample that consists of a digestion of plant foliage</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/foliageDigestion</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/foliageLeaching">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foliage leaching</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Sample that consists of leachate from foliage</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/foliageLeaching</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/forestFloorDigestion">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forest floor digestion</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Sample that consists of a digestion of forest floor material</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/forestFloorDigestion</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/grab">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grab</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A sample (sometimes mechanically collected) from a deposit or area, not intended to be representative of the deposit or area</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/grab</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/individualSample">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Individual sample</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A sample that is an individual unit, including rock hand samples, a biological specimen, or a bottle of fluid</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/individualSample</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/litterFallDigestion">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Litter fall digestion</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Sample that consists of a digestion of litter fall</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/litterFallDigestion</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/orientedCore">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oriented core</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Core that can be positioned on the surface in the same way that it was arranged in the borehole before extraction</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/orientedCore</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/other">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Sample does not fit any of the existing type designations. It is expected that further detailed description of the particular sample be provided</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/other</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/petriDishDryDeposition">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Petri dish deposition</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Sample from dry deposition in a petri dish</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/petriDishDryDeposition</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/precipitationBulk">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Precipitation bulk</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Sample from bulk precipitation</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/precipitationBulk</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/rockPowder">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rock powder</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A sample created from pulverizing a rock to powder</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/rockPowder</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/standardReferenceSpecimen">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Standard referece specimen</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Standard reference specimen</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/standardReferenceSpecimen</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/terrestrialSection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terrestrial section</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">A sample of a section of the near-surface Earth, generally in the critical zone</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/terrestrialSection</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/thinSection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thin section</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">Thin section</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://vocabulary.odm2.org/specimentype/thinSection</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocabulary.odm2.org/specimentype/unknown">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode/sridType">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SRID type</rdfs:label>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Unknown"/>
+	<skos:member rdf:resource="https://epsg.io/4326"/>
+	<skos:member rdf:resource="https://epsg.io/4938"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://epsg.io/4326">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">World Geodetic System 1984</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">World Geodetic System 1984, used in GPS</skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://epsg.io/4326</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGSN Technical Committee</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://epsg.io/4938">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geocentric Datum of Australia 1994</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode"/>
+	<skos:definition xml:lang="en">GDA94 Geocentric coordinate system </skos:definition>
+	<dct:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://epsg.io/4938</dct:source>
+	<dct:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoscience Australia</dct:contributor>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/igsncode">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:label xml:lang="en">IGSN codelist</rdfs:label>
+	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nicholas Car</dc:creator>
+	<dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-17T12:00:00+00:00</dct:created>
+	<dct:creator rdf:resource="http://orcid.org/0000-0002-8742-7730"/>
+	<dct:description xml:lang="en">A SKOS vocabulary version of the IGSN codelists for description metadata.</dct:description>
+	<dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-11-17</dct:issued>
+	<dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-17T12:00:00+00:00</dct:modified>
+	<dct:publisher rdf:resource="http://editor.vocabs.ands.org.au/user/Geoscience-Australia"/>
+	<dct:title xml:lang="en">IGSN codelist</dct:title>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v1.0</owl:versionInfo>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Private"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Public"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Collection"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ContactPerson"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Distributor"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Editor"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Funder"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/HostingInstitution"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Other"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ProjectLeader"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ProjectManager"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ProjectMember"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/RelatedPerson"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ResearchGroup"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Researcher"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/RightsHolder"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Sponsor"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Supervisor"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Unknown"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/WorkPackageLeader"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/CTD"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/borehole"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/crossSection"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/depthInterval"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/excavation"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/fieldArea"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/flightline"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/interval"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/observationWell"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/profile"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/quadrat"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/scene"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/shipsTrack"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/site"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/soilPitSection"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/specimen"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/streamGage"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/trajectory"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/transect"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/traverse"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/waterQualityStation"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/samplingfeaturetype/weatherStation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/LineString"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MultiLineString"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MultiPoint"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MultiPolygon"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Point"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Polygon"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ARK"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/DOI"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Handle"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/IGSN"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ISBN"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ISNI"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ISSN"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/LSID"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/ORCID"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/PURL"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/URI"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/URN"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/VIAF"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/air"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/gas"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/ice"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/liquidAqueous"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/liquidOrganic"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/mineral"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/organism"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/other"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/particulate"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/rock"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/sediment"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/snow"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/soil"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/tissue"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/medium/unknown"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Blast"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Corer"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Dredge"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Grab"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Hand"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/MOCNESS"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Net"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Probe"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Scoop"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Trap"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Trawl"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/PhysicalSample"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/SampleCollection"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/SamplingFeature"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Feature"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/Sample"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/hasDocument"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/igsncode/hasEvent"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/automated"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/core"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/coreHalfRound"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/corePiece"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/coreQuarterRound"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/coreSection"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/coreSectionHalf"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/coreSub-Piece"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/coreWholeRound"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/cuttings"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/dredge"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/foliageDigestion"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/foliageLeaching"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/forestFloorDigestion"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/grab"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/individualSample"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/litterFallDigestion"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/orientedCore"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/other"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/petriDishDryDeposition"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/precipitationBulk"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/rockPowder"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/standardReferenceSpecimen"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/terrestrialSection"/>
+	<skos:hasTopConcept rdf:resource="http://vocabulary.odm2.org/specimentype/thinSection"/>
+	<skos:hasTopConcept rdf:resource="https://epsg.io/4326"/>
+	<skos:hasTopConcept rdf:resource="https://epsg.io/4938"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://orcid.org/0000-0002-8742-7730">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Geoscience-Australia">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+</rdf:RDF>

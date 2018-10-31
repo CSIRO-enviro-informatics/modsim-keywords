@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Sedgmen.Lara_Admin</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Geoscience-Australia">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoscience Australia</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Lara-Sedgmen">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lara-Sedgmen</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/all-concepts">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/XRF"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Asphaltene_Removal"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Asphaltene_Removal"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Isotopes_d13C"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Isotopes_d15N"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Isotopes_d2H"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/CSIA-n-alkanes"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/CSIA_d13C"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/CSIA_d2H"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Chlorin_Index"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Chlorophyll-a"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Courier"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/DIC_Analyser"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_N2__28N_"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_N2__29N_"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_N2__30N_"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_O2"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Inorganic_Carbon"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Inorganic_Nitrogen"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Organic_Nitrogen__DON_"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Organic_Phosphorous__DOP_"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Extraction"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/FRP"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Ferrous_Iron__FeO__Titration"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Flash_EA"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Fluorometry"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Fractionation"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Freeze_Dry"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC-IRMS"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_FS_Aroms"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_FS_SNA"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_SIR_Aroms"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_SIR_SNA"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_Sub-samples"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_of_gas_tracers"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC_of_gas_tracers"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC_on-column"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC_split_splitless"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Gas_Chromatography"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Gas_composition"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/H2O+_,CO2_as_C_"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/ICP-MS_LA__polished_Thin_Section_"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/ICP-MS_Laser_Ablation"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/ICP-MS_Solution"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Kinetics"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/LOI"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Laser_RAMAN_Micro-probe"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/MIMS"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Metal_Extraction"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/NH4-N"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/NOx-N"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/N_Fixation"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Ni_V_content"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Nutrient_Autoanalyser"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Offline"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Organic_Carbon"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Other__please_specify_"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/PIMA"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/P_Fraction_Sediment_Extraction"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Phaeophytin"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Reval_6"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Reval_6_TOC"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Rock_powder"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/S-removal"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/SANS_SAXS"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/SA_SNA_preparation"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/S_content"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Sat_Arom_Polar_Fractionation"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/SiO2"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/TC-EA"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/TOC"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/TOC,_d13C-TOC,_TN,_and_d15-N"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Titration"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Topped_oil"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Total_Alkalinity"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Total_Dissolved_Nitrogen__TDN_"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Total_Dissolved_Phosphorus__TDP_"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/UV-VIS_Spectophotometer"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Volatiles"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Whole_oil"/>
+	<skos:member rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/XRD"/>
+	<dcterms:description xml:lang="en">All the Concepts in this vocabulary</dcterms:description>
+	<dcterms:title xml:lang="en">All concepts</dcterms:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/XRF">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">XRF</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoscience Australia Vocabulary Working Group</dc:creator>
+	<dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-02T12:26:29.000</dc:date>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/Lara-Sedgmen"/>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/Geoscience-Australia"/>
+	<dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-08-10T00:27:25Z</dcterms:date>
+	<dcterms:description xml:lang="en">Analysis is used to classify the type of geochemical work being carried out on a sample.</dcterms:description>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-02-05</dcterms:issued>
+	<dcterms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</dcterms:language>
+	<dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-08-10T04:15:49Z</dcterms:modified>
+	<dcterms:publisher rdf:resource="http://editor.vocabs.ands.org.au/user/Geoscience-Australia"/>
+	<dcterms:subject xml:lang="en">Geoscience Australia's Analysis</dcterms:subject>
+	<dcterms:title xml:lang="en">GA Analysis</dcterms:title>
+	<dcterms:title xml:lang="en">Geoscience Australia Vocabulary - Analysis</dcterms:title>
+	<feature xmlns="http://rdfs.org/ns/void#" rdf:resource="http://pid.geoscience.gov.au/def/voc/convertedBNode/genid-51c932ca615f474c99a883db90710c4a-node1anhh8oobx153056"/>
+	<sparqlEndpoint xmlns="http://rdfs.org/ns/void#" rdf:resource="http://pid.geoscience.gov.au/def/voc/PoolParty/sparql/Analysis"/>
+	<vocabulary xmlns="http://rdfs.org/ns/void#" rdf:resource="http://www.w3.org/2004/02/skos/core#"/>
+	<availablelanguages xmlns="http://www.semantic-web.at/ppcl/" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</availablelanguages>
+	<numberOfConceptSchemes xmlns="http://www.semantic-web.at/ppcl/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numberOfConceptSchemes>
+	<numberOfConcepts xmlns="http://www.semantic-web.at/ppcl/" rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</numberOfConcepts>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v1.0</owl:versionInfo>
+	<skos:changeNote xml:lang="en">This vocabulary created directly from the database</skos:changeNote>
+	<skos:editorialNote xml:lang="en">This file contains the Geoscience Australia 02-May-2016 version of the Analysis vocabulary</skos:editorialNote>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/XRF"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Asphaltene_Removal"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Asphaltene_Removal"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Isotopes_d13C"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Isotopes_d15N"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Isotopes_d2H"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/CSIA-n-alkanes"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/CSIA_d13C"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/CSIA_d2H"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Chlorin_Index"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Chlorophyll-a"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Courier"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/DIC_Analyser"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_N2__28N_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_N2__29N_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_N2__30N_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_O2"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Inorganic_Carbon"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Inorganic_Nitrogen"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Organic_Nitrogen__DON_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Organic_Phosphorous__DOP_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Extraction"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/FRP"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Ferrous_Iron__FeO__Titration"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Flash_EA"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Fluorometry"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Fractionation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Freeze_Dry"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC-IRMS"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_FS_Aroms"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_FS_SNA"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_SIR_Aroms"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_SIR_SNA"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_Sub-samples"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_of_gas_tracers"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC_of_gas_tracers"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC_on-column"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC_split_splitless"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Gas_Chromatography"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Gas_composition"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/H2O+_,CO2_as_C_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/ICP-MS_LA__polished_Thin_Section_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/ICP-MS_Laser_Ablation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/ICP-MS_Solution"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Kinetics"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/LOI"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Laser_RAMAN_Micro-probe"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/MIMS"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Metal_Extraction"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/NH4-N"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/NOx-N"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/N_Fixation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Ni_V_content"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Nutrient_Autoanalyser"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Offline"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Organic_Carbon"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Other__please_specify_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/PIMA"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/P_Fraction_Sediment_Extraction"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Phaeophytin"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Reval_6"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Reval_6_TOC"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Rock_powder"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/S-removal"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/SANS_SAXS"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/SA_SNA_preparation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/S_content"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Sat_Arom_Polar_Fractionation"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/SiO2"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/TC-EA"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/TOC"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/TOC,_d13C-TOC,_TN,_and_d15-N"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Titration"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Topped_oil"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Total_Alkalinity"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Total_Dissolved_Nitrogen__TDN_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Total_Dissolved_Phosphorus__TDP_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/UV-VIS_Spectophotometer"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Volatiles"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/Whole_oil"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis/XRD"/>
+	<skos:prefLabel xml:lang="en">Geoscience Australia Vocabulary - Analysis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/date">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/language">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/language"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/license">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/license"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://creativecommons.org/licenses/by/4.0/">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.org/ns/void#feature">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://rdfs.org/ns/void#feature"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/convertedBNode/genid-51c932ca615f474c99a883db90710c4a-node1anhh8oobx153056">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.org/ns/void#sparqlEndpoint">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://rdfs.org/ns/void#sparqlEndpoint"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/PoolParty/sparql/Analysis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.org/ns/void#vocabulary">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://rdfs.org/ns/void#vocabulary"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semantic-web.at/ppcl/availablelanguages">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.semantic-web.at/ppcl/availablelanguages"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semantic-web.at/ppcl/numberOfConceptSchemes">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.semantic-web.at/ppcl/numberOfConceptSchemes"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.semantic-web.at/ppcl/numberOfConcepts">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.semantic-web.at/ppcl/numberOfConcepts"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://rdfs.org/ns/void#Dataset">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#changeNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#changeNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Asphaltene_Removal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Asphaltene Removal</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Asphaltene_Removal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Bulk Asphaltene Removal</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Isotopes_d13C">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Bulk Isotopes d13C</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Isotopes_d15N">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Bulk Isotopes d15N</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Bulk_Isotopes_d2H">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Bulk Isotopes d2H</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/CSIA-n-alkanes">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">CSIA-n-alkanes</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/CSIA_d13C">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">CSIA d13C</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/CSIA_d2H">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">CSIA d2H</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Chlorin_Index">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Chlorin Index</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Chlorophyll-a">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Chlorophyll-a</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Courier">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Courier</skos:prefLabel>
+	<skos:definition xml:lang="en">Redundant: now use the Preparation ''Courier''</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/DIC_Analyser">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">DIC Analyser</skos:prefLabel>
+	<skos:definition xml:lang="en">Orgchem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_N2__28N_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Dissolved Gas N2 (28N)</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_N2__29N_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Dissolved Gas N2 (29N)</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_N2__30N_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Dissolved Gas N2 (30N)</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Gas_O2">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Dissolved Gas O2</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Inorganic_Carbon">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Dissolved Inorganic Carbon</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Inorganic_Nitrogen">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Dissolved Inorganic Nitrogen</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Organic_Nitrogen__DON_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Dissolved Organic Nitrogen (DON)</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Dissolved_Organic_Phosphorous__DOP_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Dissolved Organic Phosphorous (DOP)</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Extraction">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Extraction</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/FRP">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">FRP</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Ferrous_Iron__FeO__Titration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Ferrous Iron (FeO) Titration</skos:prefLabel>
+	<skos:definition xml:lang="en">MinGeochem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Flash_EA">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Flash EA</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Fluorometry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Fluorometry</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Fractionation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Fractionation</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Freeze_Dry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Freeze Dry</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC-IRMS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">GC-IRMS</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">GCMS</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_FS_Aroms">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">GCMS FS Aroms</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_FS_SNA">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">GCMS FS SNA</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_SIR_Aroms">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">GCMS SIR Aroms</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_SIR_SNA">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">GCMS SIR SNA</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_Sub-samples">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">GCMS Sub-samples</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/GCMS_of_gas_tracers">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">GCMS of gas tracers</skos:prefLabel>
+	<skos:definition xml:lang="en">Orgchem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC_of_gas_tracers">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">GC of gas tracers</skos:prefLabel>
+	<skos:definition xml:lang="en">Orchem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC_on-column">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">GC on-column</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/GC_split_splitless">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">GC split/splitless</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Gas_Chromatography">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Gas Chromatography</skos:prefLabel>
+	<skos:definition xml:lang="en">Orgchem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Gas_composition">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Gas composition</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/H2O+_,CO2_as_C_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">H2O+ ,CO2(as C)</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/ICP-MS_LA__polished_Thin_Section_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ICP-MS LA (polished Thin Section)</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/ICP-MS_Laser_Ablation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ICP-MS Laser Ablation</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/ICP-MS_Solution">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ICP-MS Solution</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Kinetics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Kinetics</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/LOI">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">LOI</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Laser_RAMAN_Micro-probe">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Laser RAMAN Micro-probe</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/MIMS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">MIMS</skos:prefLabel>
+	<skos:definition xml:lang="en">Orgchem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Metal_Extraction">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Metal Extraction</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/NH4-N">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">NH4-N</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/NOx-N">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">NOx-N</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/N_Fixation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">N Fixation</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Ni_V_content">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Ni_V content</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Nutrient_Autoanalyser">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Nutrient Autoanalyser</skos:prefLabel>
+	<skos:definition xml:lang="en">Orgchem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Offline">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Offline</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Organic_Carbon">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Organic Carbon</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Other__please_specify_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Other (please specify)</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/PIMA">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">PIMA</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/P_Fraction_Sediment_Extraction">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">P Fraction Sediment Extraction</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Phaeophytin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Phaeophytin</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Reval_6">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Reval 6</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Reval_6_TOC">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Reval 6/TOC</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Rock_powder">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Rock powder</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/S-removal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">S-removal</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/SANS_SAXS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">SANS/SAXS</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/SA_SNA_preparation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">SA/SNA preparation</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/S_content">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">S content</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Sat_Arom_Polar_Fractionation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Sat Arom Polar Fractionation</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/SiO2">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">SiO2</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/TC-EA">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">TC-EA</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/TOC">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">TOC</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/TOC,_d13C-TOC,_TN,_and_d15-N">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">TOC, d13C-TOC, TN, and d15-N</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Titration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Titration</skos:prefLabel>
+	<skos:definition xml:lang="en">Orgchem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Topped_oil">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Topped oil</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Total_Alkalinity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Total Alkalinity</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Total_Dissolved_Nitrogen__TDN_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Total Dissolved Nitrogen (TDN)</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Total_Dissolved_Phosphorus__TDP_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Total Dissolved Phosphorus (TDP)</skos:prefLabel>
+	<skos:definition xml:lang="en">OrgChem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/UV-VIS_Spectophotometer">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">UV-VIS Spectophotometer</skos:prefLabel>
+	<skos:definition xml:lang="en">Orgchem:</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Volatiles">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Volatiles</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/Whole_oil">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Whole oil</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/analysis/XRD">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">XRD</skos:prefLabel>
+	<skos:definition xml:lang="en">MANDATORY FIELD</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/analysis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+</rdf:Description>
+
+</rdf:RDF>

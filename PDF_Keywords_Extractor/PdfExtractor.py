@@ -2,9 +2,11 @@ from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.converter import TextConverter, HTMLConverter
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
+from collections import defaultdict
 from io import BytesIO
 import PyPDF2
 import re
+import json
 from PDF_Keywords_Extractor import PdfOcr
 
 from bs4 import BeautifulSoup
@@ -185,7 +187,33 @@ class KeywordExtract():
 
         return text
 
+    def fileToDictionary(self, putHere, path):
+        #-read the download txt, and put into dictionary
+        #- where the key is the file name, and the value is the the actualy name
+        #linkFile = open("")
 
+        #-read in the keyword dump, and store keywords in a dictionary
+        #- where the key is the filename
+        putHere = defaultdict(list)
+        #file = None
+        try:
+            file = open(path,"r", encoding="utf-8")
+        except:
+            print("failed")
+            pass
+        for line in file:
 
-
-
+            # - split up the link and the key
+            if line != '\n':
+                print("1",line)
+                #split line by tab
+                tempLine = line.split("\t")
+                print("2",tempLine)
+                #split line by commas
+                if len(tempLine) > 1:
+                    putHere[tempLine[0]] = re.split("; |,",tempLine[1])
+                    for i in range(len(putHere[tempLine[0]])):
+                        putHere[tempLine[0]][i] = putHere[tempLine[0]][i].strip()
+                        putHere[tempLine[0]][i] = putHere[tempLine[0]][i].replace("\n","")
+                    print("3",putHere[tempLine[0]])
+        return putHere

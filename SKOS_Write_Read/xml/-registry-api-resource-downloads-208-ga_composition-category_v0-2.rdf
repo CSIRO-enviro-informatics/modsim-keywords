@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/CGI-Concept-Definition-Task-Group">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGI-Concept-Definition-Task-Group</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/CGI-Geoscience-Terminology-Working-Group">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGI-Geoscience-Terminology-Working-Group</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Sedgmen.Lara_Admin</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Oliver-Raymond">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oliver-Raymond</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/chloride_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik etal 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Chloride is the most abundant (mole percent) anion</skos:definition>
+	<skos:prefLabel xml:lang="en">chloride chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/fluoride_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik etal 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Fluorine is the most abundant (mole percent) anion</skos:definition>
+	<skos:prefLabel xml:lang="en">fluoride chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_chemistry"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/volcanic_lithic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/argillic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/bioclastic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcsilicate_bearing"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonaceous"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonaceous_chemistry"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_bearing"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/chloritic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/composition_not_specified"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_detrital_mode"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_lithic_detrital_mode"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/ferruginous"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/halide_chemistry"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/impure_calcsilicate_or_carbonate"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/intraclastic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_detrital_mode"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_rich_detrital_mode"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/metallic_oxide_bearing"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/metaluminous"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/micaceous"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/mono_mineralic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/monomictic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/other_composition"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/oxide"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/peralkaline"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/peraluminous"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/petroliferous"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/phosphate_chemistry"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/phosphatic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/polymictic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzose_detrital_mode"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/silicic"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sub_feldspathic_detrital_mode"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sub_lithic_detrital_mode"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/subaluminous"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfate"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfate_chemistry"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_bearing"/>
+	<dcterms:title xml:lang="en">Composition Category</dcterms:title>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/CGI-Concept-Definition-Task-Group"/>
+	<dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-11</dcterms:date>
+	<dcterms:description xml:lang="en">This scheme describes the concept space for Composition Category concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for populating the compositionCategory property in GeoSciML CompoundMaterialDescription elements.</dcterms:description>
+	<skos:changeNote xml:lang="en">2009-07-14: Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2009-12-07: SMR add collections for mineralogical and sedimentary petrographic categories, improve annotation and notes on vocabulary.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2010-02-08: SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2010-02-11: Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2010-11-27: SMR replace URN with http URI according to CGI URI scheme; update version number to 201211</skos:changeNote>
+	<skos:changeNote xml:lang="en">2011-07-07: GD update the class/object properties, define topConcepts properties and inverse.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2012-02-07: SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2012-02-08: SMR add owl:sameAs links to URI's using numeric values. URIs have same prefix (e.g. http://resource.geosciml.org/classifier/cgi/compositioncategory/, but numeric final values.)</skos:changeNote>
+	<skos:changeNote xml:lang="en">2012-11-05: SMR remove named individual, extra owl:thing declarations, add skos:collection</skos:changeNote>
+	<skos:changeNote xml:lang="en">2016-06-15: OLR - redo Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. Generate new SKOS-RDF file.</skos:changeNote>
+	<skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Composition Category vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt.</skos:editorialNote>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-08-17</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v0.2</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Neuendorf et al 2005, Struik 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Sulfur is the most abundant anion, cations are metals or semimetals.</skos:definition>
+	<skos:prefLabel xml:lang="en">sulfide chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfosalt_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/volcanic_lithic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Sedimentary material contains significant broken volcanic rock fragments or vitric fragments, irrespective of their pyroclastic or epiclastic origin.</skos:definition>
+	<skos:prefLabel xml:lang="en">volcanic lithic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<dcterms:title xml:lang="en">Composition Category - All Concepts</dcterms:title>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/chloride_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/fluoride_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/volcanic_lithic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/argillic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/arkosic_detrital_mode"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/asphaltic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/barium_bearing_carbonate_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/bioclastic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous_monomeralic_carbonate"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcium_rich_carbonate_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcsilicate"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcsilicate_bearing"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonaceous"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonaceous_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_bearing"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/chloritic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/composition_not_specified"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomite_monomineralic_carbonate"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomitic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_detrital_mode"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_lithic_detrital_mode"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/ferruginous"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/halide_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/high_silica_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/impure_calcsilicate_or_carbonate"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/intermediate_silica_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/intraclastic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_bearing_carbonate_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_rich_carbonate_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_arkosic_detrital_mode"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_detrital_mode"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_rich_detrital_mode"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/low_silica_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/mafic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/magnesium_rich_carbonate_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/metallic_oxide_bearing"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/metaluminous"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/micaceous"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/mono_mineralic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/monomictic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/nitrate_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/other_composition"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/oxide"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/pelitic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/peralkaline"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/peraluminous"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/petroliferous"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/phosphate_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/phosphatic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/polymictic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzo_feldspathic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzose"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzose_detrital_mode"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/semi_pelitic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/silicic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sub_feldspathic_detrital_mode"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sub_lithic_detrital_mode"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/subaluminous"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfate"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfate_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_bearing"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfosalt_chemistry"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/ultramafic"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/very_low_silica_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/argillic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Greater than accessory amount (greater than 5 percent by volume) of clay is present</skos:definition>
+	<skos:prefLabel xml:lang="en">argillic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/arkosic_detrital_mode">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Folk1968</dcterms:source>
+	<skos:definition xml:lang="en">Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the feldspar to lithic ratio is greater than 3 to 1. This corresponds to the arkose field of Folk (1968). For clastic rocks with little or no matrix and cement, rocks in this detrital mode composition category will also have quartz-feldspathic mineralogical composition.</skos:definition>
+	<skos:prefLabel xml:lang="en">arkosic detrital mode</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_lithic_detrital_mode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/asphaltic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Jackson 1997</dcterms:source>
+	<skos:definition xml:lang="en">Material contains a significant amount of asphalt, which is a 'dark brown to black viscous liquid or low-melting solid bitumen that consists almost entirely of carbon and hydrogen...[and] formed in oil-bearing rocks by the evaporation of volatiles...' (Jackson, 1997, p. 39).</skos:definition>
+	<skos:prefLabel xml:lang="en">asphaltic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonaceous"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/barium_bearing_carbonate_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">CO3 is the predominant anion, and greater than 5 mole percent of cations are Ba.</skos:definition>
+	<skos:prefLabel xml:lang="en">barium bearing carbonate chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/bioclastic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Carbonate sedimentary material contains significant broken skeletal material</skos:definition>
+	<skos:prefLabel xml:lang="en">bioclastic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Calcium carbonate minerals are present, carbonate minerals form less than 50 percent of rock, material contains sufficient CaCO3 to react forming bubbles when hydrochloric acid is applied.</skos:definition>
+	<skos:prefLabel xml:lang="en">calcareous</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_bearing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous_monomeralic_carbonate">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Carbonate minerals form greater than 75 percent of rock, and calcium carbonate minerals forms greater than 75 percent of carbonate minerals.</skos:definition>
+	<skos:prefLabel xml:lang="en">calcareous monomeralic carbonate</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcium_rich_carbonate_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik etal 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">CO3 is the predominante anion, and the Ca is the most abundant (mole percent) cation.</skos:definition>
+	<skos:prefLabel xml:lang="en">calcium rich carbonate chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcsilicate">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Material consists of greater than or equal to 50 percent calcsilicate or carbonate minerals and carbonate minerals less than or equal to calcsilicate minerals in mineral mode.</skos:definition>
+	<skos:prefLabel xml:lang="en">calcsilicate</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/impure_calcsilicate_or_carbonate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcsilicate_bearing">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Calcsilicate minerals of any sort are present, but less than 50 percent of rock</skos:definition>
+	<skos:prefLabel xml:lang="en">calcsilicate bearing</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonaceous">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Material containing significant carbon or hydrocarbon mineral phases, including graphite, coal, oil, gas, lignite, peat.</skos:definition>
+	<skos:prefLabel xml:lang="en">carbonaceous</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/asphaltic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonaceous_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik2002, SLTTs2004, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Containing greater than 5 percent reduced carbon in compounds that are typically the diagenetic products of dead organisms (e.g. coal, bitumen and petroleum). 5 percent value is chosen for consistency with SLTTs usage of term carbonaceous.</skos:definition>
+	<skos:prefLabel xml:lang="en">carbonaceous chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_bearing_carbonate_chemistry"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/magnesium_rich_carbonate_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Material consists of greater than 50 percent calcsilicate or carbonate minerals and carbonate minerals greater than calcsilicate minerals in mineral mode. Metacarbonate of NADMSC SLTTm (2004) terminology, adopted here for non-genetic use.</skos:definition>
+	<skos:prefLabel xml:lang="en">carbonate</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/barium_bearing_carbonate_chemistry"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_bearing">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Carbonate minerals of any sort are present, but less than 50 percent of rock.</skos:definition>
+	<skos:prefLabel xml:lang="en">carbonate bearing</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomitic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik etal 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">The carbonate (CO3) anion is the predominant anion (by mole percent) in chemical analysis. Sub-categories may be defined by dominant cation. Material in this chemical class overlaps with the monomineralic carbonate class, and probably overlaps with the Carbonate class in the mineralogical composition classification.</skos:definition>
+	<skos:prefLabel xml:lang="en">carbonate chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcium_rich_carbonate_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/chloritic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Greater than accessory amount (greater than 5 percent by volume) of chlorite group minerals are present</skos:definition>
+	<skos:prefLabel xml:lang="en">chloritic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/composition_not_specified">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Composition not specified. Use in normative descriptions where any composition property is allowed.</skos:definition>
+	<skos:prefLabel xml:lang="en">composition not specified</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomite_monomineralic_carbonate">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Carbonate minerals form greater than 75 percent of rock, and dolomite forms greater than 75 percent of carbonate minerals.</skos:definition>
+	<skos:prefLabel xml:lang="en">dolomite monomineralic carbonate</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomitic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Dolomite is present, carbonate minerals form less than 50 percent of rock.</skos:definition>
+	<skos:prefLabel xml:lang="en">dolomitic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_bearing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Sedimentary material contains significant feldspar mineral content</skos:definition>
+	<skos:prefLabel xml:lang="en">feldspathic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_detrital_mode">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dott1964, Folk1968</dcterms:source>
+	<skos:definition xml:lang="en">General sandstone petrography term for a sandstone in which the ratio of feldspar to lithic fragments is greater than 1:1 and less than 75 percent quartz is present in the detrital mode. Subsumes lithic arkosic and arkosic sandstone petrographic composition classes. Usage of modifier feldspathic is consistent with petrographic subdivisions of Dott (1964) and Williams, Turner and Gilbert (1982)</skos:definition>
+	<skos:prefLabel xml:lang="en">feldspathic detrital mode</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_arkosic_detrital_mode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_lithic_detrital_mode">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Folk1968</dcterms:source>
+	<skos:definition xml:lang="en">Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the feldspar to lithic ratio is between 1 to 1 and 1 to 3. This corresponds to the feldspathic litharenite field of Folk (1968). Rocks in this class are likely to be quartzo-feldspathic in terms of mineralogical composition terms in this vocablary, but because the mineralogical composition of the lithic fraction is not constrainged, this correlation is not necessary.</skos:definition>
+	<skos:prefLabel xml:lang="en">feldspathic lithic detrital mode</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/arkosic_detrital_mode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Material consists of greater than 40 percent dark ferromagnesian silicate minerals. Standard term defined by Bates and Jackson (1987) to mean 'containing iron and magnesium'. Subsumes mafic and ultramafic.</skos:definition>
+	<skos:prefLabel xml:lang="en">ferromagnesian</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/mafic"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/ultramafic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/ferruginous">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Greater than accessory amount (greater than 5 percent by volume) of non-silicate iron minerals (hematite, magnetite, siderite...) are present. Rocks containing abundant iron-rich silicate minerals would use the 'Ferromagnesian' terms.</skos:definition>
+	<skos:prefLabel xml:lang="en">ferruginous</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/halide_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik etal 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">One or more of halide group elements (F, Cl, Br, I) are most abundant (mole percent) anion</skos:definition>
+	<skos:prefLabel xml:lang="en">halide chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/nitrate_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/high_silica_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik2002, SLTTs2004, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Containing 65 percent or more SiO2 by weight. Syn acid.</skos:definition>
+	<skos:prefLabel xml:lang="en">high silica chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/impure_calcsilicate_or_carbonate">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Material consists of greater than 50 percent calcsilicate or carbonate minerals and relative proportion of calcsilicate and carbonate minerals is unknown or not specified.</skos:definition>
+	<skos:prefLabel xml:lang="en">impure calcsilicate or carbonate</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcsilicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/intermediate_silica_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik2002, SLTTs2004, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Containing SiO2 in the range 52-65 percent, sometimes described as \intermediate\ rocks.</skos:definition>
+	<skos:prefLabel xml:lang="en">intermediate silica chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/intraclastic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Carbonate sedimentary material contains signficant intraclast content</skos:definition>
+	<skos:prefLabel xml:lang="en">intraclastic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_bearing_carbonate_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">CO3 is the predominant anion, and iron is greater than 5 mole percent of the cations (includes Fe, Mg, Mn, Ba, Sr, Ca...).</skos:definition>
+	<skos:prefLabel xml:lang="en">iron bearing carbonate chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_rich_carbonate_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_rich_carbonate_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">CO3 is the predominant anion, and iron is the most abundant (mole percent) cation</skos:definition>
+	<skos:prefLabel xml:lang="en">iron rich carbonate chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/iron_bearing_carbonate_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Sedimentary material contains significant detrital rock fragments derived by erosion from older, pre-existing rock materials</skos:definition>
+	<skos:prefLabel xml:lang="en">lithic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_arkosic_detrital_mode">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Folk1968</dcterms:source>
+	<skos:definition xml:lang="en">Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the ratio of lithic fragments to feldspar is between 1:1 and 1:3. This corresponds to the lithic arkose field of Folk (1968), the 75 percent quartz boundary is chosen to be consistent with quartzsose composition as defined in the mineralogic compostion terms vocabulary. Because of the abundance of lithic fragments for which the mineralogic composition is not specified, and the presence of undiscernible matrix and cement that are not incuded in the detrital mode, corresondence with the mineralogical composition terms is very approximate.</skos:definition>
+	<skos:prefLabel xml:lang="en">lithic arkosic detrital mode</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/feldspathic_detrital_mode"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_detrital_mode">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Folk1968</dcterms:source>
+	<skos:definition xml:lang="en">Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the lithic to feldspar ratio is greater than 3 to 1. This corresponds to the litharenite field of Folk (1968). Because the mineralogy of the lithic fragments is not constrained, the mineralogical composition is largely independent of the detrital mode composition for this class.</skos:definition>
+	<skos:prefLabel xml:lang="en">lithic detrital mode</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/lithic_rich_detrital_mode">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dott1964, Folk1968</dcterms:source>
+	<skos:definition xml:lang="en">Sandstone petrographic composition term indicating that the ratio of lithic fragments to feldspar is greater than 1:1, and less than 75 percent quartz is present in the detrital mode. Because the mineralogy of the lithic fragments is not constrained, the mineralogical composition is largely independent of the detrital mode composition for this class.</skos:definition>
+	<skos:prefLabel xml:lang="en">lithic rich detrital mode</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/low_silica_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik2002, SLTTs2004, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Containing SiO2 in the range 44-52 percent. Syn basic.</skos:definition>
+	<skos:prefLabel xml:lang="en">low silica chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/mafic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Material consists of greater than or equal to 40 percent and less than 90 percent ferromagnesian silicate minerals.</skos:definition>
+	<skos:prefLabel xml:lang="en">mafic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/magnesium_rich_carbonate_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik etal 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">CO3 is the predominant anion, and Mg is the most abundant (mole percent) cation.</skos:definition>
+	<skos:prefLabel xml:lang="en">magnesium rich carbonate chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/metallic_oxide_bearing">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik2002, SLTTs2004, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Greater than accessory amounts (greater than 5 percent by volume) of base metal oxide minerals such as magnetite (Fe3O4) or pyrolusite (MnO2) are present.</skos:definition>
+	<skos:prefLabel xml:lang="en">metallic oxide bearing</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/metaluminous">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Shand 1947</dcterms:source>
+	<skos:definition xml:lang="en">Chemical composition term used for igneous rocks, denoting that content of aluminum oxide is greater than sodium oxide plus potassium oxide, but aluminum oxide less than sum of Na, K and Ca oxide.</skos:definition>
+	<skos:prefLabel xml:lang="en">metaluminous</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/micaceous">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Greater than accessory amount (greater than 5 percent by volume) of mica group mineral are present</skos:definition>
+	<skos:prefLabel xml:lang="en">micaceous</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/mono_mineralic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Greater than 75 percent of the material consists of a single mineral species.</skos:definition>
+	<skos:prefLabel xml:lang="en">mono mineralic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/monomictic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Jackson 1997</dcterms:source>
+	<skos:definition xml:lang="en">Grains or clasts are composed of a single rock or mineral type (Jackson, 1997)</skos:definition>
+	<skos:prefLabel xml:lang="en">monomictic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/monomineralic_carbonate">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Rock in which carbonate minerals form greater than 75 percent of rock.</skos:definition>
+	<skos:prefLabel xml:lang="en">monomineralic carbonate</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/carbonate"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/calcareous_monomeralic_carbonate"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/dolomite_monomineralic_carbonate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/nitrate_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik etal 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Nitrate (NO3) is most abundant (mole percent) anion.</skos:definition>
+	<skos:prefLabel xml:lang="en">nitrate chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/halide_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/other_composition">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Composition is known but doesn’t' fit in any other category</skos:definition>
+	<skos:prefLabel xml:lang="en">other composition</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/oxide">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Material predominantly composed of oxide minerals</skos:definition>
+	<skos:prefLabel xml:lang="en">oxide</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/pelitic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and aluminous mineral + mica content is greater than or equal to 40 percent.</skos:definition>
+	<skos:prefLabel xml:lang="en">pelitic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/peralkaline">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Shand 1947</dcterms:source>
+	<skos:definition xml:lang="en">Aluminum oxide (Al2O3) is less than sum of K and Na oxide.</skos:definition>
+	<skos:prefLabel xml:lang="en">peralkaline</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/peraluminous">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Shand 1947</dcterms:source>
+	<skos:definition xml:lang="en">Aluminum oxide (Al2O3) greater than sum of Na, K and Ca oxide.</skos:definition>
+	<skos:prefLabel xml:lang="en">peraluminous</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/petroliferous">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Crude oil or natural gas is present, generally in trace amounts, commonly detected by smell</skos:definition>
+	<skos:prefLabel xml:lang="en">petroliferous</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/phosphate_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik etal 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Phosphate (PO4) is the most abundant (mole percent) anion.</skos:definition>
+	<skos:prefLabel xml:lang="en">phosphate chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/phosphatic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Greater than accessory amount (greater than 5 percent by volume) of phosphate minerals are present</skos:definition>
+	<skos:prefLabel xml:lang="en">phosphatic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/polymictic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Jackson, 1997, p. 501</dcterms:source>
+	<skos:definition xml:lang="en">Grains or clasts are composed of many mineral or rock types</skos:definition>
+	<skos:prefLabel xml:lang="en">polymictic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent.</skos:definition>
+	<skos:prefLabel xml:lang="en">quartz feldspar pelitic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/pelitic"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzo_feldspathic"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/semi_pelitic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzo_feldspathic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and quartz + feldspar (sensu Robertson, 1999) greater than 60 percent.</skos:definition>
+	<skos:prefLabel xml:lang="en">quartzo feldspathic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzose"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzose">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Material consists of greater than or equal to 75 percent quartz.</skos:definition>
+	<skos:prefLabel xml:lang="en">quartzose</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzo_feldspathic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartzose_detrital_mode">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Folk1968, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Detrital mineral grains in a granular rock consist of greater than 95 percent quartz. This petrographic criteria follows the most restrictive definition of the composition field at the quartz vertex of the sandstone QFL triangle (Folk, 1968). This use of term quartzose is more restrictive that that used in the mineralogical composition term vocabulary, reflecting the interpretive significance of pure quartz sandstones in sedimentary petrology.</skos:definition>
+	<skos:prefLabel xml:lang="en">quartzose detrital mode</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/semi_pelitic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and quartz+ feldspar less than 60 percent</skos:definition>
+	<skos:prefLabel xml:lang="en">semi pelitic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/quartz_feldspar_pelitic"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Neuendorf et al 2005, Struik 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Composed of minerals whose crystal structure contains SiO4 tetrahedra, either isolated or joined through one or more oxygen atoms to form groups, chains, sheets or three-dimensional structures with metallic cations. Composition ranges from 20-100 percent SiO2. Typically some Al substitutues for silica. A survey of chemical analyses in the Georock database (query FOR ALL GEOLOGICAL SETTINGS, MATERIAL: WHOLE ROCK (AND VOLCANIC GLASS), PUB. YEARS: 2005-1970), 10/10/2005, http://georoc.mpch-mainz.gwdg.de/georoc/Entry.html) discovered that the lowest silica (Si02) content for igneous rock is about 20 percent. This is consistent with the lowest silica content found for a silicate mineral is about 21 percent for a chlorite variety found by scanning the mineral analyses in Deer, Howie, and Zussman (1966).</skos:definition>
+	<skos:prefLabel xml:lang="en">silicate chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/high_silica_chemistry"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/intermediate_silica_chemistry"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/low_silica_chemistry"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/very_low_silica_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/silicic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Greater than accessory amount (greater than 5 percent by volume) of silica, amorphous, as quartz, or any of the silica polymorphs are present</skos:definition>
+	<skos:prefLabel xml:lang="en">silicic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/sub_feldspathic_detrital_mode">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Folk1968</dcterms:source>
+	<skos:definition xml:lang="en">Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 50 percent lithic fragments, between 75 and 95 percent quartz (thus less than 25 percent feldspar). This corresponds to the subarkose field of Folk (1968), the 75 percent quartz boundary is consistent with the quartzsose composition as defined in the mineralogic compostion terms vocabulary, but if more than a few percent 'matrix' or cement is present, this is not necessarily equivalent to the mineralogical composition term.</skos:definition>
+	<skos:prefLabel xml:lang="en">sub feldspathic detrital mode</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/sub_lithic_detrital_mode">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Folk1968</dcterms:source>
+	<skos:definition xml:lang="en">Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes more than 50 percent lithic fragments, between 75 and 95 percent quartz (thus less than 25 percent feldspar). This corresponds to the sublitharenite field of Folk (1968), the 75 percent quartz boundary is consistent with quartzsose composition as defined in the mineralogic compostion terms vocabulary.</skos:definition>
+	<skos:prefLabel xml:lang="en">sub lithic detrital mode</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/subaluminous">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Shand 1947</dcterms:source>
+	<skos:definition xml:lang="en">Aluminum oxide within 10 percent of sum of Na and K oxide.</skos:definition>
+	<skos:prefLabel xml:lang="en">subaluminous</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfate">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Material predominantly composed of sulfate minerals</skos:definition>
+	<skos:prefLabel xml:lang="en">sulfate</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfate_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik etal 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Sulfate is the most abundant anion</skos:definition>
+	<skos:prefLabel xml:lang="en">sulfate chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Material predominantly composed of sulfide minerals</skos:definition>
+	<skos:prefLabel xml:lang="en">sulfide</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_bearing"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_bearing">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Greater than accessory amount (greater than 5 percent by volume) of sulfide mineral are present</skos:definition>
+	<skos:prefLabel xml:lang="en">sulfide bearing</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfosalt_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Neuendorf et al 2005, Struik 2002, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Sulfide in which a semimetal (As, Sb, Bi) is present in a cation role</skos:definition>
+	<skos:prefLabel xml:lang="en">sulfosalt chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/sulfide_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/ultramafic">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NADM SLTTm 2004</dcterms:source>
+	<skos:definition xml:lang="en">Material consists of greater than 90 percent ferromagnesian silicate minerals.</skos:definition>
+	<skos:prefLabel xml:lang="en">ultramafic</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/ferromagnesian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/compositioncategory/very_low_silica_chemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Struik2002, SLTTs2004, This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Containing between about 20 and 44 percent SiO2. A survey of chemical analyses in the Georock database (query FOR ALL GEOLOGICAL SETTINGS, MATERIAL: WHOLE ROCK (AND VOLCANIC GLASS), PUB. YEARS: 2005-1970), 10/10/2005, http://georoc.mpch-mainz.gwdg. syn ultrabasic.</skos:definition>
+	<skos:prefLabel xml:lang="en">very low silica chemistry</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/compositioncategory/silicate_chemistry"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/date">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#changeNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#changeNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

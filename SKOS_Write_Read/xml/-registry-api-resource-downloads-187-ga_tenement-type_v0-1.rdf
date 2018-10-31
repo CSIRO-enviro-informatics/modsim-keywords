@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Aust/NZ-Government-Geoscience-Information-Committee-GGIC">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aust/NZ-Government-Geoscience-Information-Committee-GGIC</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Sedgmen.Lara_Admin</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GGIC">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GGIC</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Oliver-Raymond">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oliver-Raymond</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<dcterms:title xml:lang="en">Tenement Type - All Concepts</dcterms:title>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/Christmas-Island-mining-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/ancillary-mining-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease-private-mineral"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/christmas-island-exploration-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/coal-mining-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/commonwealth-exploration-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/consolidated-mining-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/continental-shelf-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/dredging-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-application"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-in-retention"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-offshore"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-private-mineral"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-substitution"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-coal"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-minerals"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-special"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-prospecting-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-release-area"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-exploration-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-permit"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/fossicking-area"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease-sa"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-fossicking-area"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence-to-treat-tailings"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-converted-to-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-exploration"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-production"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-development-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease-sa"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-claim"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease-SA"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-mineral-owner-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-permit"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-purposes-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence-sa"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-purposes-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-exploration-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mineral-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mining-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-retention-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-special-purpose-consents"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-mining-purposes-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mine"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mining-operation"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-permit"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-crown-private-lands-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-exploration-licence"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-mining-lease"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-purpose-mining-permit"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/temporary-reserve"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/tourist-mining-authority"/>
+	<skos:member rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/work-authority"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/Christmas-Island-mining-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">WA -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.02</skos:notation>
+	<skos:prefLabel xml:lang="en">Christmas Island mining lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/ancillary-mining-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NZ</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NZ -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.01</skos:notation>
+	<skos:prefLabel xml:lang="en">ancillary mining licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">AL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.01</skos:notation>
+	<skos:prefLabel xml:lang="en">assessment lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease-private-mineral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">A(MO)L</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.02</skos:notation>
+	<skos:prefLabel xml:lang="en">assessment lease (private mineral)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/christmas-island-exploration-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">WA -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.03</skos:notation>
+	<skos:prefLabel xml:lang="en">Christmas Island exploration licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/coal-mining-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">WA - Mining lease specifically for coal under repealed 1904 Act.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.03</skos:notation>
+	<skos:prefLabel xml:lang="en">coal mining lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/commonwealth-exploration-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">WA -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.04</skos:notation>
+	<skos:prefLabel xml:lang="en">Commonwealth exploration licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/consolidated-mining-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">CML</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.04</skos:notation>
+	<skos:prefLabel xml:lang="en">consolidated mining lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/continental-shelf-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NZ</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NZ -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.05</skos:notation>
+	<skos:prefLabel xml:lang="en">continental shelf licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/dredging-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">DL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.05</skos:notation>
+	<skos:prefLabel xml:lang="en">dredging lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">A tenement, permit, or licence related to mineral exploration activities.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/assessment-lease-private-mineral"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/christmas-island-exploration-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/commonwealth-exploration-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/continental-shelf-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-application"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-in-retention"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-offshore"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-private-mineral"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-substitution"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-coal"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-minerals"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-special"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-prospecting-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-release-area"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-exploration-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/fossicking-area"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-fossicking-area"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-exploration"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-development-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-exploration-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mineral-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-retention-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-special-purpose-consents"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-permit"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-exploration-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/temporary-reserve"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/tourist-mining-authority"/>
+	<skos:topConceptOf rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW, TAS, VIC, WA, SA, NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">TAS - Standard exploration tenement type for all commodities (Categories 1 to 6). VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s13.html. WA - Block based system; max 70 blocks; term 5 years plus 2 extensions; surrender 50%; 100 tonnes of material.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">EL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.06</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-application">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">SA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">SA - Application for an Exploration Licence.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">ELA</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.07</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration licence application</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-in-retention">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NT - Licence to carry out feasibility study or retain ore body not economically viable. See also 'retention licence' used by other jurisdictions.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">ELR</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.11</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration licence in retention</skos:prefLabel>
+	<skos:altLabel xml:lang="en">retention licence</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-offshore">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">WA -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.08</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration licence offshore</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-private-mineral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">E(MO)L</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.09</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration licence (private mineral)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-licence-substitution">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NT - Replacement exploration licence when amalgamating two or more ELs after expiry of original grant/allowed renewal periods. No longer active title type under the MTA</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">SEL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.10</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration licence - substitution</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NZ</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NZ -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.12</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration permit</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-coal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">QLD</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">QLD - Standard exploration permit for coal which allows for overlap with EPM or EPS.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">EPC</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.13</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration permit for coal</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-for-minerals">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">QLD</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">QLD - Standard exploration permit for minerals which allows for overlap with EPC and EPS.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">EPM</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.14</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration permit for minerals</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-permit-special">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">QLD</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">QLD - Special exploration permit for minerals which allows for overlap with EPM by mutual agreement with EPM holder where minerals sought are mutually exclusive.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">EPS</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.15</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration permit special</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-prospecting-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">EPL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.16</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration prospecting lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration-release-area">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">SA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">ERA</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.17</skos:notation>
+	<skos:prefLabel xml:lang="en">exploration release area</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-exploration-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NT - To explore for extractive minerals</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">EMEL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.18</skos:notation>
+	<skos:prefLabel xml:lang="en">extractive mineral exploration licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">SA, NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">SA - An EML entitles the lessee to carry out mining operations specified in the lease for the recovery of extractive minerals. NT - To mine for extractive minerals and/or erect infrastructure</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">EML</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.06</skos:notation>
+	<skos:prefLabel xml:lang="en">extractive mineral lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-permit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NT - A permit to extract, remove, store or process extractive minerals</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">EMP</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.07</skos:notation>
+	<skos:prefLabel xml:lang="en">extractive mineral permit</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/fossicking-area">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NT - Declared areas for fossicking</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">FA</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.19</skos:notation>
+	<skos:prefLabel xml:lang="en">fossicking area (s.131)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">WA - Lease not specifically for mineral extraction. Linked to mining opreations for purposes of operating machinery and depositing tailings.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.08</skos:notation>
+	<skos:prefLabel xml:lang="en">general purpose lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease-sa">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">WA - Lease not specifically for mineral extraction. Linked to mining opreations for purposes of operating machinery and depositing tailings, in State Agreement area.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.09</skos:notation>
+	<skos:prefLabel xml:lang="en">general purpose lease S.A.</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-fossicking-area">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NZ</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NZ -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.20</skos:notation>
+	<skos:prefLabel xml:lang="en">gold fossicking area</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">GL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.10</skos:notation>
+	<skos:prefLabel xml:lang="en">gold lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">TAS</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">TAS -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.11</skos:notation>
+	<skos:prefLabel xml:lang="en">lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">TAS</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">TAS -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.21</skos:notation>
+	<skos:prefLabel xml:lang="en">licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence-to-treat-tailings">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">WA - Mining tenement under the repealed 1904 Act.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.12</skos:notation>
+	<skos:prefLabel xml:lang="en">licence to treat tailings</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-converted-to-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">M(C)L</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.13</skos:notation>
+	<skos:prefLabel xml:lang="en">mineral claim converted to lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-exploration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">WA -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.22</skos:notation>
+	<skos:prefLabel xml:lang="en">mineral claim (exploration)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-production">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">SA, NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">SA - An MC provides an exclusive right for 12 months to prospect for minerals within the claim area (conditions apply). NT - Small scale mining or exploration up to 40 Ha under the Mining Act. Not an active title type under the MTA and are in process of being converted to appropriate title type.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">MC</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.16</skos:notation>
+	<skos:prefLabel xml:lang="en">mineral claim (production)</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-development-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">QLD</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">QLD - A holding permit for coal or minerals which allows further exploration and testing within limits.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">MDL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.23</skos:notation>
+	<skos:prefLabel xml:lang="en">mineral development licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">SA, WA, NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">SA - An ML entitles the lessee to carry out mining operations specified in the lease for the recovery of minerals other than extractive minerals. WA - Mining tenement under the repealed 1904 Act. NT - To mine for minerals, and/or erect infrastructures.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">ML</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.14</skos:notation>
+	<skos:prefLabel xml:lang="en">mineral lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease-sa">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">WA - Special Agreement Act mineral lease.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.15</skos:notation>
+	<skos:prefLabel xml:lang="en">mineral lease S.A.</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-claim">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">QLD</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">QLD - Small scale mining activity commonly used for gemstones, opals and sometimes gold; Limited area and conditions on production methods</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">MC</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.17</skos:notation>
+	<skos:prefLabel xml:lang="en">mining claim</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW, TAS, WA, QLD</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">TAS - Standard mineral extraction lease (for mineral categories 1,2,3 and 5). WA - Tenement on which there is an identified mineral resource for mining. Term 21 years + renewal.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">ML</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.18</skos:notation>
+	<skos:prefLabel xml:lang="en">mining lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease-SA">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">WA - Max area 200 ha,term 4 years can extract 500 tonnes of material</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.19</skos:notation>
+	<skos:prefLabel xml:lang="en">mining lease S.A.</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">VIC, NZ</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s14.html</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.20</skos:notation>
+	<skos:prefLabel xml:lang="en">mining licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-mineral-owner-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">M(MO)L</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.21</skos:notation>
+	<skos:prefLabel xml:lang="en">mining (mineral owner) lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-permit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NZ</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NZ -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.22</skos:notation>
+	<skos:prefLabel xml:lang="en">mining permit</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-purposes-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">MPL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.23</skos:notation>
+	<skos:prefLabel xml:lang="en">mining purposes lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">WA - Lease not specifically for mineral extraction. An ancilliary tenement to a mining lease for the purposes of infrastructure such as roads, pipelines etc.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.24</skos:notation>
+	<skos:prefLabel xml:lang="en">miscellaneous licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence-sa">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">WA - Lease not specifically for mineral extraction. An ancilliary tenement to a mining lease for the purposes of infrastructure such as roads, pipelines etc, under a Special Agreement Act.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.25</skos:notation>
+	<skos:prefLabel xml:lang="en">miscellaneous licence S.A.</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-purposes-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">SA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">SA - An MPL may be granted for any purpose ancillary to the conduct of mining operations, for example an operating plant, drainage or an access road.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">MPL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.26</skos:notation>
+	<skos:prefLabel xml:lang="en">miscellaneous purposes licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-exploration-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NT - Offshore Waters [Applications of Territory Laws] Act 1994. To explore for minerals outside of the 3 nautical mile</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">OEL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.24</skos:notation>
+	<skos:prefLabel xml:lang="en">offshore exploration licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mineral-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">TAS</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">TAS -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.25</skos:notation>
+	<skos:prefLabel xml:lang="en">offshore mineral licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mining-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NT - Off-shore Waters [Application of Territory Laws] Act 1994 To mine for minerals outside the 3 nautical mile</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">OML</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.27</skos:notation>
+	<skos:prefLabel xml:lang="en">offshore mining licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-retention-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NT - Off-shore Waters [Application of Territory Laws] Act 1994</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">ORL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.26</skos:notation>
+	<skos:prefLabel xml:lang="en">offshore retention licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-special-purpose-consents">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NT</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">NT - A special purpose consent authorises the holder to carry out either scientific investigations, a reconnaissance survey or collect a small amount of minerals. Actually a title under the Commonwealth Offshore Minerals Act, but each state were to use as model for within 3 mile limit.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">OSPC</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.27</skos:notation>
+	<skos:prefLabel xml:lang="en">offshore special purpose consents</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">PLL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.28</skos:notation>
+	<skos:prefLabel xml:lang="en">private lands lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-mining-purposes-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">PL(MP)L</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.29</skos:notation>
+	<skos:prefLabel xml:lang="en">private lands (mining purposes) lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mine">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">SA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">SA - tenements declared prior to the Mining Act, 1971 and are subject to specific conditions.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.30</skos:notation>
+	<skos:prefLabel xml:lang="en">private mine</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mining-operation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NZ</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NZ -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.31</skos:notation>
+	<skos:prefLabel xml:lang="en">private mining operation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">A tenement, permit, or licence related to mining activities or related production of mineral products.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02</skos:notation>
+	<skos:prefLabel xml:lang="en">production</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/Christmas-Island-mining-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/ancillary-mining-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/coal-mining-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/consolidated-mining-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/dredging-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/extractive-mineral-permit"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/general-purpose-lease-sa"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/gold-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/licence-to-treat-tailings"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-converted-to-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-claim-production"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mineral-lease-sa"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-claim"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-lease-SA"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-mineral-owner-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-permit"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/mining-purposes-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-licence-sa"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/miscellaneous-purposes-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/offshore-mining-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-lands-mining-purposes-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mine"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/private-mining-operation"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production-licence"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-crown-private-lands-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-mining-lease"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-purpose-mining-permit"/>
+	<skos:narrower rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/work-authority"/>
+	<skos:topConceptOf rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">TAS</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">TAS - for extraction of Geothermal (category 6) or onshore oil and gas (category 4)</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.32</skos:notation>
+	<skos:prefLabel xml:lang="en">production licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">VIC, WA, NZ</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">WA - licence for prospecting, up to 200 hectares, 4 year term + 4year extension. Removal of up to 500 t of material allowed. VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s14b.html</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.28</skos:notation>
+	<skos:prefLabel xml:lang="en">prospecting licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/prospecting-permit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NZ, WA, QLD</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">QLD - Allows small scale exploration with area limits and pegging for mining applications</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.29</skos:notation>
+	<skos:prefLabel xml:lang="en">prospecting permit</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">SA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">SA - An RL entitles the lessee to retain the lease area for future mining operations where, for economic or other reasons, the lessee is justified in not proceeding immediately.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.33</skos:notation>
+	<skos:prefLabel xml:lang="en">retention lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/retention-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">TAS, VIC, WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">TAS - Exploration tenement where a resource has been defined but is currently sub-economic, and requires further exploratoin before a Mining lease can be granted VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s14c.html. WA - Holding title for an identified mineral resource for later mining, but is not able to be further explored or mined.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.30</skos:notation>
+	<skos:prefLabel xml:lang="en">retention licence</skos:prefLabel>
+	<skos:altLabel xml:lang="en">exploration licence in retention</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-crown-private-lands-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">S(C&amp;PL)L</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.34</skos:notation>
+	<skos:prefLabel xml:lang="en">special (crown &amp; private lands) lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-exploration-licence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">TAS</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">TAS - Exploration tenement - larger than normal tenement to explore for new commodity types or utilise new exploration techniques. May be extended to a maximum of 10 years.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.31</skos:notation>
+	<skos:prefLabel xml:lang="en">special exploration licence</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NSW</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NSW -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/AbbreviatedLabel">SL</skos:notation>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.35</skos:notation>
+	<skos:prefLabel xml:lang="en">special lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-mining-lease">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">SA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">SA - The tenement type SML (Special Mining Lease) relates to the Olympic Dam mine, which is administered under the Roxby Downs (Indenture Ratification) Act, 1982. There is also an historic disused tenement type SML.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.36</skos:notation>
+	<skos:prefLabel xml:lang="en">special mining lease</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/special-purpose-mining-permit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">NZ</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">NZ -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.37</skos:notation>
+	<skos:prefLabel xml:lang="en">special purpose mining permit</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/temporary-reserve">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">WA</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">WA - Mining tenement under the repealed 1904 Act.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.32</skos:notation>
+	<skos:prefLabel xml:lang="en">temporary reserve</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/tourist-mining-authority">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">VIC</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:definition xml:lang="en">VIC - http://www.austlii.edu.au/au/legis/vic/consol_act/mrda1990432/s59.html</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">01.33</skos:notation>
+	<skos:prefLabel xml:lang="en">tourist mining authority</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/work-authority">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">VIC</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<skos:definition xml:lang="en">VIC -</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype"/>
+	<skos:notation rdf:datatype="http://resource.geoscience.gov.au/classifier/ggic/LocalHierarchyKey">02.38</skos:notation>
+	<skos:prefLabel xml:lang="en">work authority</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geoscience.gov.au/classifierscheme/ggic/2016.01/tenementtype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dcterms:title xml:lang="en">Tenement Type</dcterms:title>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/Aust/NZ-Government-Geoscience-Information-Committee-GGIC"/>
+	<dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-11-26</dcterms:date>
+	<dcterms:description xml:lang="en">This concept scheme defines terms used to describe the type of mineral tenements granted in Australian and New Zealand jurisdictions (eg, exploration licence, mining lease).</dcterms:description>
+	<skos:changeNote xml:lang="en">2016-07-22 OLR - Reformat SKOS-RDF for migration to new repository</skos:changeNote>
+	<skos:changeNote xml:lang="en">Original SKOS implementation, 26 Nov 2015.</skos:changeNote>
+	<skos:editorialNote xml:lang="en">This file contains the 2015 version of the GGIC mineral temement type vocabulary. Compilation and review in MS-Excel spreadsheet, converted to SKOS using GSML_SKOS_fromXLS_2015.02.xslt.</skos:editorialNote>
+	<skos:hasTopConcept rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/exploration"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geoscience.gov.au/classifier/ggic/tenementtype/production"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-09-06</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v0.1</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#notation">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/date">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#changeNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#changeNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

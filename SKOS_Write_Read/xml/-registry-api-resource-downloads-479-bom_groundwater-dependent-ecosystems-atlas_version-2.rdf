@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/NEII_Programme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEII_Programme</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Groundwater Unit, Bureau of Meteorology</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/vadose-zone">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The areas below the ground where void spaces are filled with a mixture of water under pressure less than atmospheric which includes water held by capillarity and air (gases) under atmospheric pressure.</skos:definition>
+	<skos:prefLabel xml:lang="en">vadose zone</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Poehls DJ and Smith GJ 2009, Encyclopedic dictionary of hydrogeology, Elsevier Inc., 517 pp.</dcterms:source>
+	<skos:altLabel xml:lang="en">unsaturated zone</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:label xml:lang="en">Groundwater Dependent Ecosystems Atlas</rdfs:label>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:39Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology"/>
+	<dcterms:description xml:lang="en">The Groundwater Dependent Ecosystems Atlas (GDE Atlas) was developed as a national dataset of Australian GDEs to inform groundwater planning and management. It is the first and only national inventory of GDEs in Australia.  The GDE Atlas web-based mapping application allows you to visualise, analyse and download GDE information for an area of interest without needing specialised software.</dcterms:description>
+	<dcterms:publisher rdf:resource="http://editor.vocabs.ands.org.au/user/Groundwater-Unit,-Bureau-of-Meteorology"/>
+	<dcterms:subject xml:lang="en">Groundwater</dcterms:subject>
+	<dcterms:title xml:lang="en">Groundwater Dependent Ecosystems Atlas</dcterms:title>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/vadose-zone"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/watertable"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/GDE-potential"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/LandsatTM5"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/MODIS"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/aquifer"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/baseflow"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/capillary-zone"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/conceptual-model"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/confined-aquifer"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/eco-hydrogeological-zone"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/ecological-water-requirement"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/ecosystem"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/electrical-conductivity"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/evapotranspiration"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/gaining-stream"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-dependent-ecosystem"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-flow-system"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/hydraulic-conductivity"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependence"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependence-likelihood"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependent-ecosystem"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/karst"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/lines-of-evidence"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/losing-stream"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/mean-seasonal-storage-range"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/pH"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/perched-aquifer"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/potentiometric-surface"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/remote-sensing"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/riparian"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/salinity"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/saturated-zone"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/stratification"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/streamflow"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/stygofauna"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/total-dissolved-solids"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/transmissivity"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/transpiration"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/troglofauna"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/turbidity"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/unconfined-aquifer"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/unsaturated-zone"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-07</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 2</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/watertable">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The groundwater surface in an unconfined aquifer or confining bed at which the pore pressure is atmospheric. It can be measured by installing shallow wells extending a few metres into the saturated zone and then determining the water level in those wells.</skos:definition>
+	<skos:prefLabel xml:lang="en">watertable</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/GDE-potential">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Describes ecosystems in terms of their 'potential to be interacting with groundwater'. The classes mapped in the GDE Atlas are:
+• High potential for groundwater interaction
+• Moderate potential for groundwater interaction
+• Low potential for groundwater interaction
+The term 'potential' is used to reflect the uncertainty inherent in identifying ecosystems as groundwater-dependant using desktop methods. Finer scale studies or fieldwork are needed to confirm this analysis.</skos:definition>
+	<skos:prefLabel xml:lang="en">GDE potential</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/LandsatTM5">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Landsat Thematic Mapper 5 – a medium resolution satellite image sensor obtained twice monthly over Australia. Data can be obtained from United States Geological Survey.</skos:definition>
+	<skos:prefLabel xml:lang="en">LandsatTM5</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Engel, J., and Weinstein, O., (1983). The Thematic Mapper – an overview, IEEE Transactions On Geoscience and Remote Sensing, GE-21:258-265</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/MODIS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">MODerate resolution Imaging Spectrometer – a sensor mounted on NASA’s TERRA and AQUA satellites that orbits the Earth collecting data in visible and infrared wavelengths. The data used in this project was the MOD43B4 Nadir BRDF (NBAR) product disseminated by NASA and post-processed by CSIRO.</skos:definition>
+	<skos:prefLabel xml:lang="en">MODIS</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Paget, M.J. and King, E.A., (2008). MODIS Land data sets for the Australian region. CSIRO Marine and Atmospheric Research internal report 004, CSIRO Canberra, Australia, ISBN 978192142432(pdf).</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/aquifer">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">An underground layer of saturated rock, sand or gravel that absorbs water and allows it to pass freely through pore spaces.</skos:definition>
+	<skos:prefLabel xml:lang="en">aquifer</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Modified from Australian and New Zealand Guidelines for Fresh and Marine Water Quality (2000)</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/baseflow">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The component of streamflow supplied by groundwater discharge.</skos:definition>
+	<skos:prefLabel xml:lang="en">baseflow</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/capillary-zone">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The zone of soil moisture above the watertable where water is drawn upwards by capillary tension in which the water is at less than atmospheric pressure.</skos:definition>
+	<skos:prefLabel xml:lang="en">capillary zone</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/conceptual-model">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Documentation of a conceptual understanding of the location of GDEs and interaction between ecosystems and groundwater.</skos:definition>
+	<skos:prefLabel xml:lang="en">conceptual model</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/confined-aquifer">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">An aquifer overlain by a confining bed. The confining bed has a significantly lower hydraulic conductivity than the aquifer. Typically, groundwater in a confined aquifer is under pressure significantly greater than atmospheric pressure.</skos:definition>
+	<skos:prefLabel xml:lang="en">confined aquifer</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/eco-hydrogeological-zone">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A region where similar processes determine the interaction between groundwater and ecosystems, due to similar ecology, geology, climate, and groundwater/surface water connections.</skos:definition>
+	<skos:prefLabel xml:lang="en">eco-hydrogeological zone</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:altLabel xml:lang="en">EHZ</skos:altLabel>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EHZ</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/ecological-water-requirement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Description of the water regimes needed to sustain the ecological values of water-dependent ecosystems at a low level of risk.</skos:definition>
+	<skos:prefLabel xml:lang="en">ecological water requirement</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">adapted from definition for Environmental Water Requirements in ARMCANZ &amp; ANZECC 1996, National principles for the provision of water for ecosystems, Sustainable Land and Water Resources Management Committee Subcommittee on Water Resources Occasional Paper SWR No 3.</dcterms:source>
+	<skos:altLabel xml:lang="en">EWR</skos:altLabel>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EWR</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/ecosystem">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A dynamic complex of plant, animal and micro-organism communities and their non-living environment interacting as a functional unit.</skos:definition>
+	<skos:prefLabel xml:lang="en">ecosystem</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Commonwealth Environmental Protection and Biodiversity Conservation Act 1999</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/electrical-conductivity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Electrical conductivity (EC) measures dissolved salt in water. The standard EC unit is microSiemens per centimetre (µS/cm) at 25 °C.</skos:definition>
+	<skos:prefLabel xml:lang="en">electrical conductivity</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:altLabel xml:lang="en">EC</skos:altLabel>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/evapotranspiration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The combined loss of water from a given area during a specified period of time by evaporation from the soil or water surface and by transpiration from plants.</skos:definition>
+	<skos:prefLabel xml:lang="en">evapotranspiration</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Australian and New Zealand Guidelines for Fresh and Marine Water Quality (2000)</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/gaining-stream">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A stream where groundwater discharge contributes to streamflow.</skos:definition>
+	<skos:prefLabel xml:lang="en">gaining stream</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra</dcterms:source>
+	<skos:altLabel xml:lang="en">discharge from groundwater to surface water</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">(a) water occurring naturally below ground level (whether in an aquifer or otherwise) or (b) water occurring at a place below ground that has been pumped, diverted or released to that place for the purpose of being stored there. It does not include water held in underground tanks, pipes or other works. 
+In GDE Atlas, this definition includes the capillary fringe, which is an important source of water for many GDEs.</skos:definition>
+	<skos:prefLabel xml:lang="en">groundwater</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Water Act 2007  Part 1 Section 4</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-dependent-ecosystem">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Natural ecosystems that require access to groundwater to meet all or some of their water requirements on a permanent or intermittent basis, so as to maintain their communities of plants and animals, ecosystem processes and ecosystem services.</skos:definition>
+	<skos:prefLabel xml:lang="en">groundwater dependent ecosystem</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra</dcterms:source>
+	<skos:altLabel xml:lang="en">GDE</skos:altLabel>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GDE</skos:notation>
+	<skos:narrower rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/aquatic-GDE"/>
+	<skos:narrower rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/subterranean-GDE"/>
+	<skos:narrower rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/terrestrial-GDE"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-flow-system">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The system which represents the movement of subsurface water from the point where it enters the ground to where it leaves.</skos:definition>
+	<skos:prefLabel xml:lang="en">groundwater flow system</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra</dcterms:source>
+	<skos:altLabel xml:lang="en">GFS</skos:altLabel>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GFS</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/hydraulic-conductivity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A property of soil or rock, which describes the ease with which water can move through pore spaces or fractures. It depends on the intrinsic permeability of the material and on the degree of saturation. Saturated hydraulic conductivity describes water movement through saturated media.</skos:definition>
+	<skos:prefLabel xml:lang="en">hydraulic conductivity</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Describes a landscape within the GDE Atlas that is wetter than surrounding areas either seasonally or permanently, because it receives water from inflows in addition to rainfall. IDs include groundwater dependent ecosystems as well as ecosystems which use sources of water other than rainfall (e.g. surface water, soil water, irrigation). 
+The layer that shows IDs is derived from the remote sensing layer, in which only pixels that have inflow dependence likelihoods of between 6 and 10 are included. The pixels are a combination of MODIS and Landsat data and are at a resolution of 25m2.</skos:definition>
+	<skos:prefLabel xml:lang="en">inflow dependence</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:altLabel xml:lang="en">ID</skos:altLabel>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ID</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependence-likelihood">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Describes the likelihood that a landscape is accessing a source of water in addition to rainfall (that it is inflow dependent). It is expressed in the ID layer as a value between 6 (low) and 10 (high), where 10 indicates a landscape that is most likely to be accessing additional water sources. A likelihood value of 6 indicates a landscape that is marginally more likely to be accessing an additional source of water than relying solely on rainfall. A value of less than 6 represents a landscape that is more likely to rely solely on rainfall and is therefore not considered inflow dependent.</skos:definition>
+	<skos:prefLabel xml:lang="en">inflow dependence likelihood</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/inflow-dependent-ecosystem">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Describes ecosystems that are likely to be using another source of water in addition to rainfall. IDEs include groundwater dependent ecosystems as well as ecosystems which use sources of water other than rainfall (e.g. surface water, soil water, irrigation).
+IDEs are effectively the ID pixels assigned onto a previously mapped ecosystem polygon. The pixel ID likelihood value was assigned to each ecosystem polygon using a majority rules approach. This means that the ID likelihood value which occurred most often within the ecosystem polygon, was the likelihood value assigned to the polygon overall.</skos:definition>
+	<skos:prefLabel xml:lang="en">inflow dependent ecosystem</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:altLabel xml:lang="en">IDE</skos:altLabel>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDE</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/karst">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Terrain characterised by sinkholes, caves and springs, developed most commonly in carbonate rocks, where significant dissolution of the rock has occurred due to flowing water.</skos:definition>
+	<skos:prefLabel xml:lang="en">karst</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Jennings 1985; Culver et al. 1995; Fetter 2001 as referenced in M Tomlinson and A Boulton 2008, Subsurface groundwater dependent ecosystems: a review of biodiversity, ecological processes and ecosystem services, National Water Commission Waterlines Occasional Paper No. 8, October 2008</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/lines-of-evidence">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">GDE Atlas terminology identifying the number of rules that could be applied to a polygon given the GIS data available for the analysis. The ‘Lines of Evidence’ result shows how much data the GDE potential result was based on, and therefore is a pragmatic indicator of the reliability of the GDE potential result. This is an attribute for each derived GDE polygon.</skos:definition>
+	<skos:prefLabel xml:lang="en">lines of evidence</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/losing-stream">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A stream from which water is lost to the surrounding and underlying substrate via infiltration through the streambed and banks.</skos:definition>
+	<skos:prefLabel xml:lang="en">losing stream</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/mean-seasonal-storage-range">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Expresses the estimated mean seasonal range in the amount of water stored in all water stores (surface, soil and groundwater). A large range is likely to indicate a large use of water from storage during periods with low rainfall, for example through root water uptake from deeper soil or groundwater stores.</skos:definition>
+	<skos:prefLabel xml:lang="en">mean seasonal storage range</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Van Dijk, A., Warren, G., Van Niel, T., Byrne, G., Pollock. D., Doody, T., (2011). Derivation of data layers from medium resolution remote sensing to support mapping of groundwater dependent ecosystems. CSIRO Land and Water, Internal Document for National Water Commission GDE Atlas.</dcterms:source>
+	<skos:altLabel xml:lang="en">MSSR</skos:altLabel>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MSSR</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/pH">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Value that represents the acidity or alkalinity of an aqueous solution. It is defined as the negative logarithm of the hydrogen ion concentration of the solution.</skos:definition>
+	<skos:prefLabel xml:lang="en">pH</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Australian and New Zealand Guidelines for Fresh and Marine Water Quality (2000)</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/perched-aquifer">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A region in the unsaturated zone where the soil or rock may be locally saturated because it overlies a low-permeability unit.</skos:definition>
+	<skos:prefLabel xml:lang="en">perched aquifer</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/potentiometric-surface">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A surface representing the hydraulic head of groundwater; represented by the watertable altitude in an unconfined aquifer or by the altitude to which water will rise in a properly constructed well in a confined aquifer.</skos:definition>
+	<skos:prefLabel xml:lang="en">potentiometric surface</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">USGS Definition of Terms</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/remote-sensing">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Any kind of data recording by a sensor which measures energy emitted or reflected by objects located at some distance from the sensor (i.e. no direct ground contact). Can include aerial photographs, airborne digital sensors and satellite imagery.</skos:definition>
+	<skos:prefLabel xml:lang="en">remote sensing</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/riparian">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">An area or zone within or along the banks of a stream or adjacent to a watercourse or wetland; relating to a riverbank and its environment, particularly to the vegetation.</skos:definition>
+	<skos:prefLabel xml:lang="en">riparian</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/salinity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The concentration of soluble salts in a solution, soil or other medium.</skos:definition>
+	<skos:prefLabel xml:lang="en">salinity</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">eWater Toolkit Glossary</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/saturated-zone">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The part of the lithosphere where each void space in subsurface material is filled with water, or is saturated, under greater pressure than that of the atmosphere.</skos:definition>
+	<skos:prefLabel xml:lang="en">saturated zone</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Poehls DJ and Smith GJ 2009, Encyclopedic dictionary of hydrogeology, Elsevier Inc., 517 pp.</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/stratification">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The formation of layers in a water body that show differences in temperature, turbidity, pH, nutrients, salinity, dissolved oxygen or light penetration at various depths.</skos:definition>
+	<skos:prefLabel xml:lang="en">stratification</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">eWater Toolkit Glossary</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/streamflow">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The flow of water in streams, rivers and other channels.</skos:definition>
+	<skos:prefLabel xml:lang="en">streamflow</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:altLabel xml:lang="en">flow</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/stygofauna">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Aquatic animals found in groundwater; sometimes used as a synonym of stygobite.</skos:definition>
+	<skos:prefLabel xml:lang="en">stygofauna</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Tomlinson M and Boulton A 2008, Subsurface groundwater dependent ecosystems: a review of biodiversity, ecological processes and ecosystem services, National Water Commission Waterlines Occasional Paper No. 8, October 2008</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/total-dissolved-solids">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The sum of all particulate material dissolved in water. Usually expressed in terms of milligrams per litre (mg/L). It can be measured by evaporating the solvent and measuring the mass of residues left or may be estimated from the electrical conductivity of the water.</skos:definition>
+	<skos:prefLabel xml:lang="en">total dissolved solids</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<skos:altLabel xml:lang="en">TDS</skos:altLabel>
+	<skos:notation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TDS</skos:notation>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/transmissivity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The rate at which water moves through a unit width of aquifer or aquitard under a unit hydraulic gradient. It is the product of aquifer thickness and hydraulic conductivity.</skos:definition>
+	<skos:prefLabel xml:lang="en">transmissivity</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Richardson, S., et al., (2011). Australian groundwater-dependent ecosystem toolbox part 1: assessment framework, Waterlines report, National Water Commission, Canberra</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/transpiration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Evaporation loss of water from the leaves of plants through the stomata; the flow of water through plants from soil to atmosphere.</skos:definition>
+	<skos:prefLabel xml:lang="en">transpiration</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">eWater Toolkit Glossary</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/troglofauna">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Terrestrial animals living in caves and other air-filled subterranean spaces.</skos:definition>
+	<skos:prefLabel xml:lang="en">troglofauna</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Tomlinson M and Boulton A 2008, Subsurface groundwater dependent ecosystems: a review of biodiversity, ecological processes and ecosystem services, National Water Commission Waterlines Occasional Paper No. 8, October 2008</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/turbidity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Means the measure of the light scattering properties of water, and is an indicator of the presence of suspended solids.</skos:definition>
+	<skos:prefLabel xml:lang="en">turbidity</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Water Regulations 2008  Schedule 3 Part 1</dcterms:source>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/unconfined-aquifer">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">An aquifer in which there are no confining beds between the saturated zone and the surface. There will be a watertable in an unconfined aquifer.</skos:definition>
+	<skos:prefLabel xml:lang="en">unconfined aquifer</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/unsaturated-zone">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The areas below the ground where void spaces are filled with a mixture of water under pressure less than atmospheric which includes water held by capillarity and air (gases) under atmospheric pressure.</skos:definition>
+	<skos:prefLabel xml:lang="en">unsaturated zone</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/Groundwater-Dependent-Ecosystems-Atlas"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Poehls DJ and Smith GJ 2009, Encyclopedic dictionary of hydrogeology, Elsevier Inc., 517 pp.</dcterms:source>
+	<skos:altLabel xml:lang="en">vadose zone</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/aquatic-GDE">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A GDE which uses groundwater after it has been discharged to the surface. This includes all groundwater-fed surface water bodies, such as rivers, wetlands, lakes and springs.
+This definition refers only to the aquatic (inundated) component of a system, and therefore excludes any vegetation which may fringe a surface water body.</skos:definition>
+	<skos:prefLabel xml:lang="en">aquatic GDE</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Eamus, D., Froend, R., Loomes, R., Hose, G., Murray, B., (2006). A functional methodology for determining the groundwater regime needed to maintain the health of groundwater-dependent vegetation, Australian Journal of Botany, 2006, 54, 97–114, 2006.</dcterms:source>
+	<skos:broader rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-dependent-ecosystem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#notation">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/subterranean-GDE">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A water-dependent ecosystem occurring below the surface of the ground within fractured, porous or unconsolidated aquifers, and in caves in both the saturated and vadose zones.</skos:definition>
+	<skos:prefLabel xml:lang="en">subterranean GDE</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Australian National Aquatic Ecosystem Classification, Subterranean Class – Background briefing note. Aquatic Ecosystems Task Group.</dcterms:source>
+	<skos:broader rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-dependent-ecosystem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/terrestrial-GDE">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A GDE that accesses subsurface groundwater to meet all or some of its water requirements. This includes terrestrial vegetation, subsurface fauna communities (e.g. burrowing crayfish), and some vegetation which is associated with a surface water body.</skos:definition>
+	<skos:prefLabel xml:lang="en">terrestrial GDE</skos:prefLabel>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-10-13T04:01:55Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:source xml:lang="en">Eamus, D., Froend, R., Loomes, R., Hose, G., Murray, B., (2006). A functional methodology for determining the groundwater regime needed to maintain the health of groundwater-dependent vegetation, Australian Journal of Botany, 2006, 54, 97–114, 2006.</dcterms:source>
+	<skos:broader rdf:resource="http://www.neii.gov.au/def/voc/GW/groundwater-dependent-ecosystems-atlas/groundwater-dependent-ecosystem"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

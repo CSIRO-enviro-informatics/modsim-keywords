@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/CGI-Geoscience-Terminology-Working-Group">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGI-Geoscience-Terminology-Working-Group</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Raymond.Oliver">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Raymond.Oliver</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Sedgmen.Lara_Admin</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Oliver-Raymond">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oliver-Raymond</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<dcterms:title xml:lang="en">Processing Activity - All Concepts</dcterms:title>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/adsorption"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/agglomeration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/bioleaching"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/burning"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/calcining"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/cementation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/centrifugal-gravity-separation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/coagulation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/comminution"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/crystallization"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/distillation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/eddy-current-separator"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrolysis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrostatic-separation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/evaporation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flocculation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flotation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravity-separation-table"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/heavy-medium-separation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/hydrometallurgy"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/incineration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/leaching"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/liquid-solid-separation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/magnetic-separation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/manual-sorting"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/particle-sizing"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/precipitation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/pyrometallurgy"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/roasting"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sluice-concentration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/smelting"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/solvent-extraction"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sorting"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/stratification-jig"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dcterms:title xml:lang="en">Processing Activity</dcterms:title>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment"/>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/CGI-Geoscience-Terminology-Working-Group"/>
+	<dcterms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-11-29</dcterms:date>
+	<dcterms:description xml:lang="en">This file contains the CGI Processing Activity vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts to categorize processing activities associated with a mining activity. A miningActivity and subsequent processingActivity provide the linkage between a minedMaterial and a mine Product. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+	<skos:changeNote xml:lang="en">2014-02-23 SMR Original conversion to SKOS.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name.</skos:changeNote>
+	<skos:changeNote xml:lang="en">2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions.</skos:changeNote>
+	<skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Processing Activity vocabulary. Vocabulary Shepherd: Jouni Vuollo. Compilation and review in Google doc spreadsheet; adopted 9/01/2014; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-09-06</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v0.1</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">concentraing processes that combine physical and chemical separation methods.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">02</skos:notation>
+	<skos:prefLabel xml:lang="en">physico-chemical treatment</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/agglomeration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/coagulation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flocculation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flotation"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/adsorption">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Taking up of ions, molecules or colloids on the surface of a material.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.6</skos:notation>
+	<skos:prefLabel xml:lang="en">adsorption</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/agglomeration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment"/>
+	<skos:definition xml:lang="en">Agglomeration: process designed to bind together finely ground particles. The result is an agglomerate or a sinter. Pelletization: process designed to produce spherical agglomerates of a few mm diameter, called pellets, through a rotating device (balling drum, balling disc) after the addition of some binding material (swelling clay, lime, cement, etc.) and water.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">02.2</skos:notation>
+	<skos:prefLabel xml:lang="en">agglomeration</skos:prefLabel>
+	<skos:altLabel xml:lang="en">pelletization</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sorting"/>
+	<skos:definition xml:lang="en">Automated sorting of material on the basis of physical characteristics using optical characteristics (visible spectrum, near infrared, X-ray, ultraviolet), electrical conductivity, density, magnetic susceptibility or other physical properties</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1.2</skos:notation>
+	<skos:prefLabel xml:lang="en">automatic sorting</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/eddy-current-separator"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrostatic-separation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/magnetic-separation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/bioleaching">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Bioleaching</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Bioleaching is the extraction of metals from their ores through the use of living organisms. This is much cleaner than the traditional heap leaching using cyanide. Bioleaching is one of several applications within biohydrometallurgy and several methods are used to recover copper, zinc, lead, arsenic, antimony, nickel, molybdenum, gold, silver, and cobalt.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.17</skos:notation>
+	<skos:prefLabel xml:lang="en">bioleaching</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/burning">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://www.e-goldprospecting.com/html/coal_gold_agglomeration__cga_.html</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">The utilization of coal-oil agglomerates in the recovery of gold is based on the natural hydrophobicity/lipophilicity of gold, a property which according to the consensus of most surface chemistry experts is brought about by the ease by which gold surface becomes contaminated, though is possible to recover gold by agglomerating them with oil, the amount of gold in the ore is usually small that there is insufficient gold particles to form agglomerates. Thus, the need to use other hydrophobic materials (e.g. coal) to either form agglomerates together with gold or act as a carrier of gold particles. Agglomerates are prepared in a previous step and then added to the ore pulp in a second step. The gold particles, being oilfilic, penetrate into the agglomerates. In a continuous operation the agglomerates would be maintained in contacting tanks until they reach a pre-determined gold content. The tailings are discarded by means of a screen situated at the upper part of the tanks. The recovery of gold from agglomerates is obtained in a later step by burning the agglomerates and then separating the gold from the ashes.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.14</skos:notation>
+	<skos:prefLabel xml:lang="en">burning</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/calcining">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Calcination</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">A more general definition is “Calcination (also referred to as calcining) is a thermal treatment process in presence of air applied to ores and other solid materials to bring about a thermal decomposition, phase transition, or removal of a volatile fraction. The calcination process normally takes place at temperatures below the melting point of the product materials. Calcination is to be distinguished from roasting, in which more complex gas–solid reactions take place between the furnace atmosphere and the solids.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.15</skos:notation>
+	<skos:prefLabel xml:lang="en">calcining</skos:prefLabel>
+	<skos:altLabel xml:lang="en">calcination</skos:altLabel>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Raymond.Oliver"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-12-15T02:09:52Z</dcterms:modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/cementation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Cementation</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">In metallurgy, cementation is a process in which ions are reduced to zero valence at a solid metallic interface</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.4</skos:notation>
+	<skos:prefLabel xml:lang="en">cementation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/centrifugal-gravity-separation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+	<skos:definition xml:lang="en">particulate material is introduced into a fluid medium that is being rotated, denser particles move away from the center of rotation faster than lighter particles, allowing them to be concentrated.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1.2.1.4</skos:notation>
+	<skos:prefLabel xml:lang="en">centrifugal gravity separation</skos:prefLabel>
+	<skos:altLabel xml:lang="en">radial acceleration</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">Sorting process using chemical separation methods</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03</skos:notation>
+	<skos:prefLabel xml:lang="en">chemical treatment</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/adsorption"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/bioleaching"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/burning"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/calcining"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/cementation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/crystallization"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/distillation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrolysis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/evaporation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/hydrometallurgy"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/incineration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/leaching"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/precipitation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/pyrometallurgy"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/roasting"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/smelting"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/solvent-extraction"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/coagulation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://ktrungthuy.free.fr/SACH-BOOKS/Handbook%20of%20Flotation%20Reagents,%20Elsevier%20(2007),%200444530290.pdf</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment"/>
+	<skos:definition xml:lang="en">In a dispersed system, particles of all species can be aggregated into larger structures by several mechanisms. Aggregation, based on reducing inter-particle repulsion forces, is known as coagulation and the aggregates are called coagula. If coagulation is induced by a polymer-bridging action, the process is called flocculation and the aggregates are called flocs. When aggregation is achieved as a result of the action of an immersible bridging liquid, such as oil, the process is called agglomeration and the aggregates are referred to as agglomerates. The mechanisms include both those in coagulation (i.e. action of electrolytes) and bridging flocculation by either inorganic polymers or by precipitating metal hydroxides. The latter is known as sweep flocculation.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">02.3</skos:notation>
+	<skos:prefLabel xml:lang="en">coagulation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/comminution">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment"/>
+	<skos:definition xml:lang="en">Breaking solid particles to reduce their sizes; general term encompassing crushing and grinding.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.3</skos:notation>
+	<skos:prefLabel xml:lang="en">comminution</skos:prefLabel>
+	<skos:altLabel xml:lang="en">crushing</skos:altLabel>
+	<skos:altLabel xml:lang="en">fragmentation</skos:altLabel>
+	<skos:altLabel xml:lang="en">grinding</skos:altLabel>
+	<skos:altLabel xml:lang="en">pulverising</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/crystallization">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Crystallization</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Crystallization is the (natural or artificial) process of formation of solid crystals precipitating from a solution, melt or more rarely deposited directly from a gas. Crystallization is also a chemical solid-liquid separation technique, in which mass transfer of a solute from the liquid solution to a pure solid crystalline phase occurs. In chemical engineering crystallization occurs in a crystallizer. Crystallization is therefore an aspect of precipitation, obtained through a variation of the solubility conditions of the solute in the solvent, as compared to precipitation due to chemical reaction.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.8</skos:notation>
+	<skos:prefLabel xml:lang="en">crystallization</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/distillation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Distillation</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Distillation is a method of separating mixtures based on differences in volatilities of components in a boiling liquid mixture. Distillation is a unit operation, or a physical separation process, and not a chemical reaction.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.7</skos:notation>
+	<skos:prefLabel xml:lang="en">distillation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/eddy-current-separator">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Eddy_current_separator</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting"/>
+	<skos:definition xml:lang="en">Uses an electric current induced into a conductor by changes in magnetic flux cutting through it. The effect of such currents is to induce a secondary magnetic field around the particle; this field reacts with the applied magnetic field resulting in forces that eject the conducting particle from the stream of mixed particles, providing the means for an effective separation.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1.5</skos:notation>
+	<skos:prefLabel xml:lang="en">eddy current separator</skos:prefLabel>
+	<skos:altLabel xml:lang="en">foucault current separator</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrolysis">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Hydrometallurgy</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Electrolysis: Electrowinning and electrorefining respectively involve the recovery and purification of metals using electrodeposition of metals at the cathode, and either metal dissolution or a competing oxidation reaction at the anode.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.5</skos:notation>
+	<skos:prefLabel xml:lang="en">electrolysis</skos:prefLabel>
+	<skos:altLabel xml:lang="en">electrorefining</skos:altLabel>
+	<skos:altLabel xml:lang="en">electrowinning</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrostatic-separation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">B.A.Wills, T.J.Napier-Munn, Will's Mineral Processing Technology, Seventh edition, Elsevier 2006.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting"/>
+	<skos:definition xml:lang="en">Separation process based on the difference in electrical conductivity between the various minerals.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1.4</skos:notation>
+	<skos:prefLabel xml:lang="en">electrostatic separation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/evaporation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Evaporation</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Evaporation is a type of vaporization of a liquid that occurs from the surface of a liquid into a gaseous phase that is not saturated with the evaporating substance.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.10</skos:notation>
+	<skos:prefLabel xml:lang="en">evaporation</skos:prefLabel>
+	<skos:altLabel xml:lang="en">drying</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flocculation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">B.A.Wills, T.J.Napier-Munn, Will's Mineral Processing Technology, Seventh edition, Elsevier 2006.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment"/>
+	<skos:definition xml:lang="en">Flocculation is the coagulation between particles induced by the bridging action of long-chain organic polymers.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">02.4</skos:notation>
+	<skos:prefLabel xml:lang="en">flocculation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flotation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor; http://www.cpchem.com/bl/specchem/en-us/Pages/IntroductiontoMineralProcessing.aspx</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment"/>
+	<skos:definition xml:lang="en">Process in which particles are separated according to their tendency to adhere more or less to air bubbles to form a mineralized froth: this feature is linked to the natural or designed hydrophobic property of the particle surface.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">02.1</skos:notation>
+	<skos:prefLabel xml:lang="en">flotation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting"/>
+	<skos:definition xml:lang="en">Process in which the valuable particles are separated from the gangue by virtue of the difference between their specific volumes. This causes their settling rates within a medium - air or water - to be different. This process is therefore affected by particle size.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1.2.1</skos:notation>
+	<skos:prefLabel xml:lang="en">gravimetric sorting</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/centrifugal-gravity-separation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravity-separation-table"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/heavy-medium-separation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sluice-concentration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/stratification-jig"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravity-separation-table">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://www.motive-traction.com.au/cgi-bin/engine.pl?Page=page.html&amp;Rec=124</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+	<skos:definition xml:lang="en">Gravity concentration consisting of an inclined planar surface fitted with riffles. Particles are carried across the surface by a fluid flow as the surface is vibrated. The shaking promotes the segregation of denser particles and keeps them moving across the deck in different angles down to the discharge end. Wilfley table, Holman table are examples.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1.2.1.3</skos:notation>
+	<skos:prefLabel xml:lang="en">gravity separation table</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/heavy-medium-separation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+	<skos:definition xml:lang="en">A gravity process by using a heavy medium with specific gravity intermediate between that of lighter minerals and heavier minerals. So that lighter minerals float, while heavier minerals sink.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1.2.1.5</skos:notation>
+	<skos:prefLabel xml:lang="en">heavy medium separation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/hydrometallurgy">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Hydrometallurgy</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Hydrometallurgy is part of the field of extractive metallurgy involving the use of aqueous chemistry for the recovery of metals from ores, concentrates, and recycled or residual materials. Hydrometallurgy is typically divided into three general areas: leaching, solution concentration and purification, and metal recovery.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.1</skos:notation>
+	<skos:prefLabel xml:lang="en">hydrometallurgy</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/incineration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Incineration</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Incineration is a waste treatment process that involves the combustion of organic substances contained in waste materials. Incineration of waste materials converts the waste into ash, flue gas, and heat. (http://en.wikipedia.org/wiki/Incineration)</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.16</skos:notation>
+	<skos:prefLabel xml:lang="en">incineration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/leaching">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Action of chemical reagents on a material resulting in the dissolution of some of its elements.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.2</skos:notation>
+	<skos:prefLabel xml:lang="en">leaching</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/liquid-solid-separation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment"/>
+	<skos:definition xml:lang="en">Separation of suspended material by concentrating of pulp and removal of fluid through thickening, filtering, decanting or cycloning.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.2</skos:notation>
+	<skos:prefLabel xml:lang="en">liquid-solid separation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/magnetic-separation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting"/>
+	<skos:definition xml:lang="en">Separation process based on the difference in magnetic susceptibility between minerals. A magnetic field is used either to deviate the magnetic particles from their course, or to lift the magnetic particles.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1.3</skos:notation>
+	<skos:prefLabel xml:lang="en">magnetic separation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/manual-sorting">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sorting"/>
+	<skos:definition xml:lang="en">Sorting a coarse material into two or more classes on the basis of physical characteristics: appearance, colour, conductivity, fluorescence, etc., manually.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1.1</skos:notation>
+	<skos:prefLabel xml:lang="en">manual sorting</skos:prefLabel>
+	<skos:altLabel xml:lang="en">handpicking</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/particle-sizing">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment"/>
+	<skos:definition xml:lang="en">separation of particles of a fragmented material into several classes according to size. Typically done by means of screens or sieves: particle with a size larger than the screen or sieve opening are said to form the oversize fraction, the others form the undersize fraction.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.4</skos:notation>
+	<skos:prefLabel xml:lang="en">particle sizing</skos:prefLabel>
+	<skos:altLabel xml:lang="en">classification</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+	<skos:definition xml:lang="en">processes using physical separation methods</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01</skos:notation>
+	<skos:prefLabel xml:lang="en">physical treatment</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/comminution"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/liquid-solid-separation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/particle-sizing"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sorting"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/precipitation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Hydrometallurgy</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Precipitation in hydrometallurgy involves the chemical precipitation of either metals and their compounds or of the contaminants from aqueous solutions. Precipitation will proceed when, through reagent addition, evaporation, pH change or temperature manipulation, any given species exceeds its limit of solubility.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.9</skos:notation>
+	<skos:prefLabel xml:lang="en">precipitation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/pyrometallurgy">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Pyrometallurgy</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Pyrometallurgy is a branch of extractive metallurgy. It consists of the thermal treatment of minerals and metallurgical ores and concentrates to bring about physical and chemical transformations in the materials to enable recovery of valuable metals. Pyrometallurgical treatment may produce saleable products such as pure metals, or intermediate compounds or alloys, suitable as feed for further processing. Examples of elements extracted by pyrometallurgical processes include the oxides of less reactive elements like Fe, Cu, Zn, Chromium, Tin, Manganese.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.11</skos:notation>
+	<skos:prefLabel xml:lang="en">pyrometallurgy</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/roasting">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Roasting_(metallurgy)</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Roasting is a step in the processing of certain ores. More specifically, roasting is a metallurgical process involving gas–solid reactions at elevated temperatures with the goal of purifying the metal component(s). Roasting consists of thermal gas–solid reactions, which can include oxidation, reduction, chlorination, sulfation, and pyrohydrolysis. In roasting, the ore or ore concentrate is treated with very hot air.” http://en.wikipedia.org/wiki/Roasting_(metallurgy)</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.12</skos:notation>
+	<skos:prefLabel xml:lang="en">roasting</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sluice-concentration">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+	<skos:definition xml:lang="en">a slanting trough fitted with riffles or with moquette along the bottom of the trough; particles are entrained in fluid flowing through the trough, and denser particles settle to the bottom more rapidly and are trapped.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1.2.1.2</skos:notation>
+	<skos:prefLabel xml:lang="en">sluice concentration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/smelting">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://en.wikipedia.org/wiki/Pyrometallurgy#Smelting</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Smelting is a form of extractive metallurgy; its main use is to produce a metal from its ore. Smelting involves thermal reactions in which at least one product is a molten phase. Metal oxides can then be smelted by heating with coke or charcoal (forms of carbon), a reducing agent that liberates the oxygen as carbon dioxide leaving a refined mineral. Carbonate ores are also smelted with charcoal, but are sometimes need to be calcined first. Other materials may need to be added as flux, aiding the melting of the oxide ores and assisting in the formation of a slag, as the flux reacts with impurities, such as silicon compounds. Smelting usually takes place at a temperature above the melting point of the metal, but processes vary considerably according to the ore involved and other matters.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.13</skos:notation>
+	<skos:prefLabel xml:lang="en">smelting</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/solvent-extraction">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+	<skos:definition xml:lang="en">Extraction with a solvent. This may be achieved on: (1) the soluble part of a solid matter (solid/liquid extraction), (2) the elements within a liquid phase (liquid/liquid extraction).</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">03.3</skos:notation>
+	<skos:prefLabel xml:lang="en">solvent extraction</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sorting">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">Based on http://en.wikipedia.org/wiki/Ore_sorting and http://en.wikipedia.org/wiki/Mineral_processing</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment"/>
+	<skos:definition xml:lang="en">Processes that operate on particulate material to concentrate a desired component and separate it from waste material.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1</skos:notation>
+	<skos:prefLabel xml:lang="en">sorting</skos:prefLabel>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/manual-sorting"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/stratification-jig">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:source xml:lang="en">http://www.info-diamond.com/rough/mining-equipment-47.html; http://en.wikipedia.org/wiki/Jig_concentrators</dcterms:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+	<skos:definition xml:lang="en">The principle of the jig is the action of pulsed vertical movement of water through a volume of particulate material. Particles with a higher specific gravity (density) settle faster, resulting in a concentration of material with higher density at the bottom, on the jig bed.</skos:definition>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifier/cgi/LocalHierarchyKey">01.1.2.1.1</skos:notation>
+	<skos:prefLabel xml:lang="en">stratification jig</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#notation">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/date">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#changeNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#changeNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

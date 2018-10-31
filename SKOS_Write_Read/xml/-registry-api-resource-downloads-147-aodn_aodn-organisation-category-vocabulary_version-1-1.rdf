@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns="http://schema.semantic-web.at/ppt/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:opencyc="http://sw.opencyc.org/concept/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation_classes/1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dcterms:title xml:lang="en">AODN Organisation Category Vocabulary</dcterms:title>
+	<dcterms:description xml:lang="en">An AODN controlled vocabulary describing organisation categories for classifying organisational entities.</dcterms:description>
+	<dcterms:contributor xml:lang="en">Sebastien Mancini</dcterms:contributor>
+	<dcterms:subject xml:lang="en">organisation</dcterms:subject>
+	<dcterms:publisher xml:lang="en">eMarine Information Infrastructure (eMII)</dcterms:publisher>
+	<dcterms:creator xml:lang="en">Natalia Atkins</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-27T10:38:15Z</dcterms:created>
+	<dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Freely Available For Reuse</dc:rights>
+	<identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#string">category</identifier>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-11T22:41:25Z</dcterms:modified>
+	<skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/category/1"/>
+	<skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/category/2"/>
+	<skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/category/3"/>
+	<skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/category/4"/>
+	<skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/category/5"/>
+	<skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/category/6"/>
+	<skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/category/7"/>
+	<csw:hierarchyRoot rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</csw:hierarchyRoot>
+	<csw:hierarchyRootType rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-29</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1.1</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://schema.semantic-web.at/ppt/identifier">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://schema.semantic-web.at/ppt/identifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation_classes/category/1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalia Atkins</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-27T10:38:15Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-12T01:25:45Z</dcterms:modified>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/26"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/27"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/34"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/42"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/168"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/24"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/13"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/8"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/23"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/133"/>
+	<skos:prefLabel xml:lang="en">Australian Government</skos:prefLabel>
+	<skos:definition xml:lang="en">Australian Government category</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network Organisation Category Register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation_classes/category/2">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMII_Finney.Kim</dcterms:contributor>
+	<dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalia Atkins</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-27T10:38:15Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-06-24T03:15:46Z</dcterms:modified>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/79"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/59"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/78"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/73"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/67"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/65"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/58"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/54"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/63"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/74"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/80"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/75"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/66"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/70"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/69"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/62"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/57"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/56"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/71"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/64"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/81"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/55"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/76"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/86"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/61"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/96"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/102"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/60"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/77"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/109"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/113"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/114"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/117"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/122"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/121"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/127"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/72"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/128"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/129"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/130"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/177"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/171"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/33"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/344"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/346"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/345"/>
+	<skos:prefLabel xml:lang="en">State Government</skos:prefLabel>
+	<skos:definition xml:lang="en">State Government category</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network Organisation Category Register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation_classes/category/3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalia_Atkins</dcterms:contributor>
+	<dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalia Atkins</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-27T10:38:15Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-13T01:45:42Z</dcterms:modified>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/262"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/263"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/268"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/178"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/270"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/274"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/189"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/278"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/279"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/287"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/289"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/294"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/303"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/194"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/305"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/309"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/210"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/215"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/217"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/224"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/235"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/307"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/252"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/318"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/316"/>
+	<skos:prefLabel xml:lang="en">Australian University</skos:prefLabel>
+	<skos:definition xml:lang="en">Australian University category</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network Organisation Category Register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation_classes/category/4">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMII_Atkins.Natalia</dcterms:contributor>
+	<dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalia Atkins</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-27T10:38:15Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-29T03:35:48Z</dcterms:modified>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/364"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/324"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/348"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/341"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/349"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/319"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/366"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/331"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/350"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/320"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/329"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/332"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/351"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/337"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/326"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/360"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/352"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/369"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/334"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/328"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/321"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/335"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/333"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/330"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/322"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/327"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/339"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/358"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/367"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/325"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/323"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/355"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/353"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/354"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/403"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/398"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/395"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/396"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/397"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/371"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/372"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/373"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/374"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/375"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/376"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/377"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/378"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/379"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/380"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/381"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/382"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/383"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/384"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/385"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/386"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/387"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/388"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/389"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/390"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/391"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/393"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/394"/>
+	<skos:prefLabel xml:lang="en">International</skos:prefLabel>
+	<skos:definition xml:lang="en">International category</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network Organisation Category Register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation_classes/category/5">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMII_Atkins.Natalia</dcterms:contributor>
+	<dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natalia Atkins</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-04-27T10:38:15Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-29T03:25:28Z</dcterms:modified>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/28"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/30"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/32"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/41"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/39"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/106"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/35"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/43"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/37"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/38"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/44"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/46"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/48"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/52"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/53"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/82"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/85"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/87"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/88"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/89"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/90"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/95"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/92"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/93"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/94"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/97"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/98"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/99"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/100"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/101"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/103"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/108"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/104"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/107"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/105"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/112"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/110"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/111"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/31"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/116"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/115"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/119"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/118"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/124"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/125"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/126"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/131"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/132"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/40"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/172"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/173"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/174"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/175"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/176"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/347"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/343"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/401"/>
+	<skos:prefLabel xml:lang="en">Private Company</skos:prefLabel>
+	<skos:definition xml:lang="en">Private Company category</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network Organisation Category Register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation_classes/category/6">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMII_Atkins.Natalia</dcterms:contributor>
+	<dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kim_Finney</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-12T00:56:50Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-29T03:24:53Z</dcterms:modified>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/36"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/45"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/47"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/49"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/84"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/83"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/120"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/50"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/400"/>
+	<skos:prefLabel xml:lang="en">Non Government</skos:prefLabel>
+	<skos:definition xml:lang="en">Non Government organisation category</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network Organisation Category Register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+	<skos:hiddenLabel xml:lang="en">NGO</skos:hiddenLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation_classes/category/7">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kim_Finney</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-12T01:08:52Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-12T01:12:36Z</dcterms:modified>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/organisation/entity/51"/>
+	<skos:prefLabel xml:lang="en">Other</skos:prefLabel>
+	<skos:definition xml:lang="en">Miscellaneous category encompassing entities that don't fall neatly into other categories in this scheme.</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network Organisation Category Register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/organisation_classes/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semantic-web.at/ontologies/csw.owl#hierarchyRoot">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://semantic-web.at/ontologies/csw.owl#hierarchyRoot"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://semantic-web.at/ontologies/csw.owl#hierarchyRootType">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://semantic-web.at/ontologies/csw.owl#hierarchyRootType"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/26">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/27">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/34">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/42">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/168">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/24">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/13">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/8">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/23">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/133">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/79">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/59">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/78">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/73">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/67">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/65">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/58">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/54">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/63">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/74">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/80">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/75">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/66">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/70">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/69">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/62">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/57">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/56">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/71">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/64">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/81">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/55">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/76">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/86">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/61">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/96">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/102">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/60">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/77">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/109">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/113">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/114">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/117">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/122">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/121">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/127">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/72">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/128">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/129">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/130">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/177">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/171">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/33">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/344">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/346">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/345">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/262">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/263">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/268">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/178">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/270">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/274">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/189">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/278">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/279">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/287">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/289">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/294">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/303">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/194">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/305">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/309">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/210">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/215">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/217">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/224">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/235">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/307">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/252">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/318">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/316">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/364">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/324">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/348">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/341">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/349">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/319">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/366">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/331">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/350">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/320">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/329">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/332">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/351">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/337">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/326">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/360">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/352">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/369">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/334">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/328">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/321">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/335">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/333">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/330">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/322">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/327">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/339">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/358">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/367">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/325">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/323">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/355">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/353">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/354">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/403">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/398">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/395">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/396">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/397">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/371">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/372">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/373">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/374">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/375">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/376">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/377">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/378">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/379">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/380">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/381">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/382">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/383">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/384">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/385">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/386">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/387">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/388">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/389">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/390">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/391">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/393">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/394">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/28">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/30">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/32">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/41">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/39">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/106">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/35">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/43">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/37">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/38">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/44">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/46">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/48">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/52">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/53">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/82">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/85">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/87">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/88">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/89">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/90">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/95">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/92">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/93">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/94">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/97">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/98">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/99">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/100">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/101">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/103">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/108">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/104">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/107">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/105">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/112">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/110">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/111">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/31">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/116">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/115">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/119">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/118">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/124">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/125">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/126">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/131">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/132">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/40">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/172">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/173">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/174">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/175">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/176">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/347">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/343">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/401">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/36">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/45">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/47">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/49">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/84">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/83">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/120">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/50">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hiddenLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hiddenLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/400">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/organisation/entity/51">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

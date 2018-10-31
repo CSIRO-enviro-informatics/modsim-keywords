@@ -1,0 +1,1626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/NEII_Programme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NEII_Programme</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/National-Environmental-Information-Infrastructure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Environmental Information Infrastructure</foaf:name>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-09T02:52:17Z</dcterms:modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/National-Environmental-Information-Infrastructure-NEII">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">National Environmental Information Infrastructure (NEII)</foaf:name>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-09T02:52:26Z</dcterms:modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/NEII-Observed-property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">NEII Observed property</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#deprecated">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#deprecated"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/agriculture-soils">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">agriculture-soils</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-Aerosols">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-Aerosols</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-AirQuality">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-AirQuality</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-Altitude">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-Altitude</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-Clouds">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-Clouds</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-Precipitation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-Precipitation</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-atmosphericChemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-atmosphericChemistry</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-atmosphericElectricity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-atmosphericElectricity</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-atmosphericPhenomena">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-atmosphericPhenomena</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-atmosphericPressure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-atmosphericPressure</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-atmosphericRadiation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-atmosphericRadiation</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-atmosphericTemperature">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-atmosphericTemperature</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-atmosphericWaterVapor">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-atmosphericWaterVapor</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/atmosphere-atmosphericWinds">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">atmosphere-atmosphericWinds</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/biologicalClassification-animalsOrInvertebrates">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">biologicalClassification-animalsOrInvertebrates</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/biologicalClassification-animalsOrVertebrates">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">biologicalClassification-animalsOrVertebrates</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/biologicalClassification-bacteriaOArchaea">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">biologicalClassification-bacteriaOArchaea</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/biologicalClassification-fungi">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">biologicalClassification-fungi</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/biologicalClassification-plants">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">biologicalClassification-plants</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/biologicalClassification-protists">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">biologicalClassification-protists</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/biologicalClassification-viruses">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">biologicalClassification-viruses</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/biosphere-aquaticEcosystems">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">biosphere-aquaticEcosystems</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/biosphere-ecologicalDynamics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">biosphere-ecologicalDynamics</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/biosphere-terrestrialEcosystems">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">biosphere-terrestrialEcosystems</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/biosphere-vegetation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">biosphere-vegetation</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/cryosphere-frozenGround">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">cryosphere-frozenGround</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/cryosphere-glaciersOrIceSheets">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">cryosphere-glaciersOrIceSheets</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/cryosphere-seaIce">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">cryosphere-seaIce</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/cryosphere-snowOrIce">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">cryosphere-snowOrIce</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/landSurface-erosionOrSedimentation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">landSurface-erosionOrSedimentation</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/landSurface-geomorphicLandformsOrProcesses">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">landSurface-geomorphicLandformsOrProcesses</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/landSurface-landUseOrLandCover">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">landSurface-landUseOrLandCover</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/landSurface-landscape">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">landSurface-landscape</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/landSurface-surfaceRadiativeProperties">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">landSurface-surfaceRadiativeProperties</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/landSurface-surfaceThermalProperties">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">landSurface-surfaceThermalProperties</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/landSurface-topography">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">landSurface-topography</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-aquaticSciences">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-aquaticSciences</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-bathymetryOrSeafloorTopography">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-bathymetryOrSeafloorTopography</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-coastalProcesses">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-coastalProcesses</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-marineEnvironmentMonitoring">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-marineEnvironmentMonitoring</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-marineGeophysics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-marineGeophysics</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-marineSediments">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-marineSediments</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-marineVolcanism">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-marineVolcanism</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-oceanAcoustics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-oceanAcoustics</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-oceanChemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-oceanChemistry</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-oceanCirculation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-oceanCirculation</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-oceanHeatBudget">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-oceanHeatBudget</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-oceanOptics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-oceanOptics</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-oceanPressure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-oceanPressure</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-oceanTemperature">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-oceanTemperature</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-oceanWaves">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-oceanWaves</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-oceanWinds">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-oceanWinds</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-salinityOrDensity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-salinityOrDensity</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-seaSurfaceTopography">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-seaSurfaceTopography</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-tides">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-tides</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/oceans-waterQuality">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">oceans-waterQuality</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/paleoclimate-iceCoreRecords">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">paleoclimate-iceCoreRecords</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/paleoclimate-landRecords">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">paleoclimate-landRecords</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/paleoclimate-oceanOrLakeRecords">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">paleoclimate-oceanOrLakeRecords</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/paleoclimate-paleoclimateReconstructions">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">paleoclimate-paleoclimateReconstructions</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/solidEarth-earthGasesOrLiquids">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">solidEarth-earthGasesOrLiquids</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/solidEarth-geochemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">solidEarth-geochemistry</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/solidEarth-geodetics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">solidEarth-geodetics</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/solidEarth-geomagnetism">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">solidEarth-geomagnetism</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/solidEarth-geothermalDynamics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">solidEarth-geothermalDynamics</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/solidEarth-gravityOrGravitationalField">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">solidEarth-gravityOrGravitationalField</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/solidEarth-rocksOrMineralsOrCrystals">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">solidEarth-rocksOrMineralsOrCrystals</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/solidEarth-tectonics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">solidEarth-tectonics</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/terrestrialHydrosphere-groundWater">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">terrestrialHydrosphere-groundWater</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/terrestrialHydrosphere-surfaceWater">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">terrestrialHydrosphere-surfaceWater</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="https://www.neii.gov.au/voc/def/NEII/neii-observed-property/terrestrialHydrosphere-waterQualityOrWaterChemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:label xml:lang="en">terrestrialHydrosphere-waterQualityOrWaterChemistry</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/terrestrialHydrosphere-groundWater">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Ground water in its broadest sense includes all subsurface water whether in its liquid, solid or gaseous state, provided it is not chemically combined with the minerals present. In practice, it is all subsurface water that participates in the hydrological cycle.</skos:definition>
+	<skos:prefLabel xml:lang="en">terrestrialHydrosphere-groundWater</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:label xml:lang="en">NEII Observed Property</rdfs:label>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:18Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/National-Environmental-Information-Infrastructure"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/National-Environmental-Information-Infrastructure"/>
+	<dcterms:description xml:lang="en">Observed property is the  environmental phenomenon (property) being measured at a site, for example, streamflow, soil moisture, or air pressure. The vocabulary of  observed properties is based on a subset of NASA's Global Change Master Directory (GCMD) Science and Services keywords (http://gcmd.nasa.gov/learn/keyword_list.html).</dcterms:description>
+	<dcterms:publisher rdf:resource="http://editor.vocabs.ands.org.au/user/National-Environmental-Information-Infrastructure-NEII"/>
+	<dcterms:subject xml:lang="en">NEII</dcterms:subject>
+	<dcterms:title xml:lang="en">NEII Observed Property</dcterms:title>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/terrestrialHydrosphere-groundWater"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/terrestrialHydrosphere-surfaceWater"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/terrestrialHydrosphere-waterQualityOrWaterChemistry"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/agriculture-soils"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-Aerosols"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-AirQuality"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-Altitude"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-Clouds"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-Precipitation"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericChemistry"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericElectricity"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericPhenomena"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericPressure"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericRadiation"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericTemperature"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericWaterVapor"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericWinds"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-animalsOrInvertebrates"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-animalsOrVertebrates"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-bacteriaOArchaea"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-fungi"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-plants"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-protists"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-viruses"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biosphere-aquaticEcosystems"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biosphere-ecologicalDynamics"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biosphere-terrestrialEcosystems"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biosphere-vegetation"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/cryosphere-frozenGround"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/cryosphere-glaciersOrIceSheets"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/cryosphere-seaIce"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/cryosphere-snowOrIce"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-erosionOrSedimentation"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-geomorphicLandformsOrProcesses"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-landUseOrLandCover"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-landscape"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-surfaceRadiativeProperties"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-surfaceThermalProperties"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-topography"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-aquaticSciences"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-bathymetryOrSeafloorTopography"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-coastalProcesses"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-marineEnvironmentMonitoring"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-marineGeophysics"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-marineSediments"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-marineVolcanism"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanAcoustics"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanChemistry"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanCirculation"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanHeatBudget"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanOptics"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanPressure"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanTemperature"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanWaves"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanWinds"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-salinityOrDensity"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-seaSurfaceTopography"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-tides"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-waterQuality"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/paleoclimate-iceCoreRecords"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/paleoclimate-landRecords"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/paleoclimate-oceanOrLakeRecords"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/paleoclimate-paleoclimateReconstructions"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-earthGasesOrLiquids"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-geochemistry"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-geodetics"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-geomagnetism"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-geothermalDynamics"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-gravityOrGravitationalField"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-rocksOrMineralsOrCrystals"/>
+	<skos:hasTopConcept rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-tectonics"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-09-01</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/terrestrialHydrosphere-surfaceWater">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Pertains to all water present above the substrate or soil surface including water contained in an ocean, river, stream, lake, pond, lagoon, or impoundment reservoir.</skos:definition>
+	<skos:prefLabel xml:lang="en">terrestrialHydrosphere-surfaceWater</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/terrestrialHydrosphere-waterQualityOrWaterChemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Water quality refers to the physical, chemical, and biological characteristics of water with respect to its suitability for a particular use. Water chemistry refers to the chemical characteristics of water.</skos:definition>
+	<skos:prefLabel xml:lang="en">terrestrialHydrosphere-waterQualityOrWaterChemistry</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/NEII_Kaur.Hardeep_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-19T05:08:09Z</dcterms:modified>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/agriculture-soils">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The range of dynamic natural bodies composed of mineral and organic materials and living forms in which plants grow.</skos:definition>
+	<skos:prefLabel xml:lang="en">agriculture-soils</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-Aerosols">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Suspension of particles of condensed matter (liquid, solid, or mixed) in a carrier gas (usually air). Aerosols are important in the atmosphere as nuclei for the condensation of water droplets and ice crystals, as participants in various chemical cycles, and as absorbers and scatterers of solar radiation, thereby influencing the radiation budget of the earth-atmosphere system, which in turn influences the climate on the surface of the Earth.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-Aerosols</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-AirQuality">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The study of air pollutants in the atmosphere.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-AirQuality</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-Altitude">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A measure of height, especially of great height, as a mountain top or aircraft flight level. In meteorology, altitude is used almost exclusively with respect to the height of an airborne object above the earth’s surface, above a constant pressure surface, or above mean sea level.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-Altitude</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-Clouds">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A visible aggregate of minute water droplets and/or ice crystals in the atmosphere above the Earth’s surface.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-Clouds</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-Precipitation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">All liquid or solid phase aqueous particles that originate in the atmosphere and fall to the earth’s surface.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-Precipitation</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericChemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Measurements of chemical constituents in the atmosphere including the major (non-H2O) greenhouse gases (CO2, CH4, CFC, N2O).</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-atmosphericChemistry</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericElectricity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Electrical phenomena, regarded collectively, which occur in the Earth’s atmosphere.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-atmosphericElectricity</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericPhenomena">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The study of significant weather events.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-atmosphericPhenomena</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericPressure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The pressure exerted by the atmosphere as a consequence of gravitational attraction exerted upon the “column” of air lying directly above the point in question.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-atmosphericPressure</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericRadiation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Radiation budget refers to the difference between the absorbed solar radiation and the net infrared radiation. The radiation budget takes into account the sum of all radiation, transferred in all directions, through the Earth’s atmosphere and to and from space. The radiation budget (or radiation balance) controls the Earth’s temperature and rainfall.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-atmosphericRadiation</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericTemperature">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A measure of temperature at different levels of the Earth’s atmosphere.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-atmosphericTemperature</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericWaterVapor">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Water present in the atmosphere in gaseous form; the source of all forms of condensation and precipitation. Water vapor, clouds, and carbon dioxide are the main atmospheric components in the exchange of terrestrial radiation in the troposphere, serving as a regulator of planetary temperatures via the greenhouse effect. Approximately 50 percent of the atmosphere’s moisture lies within about 1.84 km of the earth’s surface, and only a minute fraction of the total occurs above the tropopause.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-atmosphericWaterVapor</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/atmosphere-atmosphericWinds">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Air in motion relative to the surface of the Earth. Since vertical components of atmospheric motion are relatively small especially near the surface of the Earth, meteorologists use the term to denote almost exclusively the horizontal (wind) component. Vertical winds are always identified as such.</skos:definition>
+	<skos:prefLabel xml:lang="en">atmosphere-atmosphericWinds</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-animalsOrInvertebrates">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Invertebrates are animals lacking a backbone, or without bones.</skos:definition>
+	<skos:prefLabel xml:lang="en">biologicalClassification-animalsOrInvertebrates</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-animalsOrVertebrates">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Vertebrates are chordates with a backbone, either of cartilage or bone, and a brain located inside a protective chamber of skull bones.</skos:definition>
+	<skos:prefLabel xml:lang="en">biologicalClassification-animalsOrVertebrates</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-bacteriaOArchaea">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Blue-Green Algae, now called cyanobacteria, are good examples of photoautotrophic eubacteria. They are also among the most common photoautotrophs on Earth. Most live in ponds and other freshwater habitats. They may grow as mucus-sheathed chains of cells, which can form dense, slimy mats near the surface of nutrient-enriched water.</skos:definition>
+	<skos:prefLabel xml:lang="en">biologicalClassification-bacteriaOArchaea</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-fungi">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">One of the taxonomic kingdoms, comprising eukaryotic, non-photosynthetic organisms, which obtain nutrients by the absorption of organic compounds from their surroundings. Fungi usually have chitin-containing cell walls and may be unicellular, filamentous (mycelial), or plasmoidal.</skos:definition>
+	<skos:prefLabel xml:lang="en">biologicalClassification-fungi</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-plants">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Pertaining to the scientific classification of plants.</skos:definition>
+	<skos:prefLabel xml:lang="en">biologicalClassification-plants</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-protists">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Protists are of the Kingdom Protista and are one of the diverse eukaryotes, single-celled species of which may resemble the first eukaryotic cells. At the present they are categorized by what they are not (not bacteria, fungi, plants, or animals).</skos:definition>
+	<skos:prefLabel xml:lang="en">biologicalClassification-protists</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biologicalClassification-viruses">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Biological Classification Viruses.</skos:definition>
+	<skos:prefLabel xml:lang="en">biologicalClassification-viruses</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biosphere-aquaticEcosystems">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The water environments, such as rivers, and oceans in which the life needs of a plant or animal are supplied.</skos:definition>
+	<skos:prefLabel xml:lang="en">biosphere-aquaticEcosystems</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biosphere-ecologicalDynamics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Describes coupled dynamics of human-ecological systems.</skos:definition>
+	<skos:prefLabel xml:lang="en">biosphere-ecologicalDynamics</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biosphere-terrestrialEcosystems">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The dry land environment in which the life needs of a plant or animal are supplied.</skos:definition>
+	<skos:prefLabel xml:lang="en">biosphere-terrestrialEcosystems</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/biosphere-vegetation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Vegetation, as used, here are types of plants and vegetation structures.</skos:definition>
+	<skos:prefLabel xml:lang="en">biosphere-vegetation</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/cryosphere-frozenGround">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Soil within which the moisture has predominantly changed to ice, the unfrozen portion being in vapor phase. Ice within the soil bonds (adfreezes) adjacent soil particles and renders frozen ground very hard. Permanently frozen ground is called permafrost. Dry frozen ground is relatively loose and crumbly because of the lack of bonding ice. Frozen ground is sometimes inadvisedly called frost or ground frost.</skos:definition>
+	<skos:prefLabel xml:lang="en">cryosphere-frozenGround</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/cryosphere-glaciersOrIceSheets">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Glaciers are masses of land ice, formed by the further recrystallization of firn, flowing continuously from higher to lower elevations. Ice sheets are a continuous sheet of land ice that covers a very large area and moves outward in many directions. This type of ice mass is so thick as to mask the land surface contours, in contrast to the smaller and thinner highland ice. The continental glacier of Greenland is sometimes called the Inland Ice. This term is often used to describe the great ice masses that characterized the ice ages.</skos:definition>
+	<skos:prefLabel xml:lang="en">cryosphere-glaciersOrIceSheets</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/cryosphere-seaIce">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Pertaining to the study of frozen seawater over the ocean surface.</skos:definition>
+	<skos:prefLabel xml:lang="en">cryosphere-seaIce</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/cryosphere-snowOrIce">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Pertaining to the study of frozen water over the Earth’s surface.</skos:definition>
+	<skos:prefLabel xml:lang="en">cryosphere-snowOrIce</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-erosionOrSedimentation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The natural processes relating to the break down of soil and rock, and the movement and deposition of the resulting particles.</skos:definition>
+	<skos:prefLabel xml:lang="en">landSurface-erosionOrSedimentation</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-geomorphicLandformsOrProcesses">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The science that treats the general configuration of the Earth’s surface, specifically the study of the classification, description, nature, origin, and development of present landforms and their relationships to underlying structures, and of the history of geologic changes as recorded by these surface features.</skos:definition>
+	<skos:prefLabel xml:lang="en">landSurface-geomorphicLandformsOrProcesses</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-landUseOrLandCover">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The observed physical cover and natural use of the land including the vegetation and human construction, which covers the earth’s surface.</skos:definition>
+	<skos:prefLabel xml:lang="en">landSurface-landUseOrLandCover</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-landscape">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The fundamental traits of a specific geographic area; including its biological composition, physical environment and anthropogenic or social patterns.</skos:definition>
+	<skos:prefLabel xml:lang="en">landSurface-landscape</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-surfaceRadiativeProperties">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Any measurement involving the scattering, absorption, or reflection of electromagnetic radiation at the land surface.</skos:definition>
+	<skos:prefLabel xml:lang="en">landSurface-surfaceRadiativeProperties</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-surfaceThermalProperties">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Refers to the measurements of any sort related to the amount of heat on the surface of the land.</skos:definition>
+	<skos:prefLabel xml:lang="en">landSurface-surfaceThermalProperties</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/landSurface-topography">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The general configuration of the land surface, including its relief and the position of its natural features.</skos:definition>
+	<skos:prefLabel xml:lang="en">landSurface-topography</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-aquaticSciences">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The study of Fisheries and Aquaculture.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-aquaticSciences</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-bathymetryOrSeafloorTopography">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The measurement and charting of the spatial variation of the ocean depths.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-bathymetryOrSeafloorTopography</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-coastalProcesses">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Coastal processes refers to the action of natural forces (e.g., erosion, deposition, tectonic uplift) on the shoreline, and the nearshore seabed. Some examples of landforms resulting from these processes are wave-cut cliffs, beaches, and wave-cut benches.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-coastalProcesses</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-marineEnvironmentMonitoring">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The act of watching,keeping track of or checking the ocean(pelagic or bottom conditions) for a special purpose.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-marineEnvironmentMonitoring</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-marineGeophysics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Scientific field of study pertaining to the physics of the oceanic crust and ocean-inundated continental crust. Variables include marine morphological features, geophysical processes of the marine environment, and geophysical measurements of the marine environment.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-marineGeophysics</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-marineSediments">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Loose particles of inorganic or organic origin, suspended in the water column, found on the seafloor, or found in the coastal zone. Variables include types of sediment, processes affecting sediment and sediment distribution, and characteristics of sediment.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-marineSediments</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-marineVolcanism">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The set of geological processes within the ocean that result in the volcanic expulsions of carbon dioxide and sulfur dioxide at the Earth’s surface through vents.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-marineVolcanism</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanAcoustics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Scientific field of study pertaining to sound propagation in the marine environment. Variables include measurements of the characteristics of sound.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-oceanAcoustics</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanChemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Scientific field of study pertaining to the composition and properties of seawater. Variables include concentrations of seawater’s constituent materials.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-oceanChemistry</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanCirculation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Pertaining to or measuring the movement of water in the marine environment. Variables include types of motion, as well as, circulation features. Proper names of oceanic currents are not included.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-oceanCirculation</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanHeatBudget">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Study of the heat energy gains and losses of the oceans, on global or regional scales. Variables include the terms in the heat budget equation.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-oceanHeatBudget</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanOptics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Scientific field of study of light in the oceans. Variables include measurable characteristics of underwater light.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-oceanOptics</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanPressure">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Pertaining to the measurement of force per unit area exerted on water by the overlying column of water.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-oceanPressure</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanTemperature">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Pertaining to the measurement of the average kinetic energy of oceanic water.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-oceanTemperature</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanWaves">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Study of the disturbances of the ocean medium caused by the movement of energy through that medium. Variables include types and characteristics of waves.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-oceanWaves</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-oceanWinds">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Study of the mass movement of air over the surface of the oceans.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-oceanWinds</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-salinityOrDensity">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The total amount of dissolved material in water and its effect on water’s mass-to-volume ratio. Scientific measurements related to either salinity or density are included under this Term.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-salinityOrDensity</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-seaSurfaceTopography">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">To measure sea surface height, or surface topography, scientists need to obtain the precise distance between the satellite and the center of the Earth and the precise distance between the satellite and the sea surface. Sea surface height is then calculated by subtracting the distance between the sea surface and the satellite from the distance between the center of the Earth and the satellite. The distance between the satellite and the center of the Earth is obtained by carefully monitoring the satellite position at all times.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-seaSurfaceTopography</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-tides">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Pertaining to the study of the periodic rise and fall of the sea surface, generated by long-wavelength waves which are caused by the interaction of gravitational force and inertia. Variables include characteristics of tides and other aspects important to their study.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-tides</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/oceans-waterQuality">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The fitness of water for use (by plants or animals), being affected by physical, chemical and biological factors. A Water Quality Advisory may include information on the types of contaminants that may decrease the water quality in a particular area.</skos:definition>
+	<skos:prefLabel xml:lang="en">oceans-waterQuality</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/paleoclimate-iceCoreRecords">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">An ice core is a section of ice drilled from a glacier or ice sheet. Ice deposits contain samples of the atmosphere at the time the ice formed; they also record seasonal fluctuations of temperature and dust. That’s why ice cores are extremely valuable sources of paleoclimate data on the Earth’s climate in the distant past. Researchers drill sections of ice cores hundreds of meters long and then match sections at different depths with particular eras in the Earth’s past. These sections can then be analyzed for clues about atmospheric gases and temperatures from hundreds of thousands of years ago.</skos:definition>
+	<skos:prefLabel xml:lang="en">paleoclimate-iceCoreRecords</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/paleoclimate-landRecords">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Non-marine geological information pertinent to paleoclimatology consists of all continental sedimentary records including loess,volcanic deposits, glaciation, spelothems, tree ring, pollen, and other land-based records.</skos:definition>
+	<skos:prefLabel xml:lang="en">paleoclimate-landRecords</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/paleoclimate-oceanOrLakeRecords">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Paleoclimatic information can be inferred from biogenic material in ocean sediments, oxygen isotopic analyses of sea water (via deep sea cores), coral growth, inorganic material such as from weathering and erosion, lake levels and glacial varves, and ocean circulation changes as a result of glacial-interglacial cycles.</skos:definition>
+	<skos:prefLabel xml:lang="en">paleoclimate-oceanOrLakeRecords</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/paleoclimate-paleoclimateReconstructions">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Reconstruction of past climatic conditions using paleoclimate proxy records (tree rings, ice cores, etc.).</skos:definition>
+	<skos:prefLabel xml:lang="en">paleoclimate-paleoclimateReconstructions</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-earthGasesOrLiquids">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Properties and characteristics related to the gases and liquids within the solid earth.</skos:definition>
+	<skos:prefLabel xml:lang="en">solidEarth-earthGasesOrLiquids</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-geochemistry">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Pertaining to the study of the chemical composition of the various phases of the earth, and the physical and chemical processes which have produced the observed distribution of the elements and the nuclides in these phases.</skos:definition>
+	<skos:prefLabel xml:lang="en">solidEarth-geochemistry</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-geodetics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The scientific discipline that deals with the measurement and representation of the earth, its gravitational field and geodynamic phenomena (polar motion, earth tides, and tectonic motion) in three-dimensional, time-varying space.</skos:definition>
+	<skos:prefLabel xml:lang="en">solidEarth-geodetics</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-geomagnetism">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The magnetism of the earth. Also known as terrestrial magnetism.</skos:definition>
+	<skos:prefLabel xml:lang="en">solidEarth-geomagnetism</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-geothermalDynamics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">The relation between the earth’s interior heat and other related matter, using the properties of macroscopic variables such as temperature, entropy, and pressure.</skos:definition>
+	<skos:prefLabel xml:lang="en">solidEarth-geothermalDynamics</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-gravityOrGravitationalField">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Dealing with the determination of the size and shape of the earth, the Earth’s gravitational field, and the location of points fixed to the Earth’s crust in an Earth-referred coordinate system.</skos:definition>
+	<skos:prefLabel xml:lang="en">solidEarth-gravityOrGravitationalField</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-rocksOrMineralsOrCrystals">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">A naturally occurring solid aggregate of one or more minerals that make up the solid earth.</skos:definition>
+	<skos:prefLabel xml:lang="en">solidEarth-rocksOrMineralsOrCrystals</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/solidEarth-tectonics">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:definition xml:lang="en">Branch of geology that deals with regional structure and deformational features of the Earth’s crust.</skos:definition>
+	<skos:prefLabel xml:lang="en">solidEarth-tectonics</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://www.neii.gov.au/def/voc/NEII/neii-observed-property/NEII-Observed-Property"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-10T06:17:36Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/NEII_Programme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

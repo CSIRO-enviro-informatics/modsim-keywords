@@ -1,0 +1,1267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Sedgmen.Lara_Admin</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Geoscience-Australia">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoscience Australia</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:label xml:lang="en">Material Class</rdfs:label>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-15T10:39:00+00:00</dcterms:modified>
+	<dcterms:title xml:lang="en">Material Type</dcterms:title>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/adsorbed_phase"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/atmospheric_dust"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/fluid"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/ice"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/inorganic_gas"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/mineral"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/organic_material"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/regolith"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/rock"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/snow"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/suspended_solids"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/unknown"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/unspecified_seabed_materials"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/water"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017-11-16</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v1.0</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/adsorbed_phase">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:35:50+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">An ion attached to the surface of a mineral</skos:definition>
+	<skos:prefLabel xml:lang="en">adsorbed phase</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/atmospheric_dust">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:36:38+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Fine-grained solid material collected or filtered from the atmosphere</skos:definition>
+	<skos:prefLabel xml:lang="en">atmospheric dust</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/fluid">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:36:56+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Unspecified fluid material.</skos:definition>
+	<skos:prefLabel xml:lang="en">fluid</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/drilling_fluid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/ice">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:37:26+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Frozen, solid water.</skos:definition>
+	<skos:prefLabel xml:lang="en">ice</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/inorganic_gas">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:37:40+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Any non-hydrocarbon-based gas.</skos:definition>
+	<skos:prefLabel xml:lang="en">inorganic gas</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/air"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/mineral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:38:49+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A naturally occurring inorganic, crystalline, element or compound</skos:definition>
+	<skos:prefLabel xml:lang="en">mineral</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/organic_material">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:39:01+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Any carbon-based material.</skos:definition>
+	<skos:prefLabel xml:lang="en">organic material</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/animal_material"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/vegetation"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_material"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/coal"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/coke"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/regolith">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-04T01:14:17+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Typically unconsolidated or fragmental material, either transported or residual origin, which covers bedrock. Includes surficial duricrusts that cap bedrock.</skos:definition>
+	<skos:prefLabel xml:lang="en">regolith</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/lag"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/sediment"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/mixed_rock_and_sediment"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/soil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/rock">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:50:51+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A consolidated aggregate of one or more minerals or other rocks</skos:definition>
+	<skos:prefLabel xml:lang="en">rock</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/coral"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/meteorite"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/snow">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:35:33+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">https://en.oxforddictionaries.com/definition/snow</dcterms:source>
+	<skos:definition xml:lang="en">Atmospheric water vapour frozen into ice crystals and falling in light white flakes or lying on the ground as a white layer.</skos:definition>
+	<skos:prefLabel xml:lang="en">snow</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/suspended_solids">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:52:28+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Sediment and biological particles collected from a water column that are separated by filtration and are not dissolved.</skos:definition>
+	<skos:prefLabel xml:lang="en">suspended solids</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/unknown">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:52:44+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Material type is unknown</skos:definition>
+	<skos:prefLabel xml:lang="en">unknown</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/unspecified_seabed_materials">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:53:20+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A sample that contains a mixture of materials from the seabed, possibly animal, vegetable, and mineral material.</skos:definition>
+	<skos:prefLabel xml:lang="en">unspecified seabed materials</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/water">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:53:38+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Undivided saline, brackish, or fresh water.</skos:definition>
+	<skos:prefLabel xml:lang="en">water</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/estuarine_water"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/groundwater"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/porewater"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/rain_water"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/sea_water"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/surface_water"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/air">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:37:51+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">The composite gas comprising the Earth's atmosphere.</skos:definition>
+	<skos:prefLabel xml:lang="en">air</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/inorganic_gas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/animal_material">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:39:13+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Any material of or excreted from an animal.  eg; animal tissue, faeces, hair</skos:definition>
+	<skos:prefLabel xml:lang="en">animal material</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/organic_material"/>
+	<skos:altLabel xml:lang="en">organism</skos:altLabel>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/animal_tissue"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/faeces"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hair"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/animal_tissue">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:39:24+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Material of an animal's body</skos:definition>
+	<skos:prefLabel xml:lang="en">animal tissue</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/animal_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/faeces">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:39:36+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Waste material excreted from an animal</skos:definition>
+	<skos:prefLabel xml:lang="en">faeces</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/animal_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hair">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:39:47+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Hair or fur from an animal</skos:definition>
+	<skos:prefLabel xml:lang="en">hair</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/animal_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/bark">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:45:51+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Outermost layers of stems and roots of woody plants</skos:definition>
+	<skos:prefLabel xml:lang="en">bark</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/vegetation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/vegetation">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:45:40+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Any part of a plant whether it be moss, grass, sedge, or the roots, bark, twigs or leaves of trees and shrubs.</skos:definition>
+	<skos:prefLabel xml:lang="en">vegetation</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/organic_material"/>
+	<skos:altLabel xml:lang="en">plant material</skos:altLabel>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/bark"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/foliage"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/plant_stem"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/root"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/bitumen">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:40:28+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Solid organic material that forms part of a rock. It can usually be extracted from the rock with organic solvent.</skos:definition>
+	<skos:prefLabel xml:lang="en">bitumen</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_material">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:40:17+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Any carbon-hydrogen based material.</skos:definition>
+	<skos:prefLabel xml:lang="en">hydrocarbon material</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/organic_material"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/bitumen"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/fluid_hydrocarbon"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/kerogen"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/pitch"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/resin"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/wax"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/coal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:39:56+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A readily combustible organic rock containing more than 50% by weight and more than 70% by volume of carbonaceous material.</skos:definition>
+	<skos:prefLabel xml:lang="en">coal</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/organic_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/coke">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:40:05+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A solid of carbonaceous material derived from the destructive distillation of low-ash, low-sulphur bituminous coal.</skos:definition>
+	<skos:prefLabel xml:lang="en">coke</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/organic_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/condensate">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:43:05+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A material that exists as gas in the subsurface but condenses into liquid at the surface.</skos:definition>
+	<skos:prefLabel xml:lang="en">condensate</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/fluid_hydrocarbon"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/fluid_hydrocarbon">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:40:39+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Any carbon-hydrogen fluid material</skos:definition>
+	<skos:prefLabel xml:lang="en">fluid hydrocarbon</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_material"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/condensate"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/crude_oil"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/crude_oil_with_water"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_gas"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/refined_oil"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/seep_oil_and_gas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/coral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:51:26+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Hard stony substance secreted by certain marine coelenterates as an external skeleton, typically forming large reefs in warm seas</skos:definition>
+	<skos:prefLabel xml:lang="en">coral</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/rock"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/crude_oil">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:43:18+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A naturally occurring complex liquid hydrocarbon, typically found as part of drilling activity, which after distillation and removal of impurities yields a range of combustible fuels, petrochemicals and lubricants.</skos:definition>
+	<skos:prefLabel xml:lang="en">crude oil</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/fluid_hydrocarbon"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/seep_oil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/seep_oil">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:43:31+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Crude oil that seeps at the Earths surface and recovered without the need for drilling.</skos:definition>
+	<skos:prefLabel xml:lang="en">seep oil</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/crude_oil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/crude_oil_with_water">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:43:42+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A mixture of oil and water where oil is the main phase.</skos:definition>
+	<skos:prefLabel xml:lang="en">crude oil with water</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/fluid_hydrocarbon"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/drilling_fluid">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:37:12+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Fluid used for drill bit lubrication and return of ground rock material from the drill bit, e.g. mud.</skos:definition>
+	<skos:prefLabel xml:lang="en">drilling fluid</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/fluid"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/estuarine_water">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:53:48+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Water from an estuary. Depending on the nature of the estuary, the salinity may vary spatially and temporally and range from fresh, brackish, seawater or hypersaline.</skos:definition>
+	<skos:prefLabel xml:lang="en">estuarine water</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/water"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_gas">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:43:54+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A fluid hydrocarbon that is a gas at the surface. In the subsurface this sample maybe be free of liquid hydrocarbons, contain dissolved liquid hydrocarbons, or be dissolved in oil.</skos:definition>
+	<skos:prefLabel xml:lang="en">hydrocarbon gas</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/fluid_hydrocarbon"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/gas_in_solution"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/seep_gas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/refined_oil">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:44:28+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Oil that has been processed in an oil refinery.</skos:definition>
+	<skos:prefLabel xml:lang="en">refined oil</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/fluid_hydrocarbon"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/seep_oil_and_gas">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:44:38+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Crude oil and gas that seeps at the Earths surface and recovered without the need for drilling.</skos:definition>
+	<skos:prefLabel xml:lang="en">seep oil and gas</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/fluid_hydrocarbon"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/foliage">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:46:00+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Plant leaves, especially tree leaves, considered as a group</skos:definition>
+	<skos:prefLabel xml:lang="en">foliage</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/vegetation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/gas_in_solution">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:44:07+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A gas that that is exsolved from a liquid, such as water or oil, at the surface or under experimental conditions.</skos:definition>
+	<skos:prefLabel xml:lang="en">gas in solution</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_gas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/groundwater">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:53:59+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Synonym: formation water.  Part of the subsurface water that is in the zone of saturation, i.e., below the water table.  Can be located in one or several aquifers, aquicludes or aquitards.</skos:definition>
+	<skos:prefLabel xml:lang="en">groundwater</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/water"/>
+	<skos:altLabel xml:lang="en">formation water</skos:altLabel>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/groundwater_with_oil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/groundwater_with_oil">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:54:10+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A sample containing a mixture of water and oil and may be an immulsion. Water is the main phase and hydrocarbons (e.g. benzene, toluene) are dissolved within the water. Synonym: formation water with oil</skos:definition>
+	<skos:prefLabel xml:lang="en">groundwater with oil</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/groundwater"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/seep_gas">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:44:17+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Gas that seeps at the Earths surface and recovered without the need for drilling.</skos:definition>
+	<skos:prefLabel xml:lang="en">seep gas</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_gas"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/kerogen">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:44:47+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Immobile organic matter that forms part of a rock. Kerogen cannot be extracted from the rock with organic solvents. Kerogen is concentrated in a pure form by removal of the mineral matter with strong acids (HCl, HF).</skos:definition>
+	<skos:prefLabel xml:lang="en">kerogen</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/pitch">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:44:58+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Any of the various dark heavy viscous and resinous substances obtained as a residue from the distillation of coal-tar or crude oil.</skos:definition>
+	<skos:prefLabel xml:lang="en">pitch</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/resin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:45:06+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Solid organic material that forms part of a rock. It is usually associated with coal and derived from the resinous material exuded from land plants.</skos:definition>
+	<skos:prefLabel xml:lang="en">resin</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/wax">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:45:15+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A light coloured solid precipitated from either a hydrocarbon gas or oil</skos:definition>
+	<skos:prefLabel xml:lang="en">wax</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/hydrocarbon_material"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/lag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-04T01:13:30+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Deposit, commonly thin, or fragments of larger than sand size, spread over the land surface.  Its most common origin is as the coarse material left behind after fine material has been transported away by wind, or less commonly, sheet flow.</skos:definition>
+	<skos:prefLabel xml:lang="en">lag</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/regolith"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/lake_sediment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:49:27+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A sediment deposited in a body of standing fresh water</skos:definition>
+	<skos:prefLabel xml:lang="en">lake sediment</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/sediment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/sediment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-04T01:14:20+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Unconsolidated sedimentary material.</skos:definition>
+	<skos:prefLabel xml:lang="en">sediment</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/regolith"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/lake_sediment"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/marine_sediment"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/overbank_sediment"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/stream_sediment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/marine_sediment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-04T01:17:29+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A sediment (including porewater) deposited in a submarine or coastal, brackish or saline environment.</skos:definition>
+	<skos:prefLabel xml:lang="en">marine sediment</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/sediment"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/marine_sediment_and_overlying_seawater"/>
+	<skos:narrower rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/solid_phase"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/marine_sediment_and_overlying_seawater">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-04T01:17:13+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A marine sediment core that is collected together with the overlying water, as in a core incubation experiment, or a known area of seafloor and overlying water column, as in a chamber incubation experiment.</skos:definition>
+	<skos:prefLabel xml:lang="en">marine sediment and overlying seawater</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/marine_sediment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/solid_phase">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-04T01:17:33+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">The solid material left over after the pore water has been extracted from a sediment sample.</skos:definition>
+	<skos:prefLabel xml:lang="en">solid phase</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/marine_sediment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/meteorite">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:51:36+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A rock that landed on Earth from an extraterrestrial source</skos:definition>
+	<skos:prefLabel xml:lang="en">meteorite</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/rock"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/mixed_rock_and_sediment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-04T01:14:20+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A sample containing a mixture of rock and unconsolidated sediment.</skos:definition>
+	<skos:prefLabel xml:lang="en">mixed rock and sediment</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/regolith"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/overbank_sediment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:49:54+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Alluvium that is deposited outside an alluvial channel from flowing water which has overflowed from the channel.  It includes levees and back swamp deposits.</skos:definition>
+	<skos:prefLabel xml:lang="en">overbank sediment</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/sediment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/plant_stem">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:46:09+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Stem, trunk, branch and twig material from a plant</skos:definition>
+	<skos:prefLabel xml:lang="en">plant stem</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/vegetation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/porewater">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:54:20+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Subsurface water in an interstice between grains in a marine sediment.</skos:definition>
+	<skos:prefLabel xml:lang="en">porewater</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/water"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/rain_water">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:54:33+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Rain water, collected before it hits the Earth's surface.</skos:definition>
+	<skos:prefLabel xml:lang="en">rain water</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/water"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/soil">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-04T01:13:45+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Unconsolidated mineral or organic material on the Earth's surface that serves as a natural medium for the growth of land plants.</skos:definition>
+	<skos:prefLabel xml:lang="en">soil</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/regolith"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/root">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:46:18+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">The part of a plant that bears no leaves and typically, but not always, lies below the surface of the soil and is used for absorption of water and inorganic nutrients</skos:definition>
+	<skos:prefLabel xml:lang="en">root</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/vegetation"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/sea_water">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:54:43+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Saline water from the Earth's seas and oceans</skos:definition>
+	<skos:prefLabel xml:lang="en">sea water</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/water"/>
+	<skos:altLabel xml:lang="en">ocean water</skos:altLabel>
+	<skos:altLabel xml:lang="en">seawater</skos:altLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/stream_sediment">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-04T01:17:33+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">A sediment deposited in the bed of an active or perennial stream</skos:definition>
+	<skos:prefLabel xml:lang="en">stream sediment</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/sediment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/materialtype/surface_water">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T05:14:34+00:00</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-08-03T06:54:57+00:00</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:source xml:lang="en">Geoscience Australia</dcterms:source>
+	<skos:definition xml:lang="en">Fresh or brackish water which occurs on the surface of a land mass (eg, rivers, creeks, lakes)</skos:definition>
+	<skos:prefLabel xml:lang="en">surface water</skos:prefLabel>
+	<skos:broader rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/materialtype/water"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

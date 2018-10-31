@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:opencyc="http://sw.opencyc.org/concept/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dcterms:title xml:lang="en">AODN Parameter Category Vocabulary</dcterms:title>
+	<dcterms:description xml:lang="en">A classification scheme to support faceted searching across parameter types in the IMOS 123 Portal.</dcterms:description>
+	<dcterms:subject xml:lang="en">parameter category</dcterms:subject>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:publisher xml:lang="en">eMarine Information Infrastructure (eMII)</dcterms:publisher>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-09-16T01:19:32Z</dcterms:modified>
+	<dc:rights rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Freely Available For Reuse</dc:rights>
+	<identifier xmlns="http://schema.semantic-web.at/ppt/" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">category</identifier>
+	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMII_Finney.Kim_Admin</dcterms:contributor>
+	<skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/53"/>
+	<skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/54"/>
+	<skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/55"/>
+	<skos:hasTopConcept rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015-09-23</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Version 1.0</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/description">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://schema.semantic-web.at/ppt/identifier">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://schema.semantic-web.at/ppt/identifier"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/53">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<skos:prefLabel xml:lang="en">Physical-Atmosphere</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing physical atmosphere parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/30"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/6"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/7"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/8"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/9"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/10"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/22"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/48"/>
+	<skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/54">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<skos:prefLabel xml:lang="en">Chemical</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing chemicalparameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/11"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/27"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/52"/>
+	<skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/55">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<skos:prefLabel xml:lang="en">Biological</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing biologicalparameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/4"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/19"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/26"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/46"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/51"/>
+	<skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/56">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<skos:prefLabel xml:lang="en">Physical-Water</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing physical water parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/2"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/3"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/5"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/23"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/47"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/25"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/28"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/30"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/45"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/49"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/50"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/57"/>
+	<skos:narrower rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/58"/>
+	<skos:topConceptOf rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/source">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/source"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/publisher">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/publisher"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrower"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/11">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:24:41Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Oxygen</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing dissolved oxygen parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/373"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/372"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/84"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/54"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/27">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:27:23Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Alkalinity</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing alkalinity parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/MDMAP014"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/54"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/52">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-07-13T06:52:59Z</dcterms:modified>
+	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMII_Mancini.Sebastien</dcterms:contributor>
+	<skos:prefLabel xml:lang="en">Carbon</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing carbon parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/427"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/422"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/425"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/FCO2WTAT"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/FCO2XXXX"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/XCO2DRAT"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/XCO2WBDY"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/54"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/4">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:27:50Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Ocean Biota</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing ocean biota parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/488"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/489"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/596"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/570"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/407"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/571"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/55"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/19">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:11:55Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Chlorophyll</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing chlorophyll concentration parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/CHLTMASS"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/CHLTVOLU"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/FLUOZZZZ"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/55"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/26">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:05:18Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Pigment</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing pigments concentration parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/762"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/747"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/763"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/767"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/766"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/764"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/658"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/737"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/659"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/765"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/750"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/752"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/745"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/753"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/759"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/760"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/758"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/761"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/757"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/744"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/742"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/739"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/738"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/754"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/746"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/478"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/743"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/660"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/741"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/734"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/756"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/748"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/749"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/735"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/755"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/751"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/736"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/740"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/ALLOXXPX"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/FUCXZZZZ"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/PERDXXXX"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/55"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/46">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:05:12Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Suspended particulate material</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing suspended particulate material parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/656"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/655"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/654"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/55"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/51">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:04:44Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Nutrient</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing nutrient parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/377"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/375"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/374"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/380"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/379"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/378"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/376"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/55"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/2">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-06T06:55:25Z</dcterms:modified>
+	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMII_Mancini.Sebastien</dcterms:contributor>
+	<skos:prefLabel xml:lang="en">Wave</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing waves parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/414"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/412"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/417"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/413"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/411"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/GTCAZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/GWDRZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/GSPRZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/GCMXZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/GSZZXXXX"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/4"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/3"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/2"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:27:35Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Current</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing currents parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/383"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/640"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/641"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/LCDAZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/LCEWZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/LCNSZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/LRZAZZZZ"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/5">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:26:52Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Acoustics</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing acoustics parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/399"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/597"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/SVELXXXX"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/23">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:05:30Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Density</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing density parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/401"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/47">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:29:23Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Backscattering</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing backscattering parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/728"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/25">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:24:26Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Water pressure</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing water pressure parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/565"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/566"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/28">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:27:29Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Turbidity</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing turbidity parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/TURBXXXX"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/30">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-07T00:41:33Z</dcterms:modified>
+	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMII_Mancini.Sebastien</dcterms:contributor>
+	<skos:prefLabel xml:lang="en">Air-Sea Fluxes</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing Air-Sea Fluxes parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/576"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/LWRDZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/6"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/53"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/45">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-08-07T00:36:21Z</dcterms:modified>
+	<dcterms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMII_Mancini.Sebastien</dcterms:contributor>
+	<skos:prefLabel xml:lang="en">Optical properties</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing optical properties parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/629"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/651"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/650"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/572"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/573"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/648"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/649"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/729"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/652"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/653"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/646"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/647"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/5"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/49">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:27:07Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Temperature</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing temperature parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/631"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/97"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/590"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/50">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:26:58Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Salinity</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing salinity parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/591"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/730"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/CNDCZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/PSLTZZ01"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/57">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:24:54Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Sea surface height</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing sea surface height parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/643"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/642"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/58">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:25:00Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Depth</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing depth parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/574"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/56"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#narrowMatch">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/643">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/642">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#broader">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/574">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/414">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/412">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/417">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/413">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/411">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/GTCAZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/GWDRZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/GSPRZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/GCMXZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/GSZZXXXX">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/4">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/2">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/383">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/640">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/641">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/LCDAZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/LCEWZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/LCNSZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/LRZAZZZZ">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/488">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/489">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/596">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/570">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/407">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/571">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/399">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/597">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/SVELXXXX">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/6">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:28:15Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Wind</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing wind parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/395"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/406"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/396"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/ESEWZZXX"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/ESNSZZXX"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/ERWDZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/EWDAZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/ERWSZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/ESSAZZ01"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/53"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/395">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/406">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/396">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/ESEWZZXX">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/ESNSZZXX">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/ERWDZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/EWDAZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/ERWSZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/ESSAZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/7">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:27:43Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Air temperature</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing air temperature parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/CTMPZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/CDEWZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/CWETZZ01"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/53"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/CTMPZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/CDEWZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/CWETZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/8">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:27:03Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Humidity</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing atmospheric humidity parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/CRELZZ01"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/CHUMSS01"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/53"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/CRELZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/CHUMSS01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/9">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:27:18Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Precipitation and evaporation</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing precipitation and evaporation parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/637"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/639"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/405"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/94"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/638"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/386"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/53"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/637">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/639">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/405">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/94">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/638">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/386">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/10">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:24:17Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Air pressure</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing air pressure parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/77"/>
+	<skos:narrowMatch rdf:resource="http://vocab.nerc.ac.uk/collection/P01/current/CAPHZZ01"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/53"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/77">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/CAPHZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/373">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/372">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/84">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/CHLTMASS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/CHLTVOLU">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/FLUOZZZZ">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/22">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:21:37Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">Visibility</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing atmospheric visibility parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/390"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/397"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/53"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/390">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/397">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/401">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/728">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/565">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/566">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/762">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/747">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/763">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/767">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/766">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/764">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/658">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/737">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/659">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/765">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/750">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/752">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/745">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/753">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/759">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/760">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/758">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/761">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/757">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/744">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/742">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/739">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/738">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/754">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/746">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/478">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/743">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/660">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/741">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/734">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/756">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/748">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/749">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/735">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/755">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/751">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/736">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/740">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/ALLOXXPX">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/FUCXZZZZ">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/PERDXXXX">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/MDMAP014">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/TURBXXXX">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/576">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/LWRDZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/6">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/629">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/651">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/650">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/572">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/573">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/648">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/649">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/729">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/652">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/653">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/646">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/647">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/5">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/656">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/655">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/654">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/parameter_classes/category/48">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dcterms:creator xml:lang="en">Sebastien Mancini</dcterms:creator>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-06-01T00:00:00Z</dcterms:created>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-28T02:09:29Z</dcterms:modified>
+	<skos:prefLabel xml:lang="en">UV radiation</skos:prefLabel>
+	<skos:definition xml:lang="en">This category contains vocabulary terms describing UV radiation parameters</skos:definition>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian Ocean Data Network parameter category register</dc:source>
+	<dc:publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eMarine Information Infrastructure (eMII)</dc:publisher>
+	<skos:inScheme rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/1"/>
+	<skos:narrowMatch rdf:resource="http://vocab.aodn.org.au/def/discovery_parameter/entity/733"/>
+	<skos:broader rdf:resource="http://vocab.aodn.org.au/def/parameter_classes/category/53"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/733">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/631">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/97">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/590">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/TEMPPR01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/591">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/730">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/CNDCZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/PSLTZZ01">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/377">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/375">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/374">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/380">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/379">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/378">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/376">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/427">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/422">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/425">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.aodn.org.au/def/discovery_parameter/entity/1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/FCO2WTAT">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/FCO2XXXX">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/XCO2DRAT">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://vocab.nerc.ac.uk/collection/P01/current/XCO2WBDY">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

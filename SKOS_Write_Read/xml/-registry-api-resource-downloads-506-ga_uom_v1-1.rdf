@@ -1,0 +1,2606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:cycAnnot="http://sw.cyc.com/CycAnnotations_v1#"
+	xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:csw="http://semantic-web.at/ontologies/csw.owl#"
+	xmlns:freebase="http://rdf.freebase.com/ns/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dbpedia="http://dbpedia.org/resource/"
+	xmlns:cyc="http://sw.cyc.com/concept/"
+	xmlns:tags="http://www.holygoat.co.uk/owl/redwood/0.1/tags/"
+	xmlns:opencyc="http://sw.opencyc.org/concept/"
+	xmlns:ctag="http://commontag.org/ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#object">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#object"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#first">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#first"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#rest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#value">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#value"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#domain">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subPropertyOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#subClassOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#member">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#member"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Alt"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Container">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Bag"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Container"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Seq"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#ContainerMembershipProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA_Sedgmen.Lara_Admin</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/Agent">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://xmlns.com/foaf/0.1/name"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://editor.vocabs.ands.org.au/user/Geoscience-Australia">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://purl.org/dc/terms/Agent"/>
+	<foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoscience Australia</foaf:name>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geoscience Australia Vocabulary Working Group</dc:creator>
+	<dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-05-02T12:26:29.000</dc:date>
+	<dcterms:title xml:lang="en">UoM</dcterms:title>
+	<skos:changeNote xml:lang="en">This vocabulary created directly from the database</skos:changeNote>
+	<skos:editorialNote xml:lang="en">This file contains the Geoscience Australia 02-May-2016 version of the UoM vocabulary</skos:editorialNote>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/10-2_cgs"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/10-3_SI"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/10-5_SI"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/1000_ft3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/1000_ft3_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/1000_m3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/1000_m3_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/1_s__x1E_10_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/API"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/A_m"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/BCM"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Gft3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Gl"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Gm3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Gt"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J_K2_mol"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J_K__mol_bar_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J_K_mol"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K0_5_mol_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K1_5_mol_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K2_mol_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K3_mol_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K4_mol_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K5_mol_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K_mol_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J__mol_bar_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J_bar"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/J_mol"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/K"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/K_bar"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/LCM"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/MJ"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Ma"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Mbbl"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Mct"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Mft3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Mft3_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Ml_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Mm3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Mm3_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Mt"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Mton"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/NTU"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/No_unit"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/PJ"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Pa"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/S"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/SI"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/T"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/TJ"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/TJ_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Tft3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/Torr"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/V"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/W"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/W__m_K_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/__cm3_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/__g_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/_oVPDB"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/atm"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/bar"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/bbl"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/bbl_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/bbl_hr"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cSt"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cal"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cal_K__mol_bar_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cal_K_mol"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cal__K_mol_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cal__mol_bar_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cal_mol"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cgs"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cm"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cm2"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cm3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cm3_mol"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cm_year"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cpm"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/cps"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ct"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ct_t"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/dS_m"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/darcy"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/deg"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/degC"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/dpm_g"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/fs"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ft"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ft3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ft3_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ft3_h"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/g"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/g_BCM"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/g_LCM"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/g_cm3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/g_l"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/g_m3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/g_t"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/gal_UK"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/gal_US"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/h"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/in"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kPa"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kbar"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kbbl"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kbbl_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kcal_mol"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kg"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kg_BCM"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kg_l"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kg_m3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kg_mol"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kg_t"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/km"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/knot"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kt"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/kton"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/l"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/l_t"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/lb"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/m"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/m-1"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/m2"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/m2_g"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/m3"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/m3_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/m3_h"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/m3_kPa_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/m3_mol"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mA_m"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mS"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mS_cm"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mS_m"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mT"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mV"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mW_m2"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/m_s"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mdarcy"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mg"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_CO2_g_TOC"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_CO2_g_rock"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_HC_g_TOC"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_HC_g_rock"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_g"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_g_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_g_rock"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_kg"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_l"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ml"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ml_l"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mm"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mmol_l"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mmol_m2_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mol"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mol_kg"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/mol_l"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ms"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/nG_h"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/nT"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/o_oo"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ohm"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ohm_m"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/oz"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/pH"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/phi"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ppb"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ppm"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/psi"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/rad"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/s"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/t"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ton"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/uL_L"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/uS"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/uS_cm"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/uT"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ug_g"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/ug_l"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/um"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/um2_mPa_s"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/umol_cm3_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/umol_g"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/umol_g_d"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/umol_l"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/unknown"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/us"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/us_ft"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/v_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/w_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/w_v_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/year"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/years_B_P_"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/short-ton"/>
+	<skos:hasTopConcept rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom/oz_ton"/>
+	<skos:prefLabel xml:lang="en">Geoscience Australia Vocabulary - UoM</skos:prefLabel>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-11-10T01:00:39Z</dcterms:modified>
+	<dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-01-31</dcterms:issued>
+	<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">v1.1</owl:versionInfo>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/title">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#changeNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#changeNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/10-2_cgs">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">centimetre grams seconds x 10-2</skos:prefLabel>
+	<skos:altLabel xml:lang="en">10-2 cgs</skos:altLabel>
+	<skos:definition xml:lang="en">A measure of magnetic susceptibility, a dimensionless proportionality constant that indicates the degree of magnetisation of a material in response to an applied magnetic field.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/10-3_SI">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">SI unit x 10-3</skos:prefLabel>
+	<skos:altLabel xml:lang="en">10-3 SI</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of magnetic susceptibility.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/10-5_SI">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">SI unit x 10-5</skos:prefLabel>
+	<skos:altLabel xml:lang="en">10-5 SI</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of magnetic susceptibility.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/1000_ft3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">thousand cubic feet</skos:prefLabel>
+	<skos:altLabel xml:lang="en">1000 ft3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/1000_ft3_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">thousand cubic feet per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">1000 ft3/d</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume divided by time (includes flow). Example: Measure of gaseous flow rate</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/1000_m3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">thousand cubic metres</skos:prefLabel>
+	<skos:altLabel xml:lang="en">1000 m3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/1000_m3_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">thousand cubic metres per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">1000 m3/d</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume divided by time (includes flow). Example: Measure of gaseous flow rate</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/1_s__x1E_10_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">10 billion reciprocal seconds</skos:prefLabel>
+	<skos:altLabel xml:lang="en">1/s (x1E*10)</skos:altLabel>
+	<skos:definition xml:lang="en">Rate constant, termed frequency factor or pre-exponential factor or Arrhenius constant, for first order reaction of kerogen (reactant) to petroleum (product)</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/API">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">API unit</skos:prefLabel>
+	<skos:altLabel xml:lang="en">API</skos:altLabel>
+	<skos:definition xml:lang="en">API (American Petroleum Institute) unit for gamma log. The unit of radioactivity used for natural gamma ray logs. The log can be of the total gamma ray in API units, or of the spectral response in wei</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:scopeNote xml:lang="en">API (American Petroleum Institute) unit for gamma log. The unit of radioactivity used for natural gamma ray logs. The log can be of the total gamma ray in API units, or of the spectral response in weight concentrations of thorium, uranium and potassium. This unit is based on an artificially radioactive concrete block at the University of Houston, USA, that is defined to have a radioactivity of 200 American Petroleum Institute (API) units. The formation is the primary standard for calibrating gamma ray logs.</skos:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/A_m">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">amperes per metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">A/m</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of magnetic field strength</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/BCM">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bank cubic metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">BCM</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of estimated volume used in mining industry. It represents one cubic metre of material measured prior to disturbance (in-situ).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Gft3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">billion cubic foot</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Gft3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Gl">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gigalitre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Gl</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume. Example: Measure of gaseous recovery (6.2898 mmbbl)</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Gm3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">billion cubic metres</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Gm3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Gt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gigatonne</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Gt</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">joule</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of energy, work, quantity of heat.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J_K2_mol">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule Kelvin squared per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J K2/mol</skos:altLabel>
+	<skos:definition xml:lang="en">Coefficient of the heat capacity polynomial.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J_K__mol_bar_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule Kelvin per mole per bar</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J K/(mol bar)</skos:altLabel>
+	<skos:definition xml:lang="en">MHKF (Revised Helgeson-Kirkham-Flowers model for aqueous species (ions and complexes in aqueous solutions)) model volumetric coefficient.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J_K_mol">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule Kelvin per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J K/mol</skos:altLabel>
+	<skos:definition xml:lang="en">MHKF (Revised Helgeson-Kirkham-Flowers model for aqueous species (ions and complexes in aqueous solutions)) model volumetric coefficient.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K0_5_mol_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule per Kelvin to the power of 0.5 per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J/(K0.5 mol)</skos:altLabel>
+	<skos:definition xml:lang="en">Coefficient of the molar heat capacity polynomial.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K1_5_mol_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule per Kelvin to the power of 1.5 per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J/(K1.5 mol)</skos:altLabel>
+	<skos:definition xml:lang="en">Coefficient of the molar heat capacity polynomial.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K2_mol_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule per Kelvin to the power of 2 per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J/(K2 mol)</skos:altLabel>
+	<skos:definition xml:lang="en">Coefficient of the molar heat capacity polynomial.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K3_mol_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule per Kelvin to the power of 3 per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J/(K3 mol)</skos:altLabel>
+	<skos:definition xml:lang="en">Coefficient of the molar heat capacity polynomial.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K4_mol_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule per Kelvin to the power of 4 per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J/(K4 mol)</skos:altLabel>
+	<skos:definition xml:lang="en">Coefficient of the molar heat capacity polynomial.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K5_mol_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule per Kelvin to the power of 5 per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J/(K5 mol)</skos:altLabel>
+	<skos:definition xml:lang="en">Coefficient of the molar heat capacity polynomial.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J__K_mol_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule per Kelvin per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J/(K mol)</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molar entropy, molar heat capacity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J__mol_bar_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule per mol per bar</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J/(mol bar)</skos:altLabel>
+	<skos:definition xml:lang="en">MHKF (Revised Helgeson-Kirkham-Flowers model for aqueous species (ions and complexes in aqueous solutions)) model volumetric coefficient.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J_bar">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule per bar</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J/bar</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molar volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/J_mol">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Joule per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">J/mol</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molar energy.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/K">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Kelvin</skos:prefLabel>
+	<skos:altLabel xml:lang="en">K</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of temperature. The Kelvin, unit of thermodynamic temperature, is the fraction 1/273.16 of the thermodynamic temperature of the triple point of water.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/K_bar">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Kelvin per bar</skos:prefLabel>
+	<skos:altLabel xml:lang="en">K/bar</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of a temperature-pressure gradient.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/LCM">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">loose cubic metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">LCM</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of estimated volume used in mining industry. It represents one cubic metre of material measured after the disturbance (extracted).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/MJ">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Megajoule</skos:prefLabel>
+	<skos:altLabel xml:lang="en">MJ</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of energy, work, quantity of heat.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Ma">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">million years</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Ma</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of time.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Mbbl">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">million barrels</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Mbbl</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume. Used as a measure of liquid recovery</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Mct">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">million carat</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Mct</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass used for gemstones.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Mft3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">million cubic feet</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Mft3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Mft3_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">million cubic feet per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Mft3/d</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of gaseous flow rate.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Ml_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Mega litres per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Ml/d</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of flow rate</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Mm3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Mega cubic metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Mm3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Mm3_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">million cubic metres per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Mm3/d</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of flow rate.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Mt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">megatonne</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Mt</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Mton">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">megaton</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Mton</skos:altLabel>
+	<skos:definition xml:lang="en">          A unit of mass, not energy, equal to 1000 time kton.
+        </skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-31T03:38:28Z</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/NTU">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Nephelometric Turbidity Unit</skos:prefLabel>
+	<skos:altLabel xml:lang="en">NTU</skos:altLabel>
+	<skos:definition xml:lang="en">The calibration unit for turbidity measurements using the scattered light method at 900.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/No_unit">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">No unit</skos:prefLabel>
+	<skos:altLabel xml:lang="en">No unit</skos:altLabel>
+	<skos:definition xml:lang="en">The measured property has no unit of measure.  For example, a ratio.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/PJ">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Petajoule</skos:prefLabel>
+	<skos:altLabel xml:lang="en">PJ</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of energy, work, quantity of heat.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Pa">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Pascal</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Pa</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of pressure or stress.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/S">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">siemens</skos:prefLabel>
+	<skos:altLabel xml:lang="en">S</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of electric conductance.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/SI">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">SI unit</skos:prefLabel>
+	<skos:altLabel xml:lang="en">SI</skos:altLabel>
+	<skos:definition xml:lang="en">A measure of magnetic susceptibility, a dimensionless proportionality constant that indicates the degree of magnetisation of a material in response to an applied magnetic field.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/T">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">tesla</skos:prefLabel>
+	<skos:altLabel xml:lang="en">T</skos:altLabel>
+	<skos:definition xml:lang="en">A measure of magnetic field strength.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/TJ">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Terajoule</skos:prefLabel>
+	<skos:altLabel xml:lang="en">TJ</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of energy, work, quantity of heat.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/TJ_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Terajoule per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">TJ/d</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of energy rate.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Tft3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">trillion cubic foot</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Tft3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/Torr">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">torr</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Torr</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of pressure or stress.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/V">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">volt</skos:prefLabel>
+	<skos:altLabel xml:lang="en">V</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of electric charge, quantity of electricity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/W">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">watt</skos:prefLabel>
+	<skos:altLabel xml:lang="en">W</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of power, radiant flux.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/W__m_K_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">watt per metre Kelvin</skos:prefLabel>
+	<skos:altLabel xml:lang="en">W/(m K)</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of thermal conductivity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">percent</skos:prefLabel>
+	<skos:altLabel xml:lang="en">%</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of fraction.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/__cm3_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Percent per cubic centimetre per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">%/cm3/d</skos:altLabel>
+	<skos:definition xml:lang="en">This unit pertains to the flux of oxygen, as percent saturation, from a given volume of sediment over a given time interval</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/__g_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Percent per gram per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">%/g/d</skos:altLabel>
+	<skos:definition xml:lang="en">This unit pertains to the flux of oxygen, as percent saturation, from a given dry weight of sediment over a given time interval.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/_oVPDB">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">parts per thousand Vienna Pee Dee Belemnite</skos:prefLabel>
+	<skos:altLabel xml:lang="en">%oVPDB</skos:altLabel>
+	<skos:definition xml:lang="en">Parts per thousand with reference to the Vienna Pee Dee Belemnite. Used for carbon and oxygen isotopes. </skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/atm">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">atmosphere</skos:prefLabel>
+	<skos:altLabel xml:lang="en">atm</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of pressure or stress.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/bar">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bar</skos:prefLabel>
+	<skos:altLabel xml:lang="en">bar</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of pressure or stress.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/bbl">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">barrel</skos:prefLabel>
+	<skos:altLabel xml:lang="en">bbl</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume. Used as a measure of liquid recovery</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/bbl_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">barrels per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">bbl/d</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of liquid flow rate.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/bbl_hr">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">barrels per hour</skos:prefLabel>
+	<skos:altLabel xml:lang="en">bbl/hr</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of liquid flow rate.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cSt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">centistoke</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cSt</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of kinematic viscosity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cal">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">calorie</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cal</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of energy. Thermochemical calorie.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cal_K__mol_bar_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">calorie Kelvin per mole per bar</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cal K/(mol bar)</skos:altLabel>
+	<skos:definition xml:lang="en">MHKF (Revised Helgeson-Kirkham-Flowers model for aqueous species (ions and complexes in aqueous solutions)) model volumetric coefficient.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cal_K_mol">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">calorie Kelvin per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cal K/mol</skos:altLabel>
+	<skos:definition xml:lang="en">MHKF (Revised Helgeson-Kirkham-Flowers model for aqueous species (ions and complexes in aqueous solutions)) model volumetric coefficient.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cal__K_mol_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">calorie per Kelvin per mole </skos:prefLabel>
+	<skos:altLabel xml:lang="en">cal/(K mol)</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molar entropy, molar heat capacity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cal__mol_bar_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">calorie per mole per bar</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cal/(mol bar)</skos:altLabel>
+	<skos:definition xml:lang="en">MHKF (Revised Helgeson-Kirkham-Flowers model for aqueous species (ions and complexes in aqueous solutions)) model volumetric coefficient.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cal_mol">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">calorie per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cal/mol</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molar energy.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cgs">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">centimetre grams seconds</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cgs</skos:altLabel>
+	<skos:definition xml:lang="en">A measure of magnetic susceptibility, a dimensionless proportionality constant that indicates the degree of magnetisation of a material in response to an applied magnetic field.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cm">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">centimetre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cm</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of length.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cm2">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">square centimetre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cm2</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of area.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cm3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cubic centimetre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cm3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cm3_mol">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cubic centimetre per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cm3/mol</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molar volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cm_year">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">centimeters per year</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cm/year</skos:altLabel>
+	<skos:definition xml:lang="en">Rate of movement/growth.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cpm">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">counts per minute</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cpm</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of radioactivity. The number of gamma-rayÂ photons Â recorded by a gamma-ray detector in a particular energy window over a period of 1 minute. Specific energy windows are used for measuring the </skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:scopeNote xml:lang="en">Measure of radioactivity. The number of gamma-rayÂ photons Â recorded by a gamma-ray detector in a particular energy window over a period of 1 minute. Specific energy windows are used for measuring the activity due to each of potassium, uranium and thorium. A total count window is used to measure the total activity.</skos:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/cps">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">counts per second</skos:prefLabel>
+	<skos:altLabel xml:lang="en">cps</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of radioactivity. The number of gamma-rayÂ photons Â recorded by a gamma-ray detector in a particular energy window over a period of 1 second. Specific energy windows are used for measuring the </skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:scopeNote xml:lang="en">Measure of radioactivity. The number of gamma-rayÂ photons Â recorded by a gamma-ray detector in a particular energy window over a period of 1 second. Specific energy windows are used for measuring the activity due to each of potassium, uranium and thorium. A total count window is used to measure the total activity.</skos:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ct">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">carat</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ct</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass used for diamonds and other precious stones. One carat is equal to 1/5 of a gram (200 milligrams).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ct_t">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">carat per tonne</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ct/t</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of concentration (grade) of diamonds and other precious stones in ore.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">d</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of time.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/dS_m">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">deciSiemens per metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">dS/m</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of electrical conductivity. Standard for measuring salinity, which is measured in terms of electrical conductivity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/darcy">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">darcy</skos:prefLabel>
+	<skos:altLabel xml:lang="en">darcy</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of permeability of porous solids, not area. Measure of the features of flows within petroleum reservoirs.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/deg">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">degree</skos:prefLabel>
+	<skos:altLabel xml:lang="en">deg</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of plane angle.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/degC">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">degree Celsius</skos:prefLabel>
+	<skos:altLabel xml:lang="en">degC</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of Celsius temperature.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/dpm_g">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">disintegrations per minute per gram</skos:prefLabel>
+	<skos:altLabel xml:lang="en">dpm/g</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of radiochemical decay per gram. </skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/fs">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">full string</skos:prefLabel>
+	<skos:altLabel xml:lang="en">fs</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of well recovery on pipe length</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ft">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">foot</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ft</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of length.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ft3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cubic foot</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ft3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ft3_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cubic foot per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ft3/d</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume divided by time (includes flow). Example: Measure of gaseous flow rate</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ft3_h">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cubic foot per hour</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ft3/h</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume divided by time (includes flow). Example: Measure of gaseous flow rate</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/g">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gram</skos:prefLabel>
+	<skos:altLabel xml:lang="en">g</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/g_BCM">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gram per bank cubic metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">g/BCM</skos:altLabel>
+	<skos:definition xml:lang="en">Estimated measure of grade used in mining industry. It signifies that one gram of a particular material or commodity can be extracted from one cubic metre of material measured prior to disturbance (in</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:scopeNote xml:lang="en">Estimated measure of grade used in mining industry. It signifies that one gram of a particular material or commodity can be extracted from one cubic metre of material measured prior to disturbance (in-situ).</skos:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/g_LCM">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gram per loose cubic metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">g/LCM</skos:altLabel>
+	<skos:definition xml:lang="en">Estimated measure of grade used in mining industry. It signifies that one gram of a particular material or commodity can be extracted from one cubic metre of material measured after the disturbance (e</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:scopeNote xml:lang="en">Estimated measure of grade used in mining industry. It signifies that one gram of a particular material or commodity can be extracted from one cubic metre of material measured after the disturbance (extracted).</skos:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/g_cm3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gram per cubic centimetre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">g/cm3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass divided by volume (mass density).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/g_l">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gram per litre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">g/l</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass divided by volume (mass concentration).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/g_m3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gram per cubic metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">g/m3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass divided by volume (mass density).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/g_t">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gram per tonne</skos:prefLabel>
+	<skos:altLabel xml:lang="en">g/t</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of weight per weight concentration.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/gal_UK">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gallon (Imperial)</skos:prefLabel>
+	<skos:altLabel xml:lang="en">gal UK</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/gal_US">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gallon (U.S.)</skos:prefLabel>
+	<skos:altLabel xml:lang="en">gal US</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/h">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">hour</skos:prefLabel>
+	<skos:altLabel xml:lang="en">h</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of time.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/in">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">inch</skos:prefLabel>
+	<skos:altLabel xml:lang="en">in</skos:altLabel>
+	<skos:definition xml:lang="en">Measurement of length.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kPa">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilo Pascal</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kPa</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of pressure or stress.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kbar">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilobar</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kbar</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of pressure or stress.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kbbl">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilobarrel</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kbbl</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume. Used as a measure of liquid recovery</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kbbl_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilobarrel per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kbbl/d</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of liquid flow rate.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kcal_mol">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilocalorie per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kcal/mol</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molar energy. Energy of activation in kilocalories.  1 kilocalorie per mole = 4 184 m2 kg s-2 mol-1</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kg">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilogram</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kg</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass. It is equal to the mass of the international prototype of the kilogram. </skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kg_BCM">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilogram per bank cubic metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kg/BCM</skos:altLabel>
+	<skos:definition xml:lang="en">Estimate measure of grade used in mining industry. It signifies that one kilogram of a particular material or commodity can be extracted from one cubic metre of material measured prior to disturbance </skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:scopeNote xml:lang="en">Estimate measure of grade used in mining industry. It signifies that one kilogram of a particular material or commodity can be extracted from one cubic metre of material measured prior to disturbance (in-situ).</skos:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kg_l">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilogram per litre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kg/l</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass divided by volume (mass concentration).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kg_m3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilograms per cubic metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kg/m3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass divided by volume (mass density). </skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kg_mol">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilograms per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kg/mol</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molar mass.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kg_t">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilogram per tonne</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kg/t</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of weight per weight concentration.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/km">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilometre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">km</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of length.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/knot">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">nautical mile per hour</skos:prefLabel>
+	<skos:altLabel xml:lang="en">knot</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of velocity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kt">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilotonne</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kt</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/kton">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kilton</skos:prefLabel>
+	<skos:altLabel xml:lang="en">kton</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass. 1000 times ton.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-31T03:33:14Z</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/l">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">litre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">l</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/l_t">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">litre per tonne</skos:prefLabel>
+	<skos:altLabel xml:lang="en">l/t</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume per weight concentration.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/lb">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">pound</skos:prefLabel>
+	<skos:altLabel xml:lang="en">lb</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/m">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">m</skos:altLabel>
+	<skos:definition xml:lang="en">The metre is the length of the path travelled by light in vacuum during a time interval of 1/299 792 458 of a second.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/m-1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">reciprocal meter</skos:prefLabel>
+	<skos:altLabel xml:lang="en">m-1</skos:altLabel>
+	<skos:definition xml:lang="en">measure per length</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/m2">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">square metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">m2</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of area.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/m2_g">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">square metre per gram</skos:prefLabel>
+	<skos:altLabel xml:lang="en">m2/g</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of specific surface area.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/m3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cubic metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">m3</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/m3_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cubic metres per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">m3/d</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of flow rate.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/m3_h">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cubic metre per hour</skos:prefLabel>
+	<skos:altLabel xml:lang="en">m3/h</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of flow rate.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/m3_kPa_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cubic metre per kiloPascal per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">m3/kPa/d</skos:altLabel>
+	<skos:definition xml:lang="en">A mathematical means of expressing the ability of a reservoir to deliver fluids to the wellbore. The PI is usually stated as the volume delivered per psi of drawdown at the sandface (bbl/psi).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/m3_mol">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cubic metre per mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">m3/mol</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molar volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mA_m">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milliAmpere per metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mA/m</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of magnetic field strength.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milliSiemens</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mS</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of electrical conductance.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mS_cm">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milliSiemens per centimetre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mS/cm</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of electrical conductivity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mS_m">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milliSiemens per metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mS/m</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of electrical conductivity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mT">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">millitesla</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mT</skos:altLabel>
+	<skos:definition xml:lang="en">A measure of magnetic field strength.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mV">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milliVolt</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mV</skos:altLabel>
+	<skos:definition xml:lang="en">Measurement of electrical conductivity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mW_m2">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milliWatt per cubic metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mW/m2</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of density of heat flow rate.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/m_s">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">metre per second</skos:prefLabel>
+	<skos:altLabel xml:lang="en">m/s</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of speed and velocity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mdarcy">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">millidarcy</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mdarcy</skos:altLabel>
+	<skos:definition xml:lang="en">Permeability unit. Measure of permeability of porous solids, not area.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mg">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milligram</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mg</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_CO2_g_TOC">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milligrams carbon dioxide per gram of total organic carbon</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mg CO2/g TOC</skos:altLabel>
+	<skos:definition xml:lang="en">Oxygen Index. A measure of the oxygen content of the kerogen.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_CO2_g_rock">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milligrams carbon dioxide per gram of rock</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mg CO2/g rock</skos:altLabel>
+	<skos:definition xml:lang="en">A measure of organic carbon dioxide produced on pyrolysis (Rock Eval method).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_HC_g_TOC">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milligrams hydrocarbons per gram of total organic carbon</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mg HC/g TOC</skos:altLabel>
+	<skos:definition xml:lang="en">Hydrogen Index. A measure of the hydrogen content of the kerogen.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_HC_g_rock">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milligrams hydrocarbons per gram of rock</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mg HC/g rock</skos:altLabel>
+	<skos:definition xml:lang="en">A measure of volatile hydrocarbons thermally desorbed from a rock or a measure of hydrocarbon generating potential (Rock Eval method).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_g">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milligram per gram</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mg/g</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_g_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milligram per gram per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mg/g/d</skos:altLabel>
+	<skos:definition xml:lang="en">This unit pertains to the flux of oxygen from a given dry weight of sediment over a given time interval.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_g_rock">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milligram per gram of rock</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mg/g rock</skos:altLabel>
+	<skos:definition xml:lang="en">A measure of compounds abunbance in rocks.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_kg">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milligram per kilogram</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mg/kg</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of weight per weight concentration.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mg_l">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milligram per litre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mg/l</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass divided by volume (mass concentration).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ml">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">millilitre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ml</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ml_l">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">millilitre per litre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ml/l</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of volume per volume concentration</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mm">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">millimetre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mm</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of length.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mmol_l">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milliMole per litre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mmol/l</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molarity. Number of millimoles of solute per litre of solution. Used to express the concentration of a solution. Also expressed as mM.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mmol_m2_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milliMole per square meter per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mmol/m2/d</skos:altLabel>
+	<skos:definition xml:lang="en">This unit pertain to the flux of a chemical parameter (measured in millimoles) from a given area of sediment over a given time interval.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mol">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">mole</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mol</skos:altLabel>
+	<skos:definition xml:lang="en">The mole is the amount of substance of a system which contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mol_kg">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">mole per kilogram</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mol/kg</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molality. Concentration expressed as number of moles of solute per kilogram of solvent.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/mol_l">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">mole per litre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">mol/l</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molarity. Number of moles of solute per litre of solution. Used to express the concentration of a solution. Also expressed as M.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ms">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">millisecond</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ms</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of time.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/nG_h">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">nanoGray per hour</skos:prefLabel>
+	<skos:altLabel xml:lang="en">nG/h</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of absorbed dose rate.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/nT">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">nanotesla</skos:prefLabel>
+	<skos:altLabel xml:lang="en">nT</skos:altLabel>
+	<skos:definition xml:lang="en">A measure of magnetic field strength.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/o_oo">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">parts per thousand (ppt, per_mil)</skos:prefLabel>
+	<skos:altLabel xml:lang="en">o/oo</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of fraction.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ohm">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ohm</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ohm</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of electric resistance.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ohm_m">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ohm metre</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">ohm per metre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ohm m</skos:altLabel>
+	<skos:altLabel xml:lang="en">ohm/m</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of electric resistance.</skos:definition>
+	<skos:definition xml:lang="en">Measure of resistivity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/oz">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ounce</skos:prefLabel>
+	<skos:altLabel xml:lang="en">oz</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/pH">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">pH</skos:prefLabel>
+	<skos:altLabel xml:lang="en">pH</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of the acidity or alkalinity of a solution. The logarithm of the reciprocal of hydrogen-ion concentration in gram atoms per litre; provides a measure on a scale from 0 to 14 of the acidity or </skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:scopeNote xml:lang="en">Measure of the acidity or alkalinity of a solution. The logarithm of the reciprocal of hydrogen-ion concentration in gram atoms per litre; provides a measure on a scale from 0 to 14 of the acidity or alkalinity of a solution (where 7 is neutral and &lt;7 is acidic and &gt;7 is basic).</skos:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/phi">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">phi</skos:prefLabel>
+	<skos:altLabel xml:lang="en">phi</skos:altLabel>
+	<skos:definition xml:lang="en">The phi scale is a logarithmic transformation of the Wentworth (1922) grade scale based on the negative logarithm to the base 2 of the particle size.Â  Wentworth suggested the starting point of size gr</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:scopeNote xml:lang="en">The phi scale is a logarithmic transformation of the Wentworth (1922) grade scale based on the negative logarithm to the base 2 of the particle size.Â  Wentworth suggested the starting point of size grades as 1 mm and a constant geometric ratio of 2 between</skos:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ppb">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">parts per billion</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ppb</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of fraction.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ppm">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">parts per million</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ppm</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of fraction.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/psi">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">pound-force per square inch</skos:prefLabel>
+	<skos:altLabel xml:lang="en">psi</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of pressure or stress.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/rad">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">radian</skos:prefLabel>
+	<skos:altLabel xml:lang="en">rad</skos:altLabel>
+	<skos:definition xml:lang="en">A measure of plane angle.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/s">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">second</skos:prefLabel>
+	<skos:altLabel xml:lang="en">s</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of time. The second is the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/t">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">tonne</skos:prefLabel>
+	<skos:altLabel xml:lang="en">t</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ton">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">long ton</skos:prefLabel>
+	<skos:altLabel xml:lang="en">displacement ton</skos:altLabel>
+	<skos:altLabel xml:lang="en">imperial ton</skos:altLabel>
+	<skos:altLabel xml:lang="en">British ton</skos:altLabel>
+	<skos:altLabel xml:lang="en">weight ton</skos:altLabel>
+	<skos:definition xml:lang="en">A unit of mass equal to 2,240 lb (1,016.047 kg) in the avoirdupois system used in the USA and in the old British Imperial system.  Not to be confused with the short ton a unit of weight equal to 2,000 pounds (907.18474 kg) used in the United States and in Canada before metrication which is also referred to simply as a "ton".</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-31T03:40:58Z</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/uL_L">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">microlitre per litre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">uL/L</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of concentration. Microlitres of solute per litre of solution.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/uS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">microSiemens</skos:prefLabel>
+	<skos:altLabel xml:lang="en">uS</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of electric conductance.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/uS_cm">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">microSiemens per centimetre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">uS/cm</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of electrical conductivity.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/uT">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">microtesla</skos:prefLabel>
+	<skos:altLabel xml:lang="en">uT</skos:altLabel>
+	<skos:definition xml:lang="en">A measure of magnetic field strength.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ug_g">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">microgram per gram</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ug/g</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/ug_l">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">microgram per litre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">ug/l</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of mass divided by volume (mass concentration).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/um">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">micrometre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">um</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of length.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/um2_mPa_s">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">micro square metre per milliPascal per second</skos:prefLabel>
+	<skos:altLabel xml:lang="en">um2/mPa/s</skos:altLabel>
+	<skos:definition xml:lang="en">The ratio of permeability to viscosity. Well productivity is directly proportional to the mobility-thickness product. </skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/umol_cm3_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">micromoles per cubic centimetre per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">umol/cm3/d</skos:altLabel>
+	<skos:definition xml:lang="en">This unit pertain to the flux of a chemical parameter (measured in micromoles) from a given volume of sediment over a given time interval.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/umol_g">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">micromole per gram</skos:prefLabel>
+	<skos:altLabel xml:lang="en">umol/g</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of composition. Expressed as number of micromoles of solute per gram of solvent. Can also be expressed as millimolar (mM).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/umol_g_d">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">micromoles per gram per day</skos:prefLabel>
+	<skos:altLabel xml:lang="en">umol/g/d</skos:altLabel>
+	<skos:definition xml:lang="en">This unit pertain to the flux of a chemical parameter (measured in micromoles) from a given weight of sediment over a given time interval.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/umol_l">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">micromole per litre</skos:prefLabel>
+	<skos:altLabel xml:lang="en">umol/l</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of molarity. Number of micromoles of solute per litre of solution. Used to express the concentration of a solution.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/unknown">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">unknown</skos:prefLabel>
+	<skos:altLabel xml:lang="en">unknown</skos:altLabel>
+	<skos:definition xml:lang="en">The unit of measure is missing or unknown.  This value may be used to describe measured values for which the unit of measure may be known at a later date</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/us">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">micro second</skos:prefLabel>
+	<skos:altLabel xml:lang="en">us</skos:altLabel>
+	<skos:definition xml:lang="en">Measurement of time. Equal to a millionth of a second.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/us_ft">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">micro second per foot</skos:prefLabel>
+	<skos:altLabel xml:lang="en">us/ft</skos:altLabel>
+	<skos:definition xml:lang="en">Measurement of time divided by distance.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/v_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">volume percent</skos:prefLabel>
+	<skos:altLabel xml:lang="en">v%</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of fraction. Non SI unit used to express concentration as volume as a percentage of total volume.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/w_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">weight percent</skos:prefLabel>
+	<skos:altLabel xml:lang="en">w%</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of fraction. Non SI unit used to express concentration as weight per total weight as a percentage.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/w_v_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">weight percent volume</skos:prefLabel>
+	<skos:altLabel xml:lang="en">w/v%</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of fraction. Non SI unit used to express concentation as a weight per unit volume as a percentage.</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/year">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">year</skos:prefLabel>
+	<skos:altLabel xml:lang="en">year</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of time (365days).</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/years_B_P_">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">years before present</skos:prefLabel>
+	<skos:altLabel xml:lang="en">years B.P.</skos:altLabel>
+	<skos:definition xml:lang="en">Measure of time. The number of radiocarbon years before 1950, based on a nominal (and fictitiously constant) level of 14C in the atmosphere equal to the 1950 level. Radiocarbon years do not correspond</skos:definition>
+	<skos:inScheme rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<skos:scopeNote xml:lang="en">Measure of time. The number of radiocarbon years before 1950, based on a nominal (and fictitiously constant) level of 14C in the atmosphere equal to the 1950 level. Radiocarbon years do not correspond exactly to calendar years. Also know as the Conventional Radiocarbon Age (CRA).</skos:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#altLabel">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#altLabel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#definition">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#definition"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/modified"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/short-ton">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">short ton</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-31T03:36:16Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/created">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/created"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/creator"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://pid.geoscience.gov.au/def/voc/ga/uom/oz_ton">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ounces per ton</skos:prefLabel>
+	<skos:definition xml:lang="en">A grade calculated relative to the 'long ton'          
+        </skos:definition>
+	<skos:topConceptOf rdf:resource="http://pid.geoscience.gov.au/def/voc/ga/uom"/>
+	<dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-31T03:37:26Z</dcterms:modified>
+	<dcterms:contributor rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+	<dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-01-31T03:36:50Z</dcterms:created>
+	<dcterms:creator rdf:resource="http://editor.vocabs.ands.org.au/user/GA_Sedgmen.Lara_Admin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/issued"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#versionInfo">
+	<rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#versionInfo"/>
+</rdf:Description>
+
+</rdf:RDF>

@@ -1,6 +1,5 @@
-from nltk.corpus import brown
+#from nltk.corpus import brown
 import re
-
 
 
 class KeywordQualityControl():
@@ -9,13 +8,14 @@ class KeywordQualityControl():
     #-Aims to minimise false positives, and false negatives and
     #  maximise true positives and true negatives
     def __init__(self):
+        pass
         #prepare the spelling check words
-        word_list = brown.words()
-        self.word_set = set(word_list)
-        self.word_set2 = set()
-        file = open("dictofwords.txt", "r")
-        for line in file:
-            self.word_set2.add(line.strip())
+        #word_list = brown.words()
+        #self.word_set = set(word_list)
+        #self.word_set2 = set()
+        #file = open("dictofwords.txt", "r")
+        #for line in file:
+        #    self.word_set2.add(line.strip())
 
     def check(self,keywords):
         # -this function determines if the keywords are correct based on basic checks
@@ -49,31 +49,38 @@ class KeywordQualityControl():
         # -  [text : string] keywords to be cleaned
         # Output:
         # - [data : string] clearned keywords
-        temptext = text.lower()
-        end = []
-        #special cases
-        caseend = [' 22nd international congress', "\s*[0-9]*\s*.[0-9]*\s*introduction"]
-        #casestart = ["keywords:\s*(\w*\s*[,;]*)*."]
-        for case in caseend:
-            match = re.search(case, text)
-            if match:
-                end.append(match.start())
-        '''
-        for case in casesend:
-            match = re.search(case, text)
-            if match:
-                print(text[match.start():match.end() - 1])
-        '''
-        if len(end) is not 0:
-            text = text[0:min(end)]
+        if len(text) > 1:
+            temptext = text.lower()
+            end = []
+            #special cases
+            caseend = [' 22nd international congress', "\s*[0-9]*\s*.[0-9]*\s*introduction"]
+            #casestart = ["keywords:\s*(\w*\s*[,;]*)*."]
+            for case in caseend:
+                match = re.search(case, text)
+                if match:
+                    end.append(match.start())
+            '''
+            for case in casesend:
+                match = re.search(case, text)
+                if match:
+                    print(text[match.start():match.end() - 1])
+            '''
+            if len(end) is not 0:
+                text = text[0:min(end)]
 
-        #trim white space
-        cases = ['  ', '   ', '\t', '\n']
-        for case in cases:
-            text.replace(case, '')
+            #trim white space
+            cases = ['  ', '   ', '\t', '\n']
+            for case in cases:
+                text.replace(case, '')
 
-        return text
-
+            #trim ends
+            cases = [' ', ',', '.', ';']
+            for case in cases:
+                if text[len(text)-1] == case:
+                    text = text[0:len(text)-2]
+            return text
+        return ""
+'''
     def spellingCheck(self, check_words):
         #counts number of spelling mistakes
         browncounter = 0
@@ -92,3 +99,4 @@ class KeywordQualityControl():
         return min(unixdictcounter,browncounter)
 
 #    def spellCorrect(self,word):
+'''
